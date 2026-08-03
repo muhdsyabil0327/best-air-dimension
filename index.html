@@ -25,101 +25,122 @@
 </head>
 <body class="bg-slate-50 text-slate-800 font-sans antialiased">
 
-    <!-- Top Info Bar -->
-    <div class="bg-slate-900 text-slate-300 text-xs sm:text-sm py-2 px-4 border-b border-logo-blue">
-        <div class="max-w-6xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
-            <div class="flex items-center gap-4">
-                <a href="tel:0125884643" class="hover:text-logo-blue transition"><i class="fa-solid fa-phone text-logo-blue mr-1"></i> 012-588 4643 / 011-6445 6480</a>
-                <a href="mailto:BADT7175@GMAIL.COM" class="hidden md:inline hover:text-logo-blue transition"><i class="fa-solid fa-envelope text-logo-blue mr-1"></i> BADT7175@GMAIL.COM</a>
-            </div>
-            <div class="flex items-center gap-2 text-logo-blue font-semibold">
-                <i class="fa-solid fa-award"></i> <span>30+ Years Experience in Technical Services</span>
-            </div>
-        </div>
-    </div>
-
-    <!-- Main Navigation Bar -->
-    <nav class="bg-white sticky top-0 z-50 shadow-sm border-b border-slate-100">
-        <div class="max-w-6xl mx-auto px-4 py-2.5 flex justify-between items-center">
+    <!-- MAIN NAVIGATION (Top info bar removed, WhatsApp button removed, clean navbar) -->
+    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-100 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
             
-            <!-- Company Logo & Title -->
-            <a href="#" class="flex items-center gap-3">
-                <img src="logo.png" alt="Best Air Dimension Technology Logo" class="h-14 sm:h-16 w-auto object-contain">
+            <!-- Logo & Title Left -->
+            <a href="#" class="flex items-center gap-3 group">
+                <img src="logo.png" alt="Best Air Dimension" class="h-12 w-auto object-contain transition-transform group-hover:scale-105">
                 <div>
-                    <h1 class="text-base sm:text-lg font-bold tracking-tight text-slate-900 leading-none">Best Air Dimension</h1>
-                    <span class="text-xs text-slate-500 font-semibold tracking-wider uppercase">Technology & Services</span>
+                    <span class="block text-lg font-extrabold text-slate-900 tracking-tight leading-tight">Best Air Dimension</span>
+                    <span class="block text-[10px] font-bold text-sky-600 tracking-widest uppercase">Technology & Services</span>
                 </div>
             </a>
-            
-            <!-- Navigation Links -->
-            <div class="hidden md:flex gap-6 text-sm font-semibold text-slate-600">
-                <a href="#services" class="hover:text-logo-blue transition">Services</a>
-                <a href="#partners" class="hover:text-logo-blue transition">Partners & Brands</a>
-                <a href="#about" class="hover:text-logo-blue transition">About Us</a>
-                <a href="#contact" class="hover:text-logo-blue transition">Contact</a>
-            </div>
 
-            <!-- Header Action Button -->
-            <a href="https://wa.me/60125884643?text=Hi%20Best%20Air%20Dimension,%20I%20would%20like%20to%20inquire%20about%20your%20services." target="_blank" class="bg-emerald-500 hover:bg-emerald-600 text-white font-bold px-4 py-2.5 rounded-xl transition shadow-sm text-sm flex items-center gap-2">
-                <i class="fa-brands fa-whatsapp text-lg"></i>
-                <span>WhatsApp Us</span>
+            <!-- Navigation Links -->
+            <nav class="hidden md:flex items-center gap-8 text-sm font-semibold text-slate-700">
+                <a href="#services" class="hover:text-sky-600 transition">Services</a>
+                <a href="#partners" class="hover:text-sky-600 transition">Partners & Brands</a>
+                <a href="#about" class="hover:text-sky-600 transition">About Us</a>
+                <a href="#contact" class="hover:text-sky-600 transition">Contact</a>
+            </nav>
+
+            <!-- Book Service CTA Button -->
+            <a href="#contact" class="bg-amber-500 hover:bg-amber-600 text-slate-950 font-bold px-5 py-2.5 rounded-full text-sm shadow-md hover:shadow-lg transition flex items-center gap-2">
+                <i class="fa-solid fa-calendar-check"></i> Book Service
             </a>
         </div>
-    </nav>
+    </header>
 
-    <!-- Hero Section -->
-    <header class="relative bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950 text-white py-16 sm:py-24 px-4">
-        <div class="max-w-4xl mx-auto text-center">
+
+    <!-- HERO SECTION WITH OFFICE BACKGROUND IMAGE -->
+    <section class="relative min-h-[90vh] flex items-center justify-center text-white bg-slate-950 overflow-hidden py-20 px-4">
+        
+        <!-- Background Image with Gradient Overlay -->
+        <div class="absolute inset-0 z-0">
+            <!-- Place your office image here (e.g., office.jpeg) -->
+            <img src="office.jpeg" alt="Best Air Dimension Office" class="w-full h-full object-cover object-center scale-105 filter brightness-75">
+            <!-- Dark Gradient Overlay for Readability -->
+            <div class="absolute inset-0 bg-gradient-to-b from-slate-950/85 via-slate-950/75 to-slate-950/90"></div>
+        </div>
+
+        <div class="relative z-10 max-w-4xl mx-auto text-center flex flex-col items-center">
             
-            <!-- Trust Badges -->
-            <div class="flex flex-wrap justify-center gap-2 sm:gap-3 mb-6">
-                <span class="bg-logo-blue/10 text-logo-blue border border-logo-blue/30 text-xs font-bold px-3 py-1.5 rounded-full uppercase tracking-wider">
-                    Authorized Topaire Dealer & Certified Contractors
-                </span>
+            <!-- Company Logo centered & larger -->
+            <div class="mb-6 bg-white/10 backdrop-blur-md p-4 rounded-3xl border border-white/20 shadow-2xl hover:scale-105 transition duration-300">
+                <img src="logo.png" alt="Best Air Dimension Logo" class="h-24 sm:h-28 w-auto object-contain filter drop-shadow-lg">
             </div>
 
-            <h2 class="text-3xl sm:text-5xl font-extrabold tracking-tight mb-4 leading-tight">
-                Repairing, Servicing & Installation <br class="hidden sm:inline"><span class="text-logo-blue">Excellence</span>
-            </h2>
-            <p class="text-slate-300 text-base sm:text-lg mb-8 max-w-2xl mx-auto">
+            <!-- Tagline Badge -->
+            <div class="mb-6 inline-flex items-center gap-2 bg-sky-950/80 border border-sky-400/40 text-sky-300 text-xs sm:text-sm font-bold px-4 py-1.5 rounded-full shadow-inner">
+                <i class="fa-solid fa-award text-amber-400"></i>
+                AUTHORIZED TOPAIRE DEALER & CERTIFIED CONTRACTORS
+            </div>
+
+            <!-- Main Heading -->
+            <h1 class="text-4xl sm:text-6xl font-black text-white tracking-tight leading-tight mb-6">
+                Repairing, Servicing & Installation <br class="hidden sm:inline">
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-sky-400 via-sky-200 to-amber-300">Excellence</span>
+            </h1>
+
+            <!-- Subtitle -->
+            <p class="text-slate-300 text-base sm:text-lg max-w-2xl mb-8 leading-relaxed">
                 Comprehensive air-conditioning solutions, electrical appliances repair, fire extinguisher supply, and civil engineering works in Penang.
             </p>
-            
-            <div class="flex flex-col sm:flex-row justify-center gap-4">
-                <a href="https://wa.me/60125884643?text=Hi,%20I%20would%20like%20to%20book%20a%20service%20appointment." target="_blank" class="bg-amber-500 hover:bg-amber-600 text-slate-950 font-bold py-3.5 px-8 rounded-xl shadow-lg transition flex items-center justify-center gap-2 text-base">
-                    <i class="fa-solid fa-calendar-check"></i> Book Service Appointment
+
+            <!-- Call To Action Buttons -->
+            <div class="flex flex-col sm:flex-row gap-4 mb-14 w-full sm:w-auto">
+                <a href="#contact" class="bg-amber-500 hover:bg-amber-400 text-slate-950 font-extrabold px-8 py-3.5 rounded-2xl shadow-xl hover:shadow-amber-500/20 transition flex items-center justify-center gap-2 text-sm sm:text-base">
+                    <i class="fa-solid fa-calendar-days"></i> Book Service Appointment
                 </a>
-                <a href="https://maps.app.goo.gl/Dx5hUY9ysoySuoPd9" target="_blank" class="bg-slate-800/80 hover:bg-slate-700 text-white border border-slate-700 font-bold py-3.5 px-6 rounded-xl transition flex items-center justify-center gap-2 text-base">
-                    <i class="fa-solid fa-location-dot text-logo-yellow"></i> Visit Gelugor Workshop
+                
+                <!-- Changed to "Our Company Location" -->
+                <a href="#location" class="bg-white/10 hover:bg-white/20 border border-white/20 backdrop-blur-md text-white font-bold px-8 py-3.5 rounded-2xl transition flex items-center justify-center gap-2 text-sm sm:text-base">
+                    <i class="fa-solid fa-location-dot text-amber-400"></i> Our Company Location
                 </a>
             </div>
 
-            <!-- Key Feature Badges Grid -->
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-12 text-left">
-                <div class="bg-slate-900/80 border border-slate-800 p-4 rounded-xl flex items-center gap-4">
-                    <div class="bg-logo-blue/20 text-logo-blue p-3 rounded-lg text-2xl"><i class="fa-solid fa-snowflake"></i></div>
+            <!-- Bottom Highlights Cards (Zakat Payer updated) -->
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 w-full max-w-3xl">
+                
+                <!-- Card 1: TOPAIRE Dealer -->
+                <div class="bg-slate-900/60 backdrop-blur-md border border-white/10 p-4 rounded-2xl flex items-center gap-3.5 text-left shadow-lg">
+                    <div class="w-12 h-12 rounded-xl bg-sky-500/20 text-sky-400 flex items-center justify-center text-xl flex-shrink-0 border border-sky-500/30">
+                        <i class="fa-solid fa-snowflake"></i>
+                    </div>
                     <div>
-                        <h4 class="font-bold text-white text-sm">TOPAIRE Dealer</h4>
+                        <h4 class="text-sm font-bold text-white">TOPAIRE Dealer</h4>
                         <p class="text-xs text-slate-400">RM130k+ units sold since 2021</p>
                     </div>
                 </div>
-                <div class="bg-slate-900/80 border border-slate-800 p-4 rounded-xl flex items-center gap-4">
-                    <div class="bg-logo-red/20 text-logo-red p-3 rounded-lg text-2xl"><i class="fa-solid fa-fire-extinguisher"></i></div>
+
+                <!-- Card 2: Zakat Payer (Updated) -->
+                <div class="bg-slate-900/60 backdrop-blur-md border border-white/10 p-4 rounded-2xl flex items-center gap-3.5 text-left shadow-lg">
+                    <div class="w-12 h-12 rounded-xl bg-emerald-500/20 text-emerald-400 flex items-center justify-center text-xl flex-shrink-0 border border-emerald-500/30">
+                        <i class="fa-solid fa-hand-holding-heart"></i>
+                    </div>
                     <div>
-                        <h4 class="font-bold text-white text-sm">MBPP Partner</h4>
-                        <p class="text-xs text-slate-400">Fire extinguisher supplier since 2022</p>
+                        <h4 class="text-sm font-bold text-white">Zakat Payer</h4>
+                        <p class="text-xs text-slate-400">Paying Zakat Perniagaan since 2020</p>
                     </div>
                 </div>
-                <div class="bg-slate-900/80 border border-slate-800 p-4 rounded-xl flex items-center gap-4">
-                    <div class="bg-logo-yellow/20 text-logo-yellow p-3 rounded-lg text-2xl"><i class="fa-solid fa-user-gear"></i></div>
+
+                <!-- Card 3: 30+ Years Experience -->
+                <div class="bg-slate-900/60 backdrop-blur-md border border-white/10 p-4 rounded-2xl flex items-center gap-3.5 text-left shadow-lg">
+                    <div class="w-12 h-12 rounded-xl bg-amber-500/20 text-amber-400 flex items-center justify-center text-xl flex-shrink-0 border border-amber-500/30">
+                        <i class="fa-solid fa-user-shield"></i>
+                    </div>
                     <div>
-                        <h4 class="font-bold text-white text-sm">30+ Years Experience</h4>
+                        <h4 class="text-sm font-bold text-white">30+ Years Experience</h4>
                         <p class="text-xs text-slate-400">Manager: Badrul Husam Abdullah</p>
                     </div>
                 </div>
+
             </div>
+
         </div>
-    </header>
+    </section>
 
     <!-- Main Technical Services Section with Local 5-Photo Work Progress Sliders -->
     <section id="services" class="max-w-6xl mx-auto px-4 py-16">
