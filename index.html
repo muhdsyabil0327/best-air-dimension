@@ -25,51 +25,49 @@
 </head>
 <body class="bg-slate-50 text-slate-800 font-sans antialiased">
 
-    <!-- MAIN NAVIGATION (Top info bar removed, WhatsApp button removed, clean navbar) -->
-    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-100 shadow-sm">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+    <!-- MAIN NAVIGATION (Enlarged Logo, Bigger Text & CTA Button) -->
+    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-200/80 shadow-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-24 flex items-center justify-between">
             
-            <!-- Logo & Title Left -->
-            <a href="#" class="flex items-center gap-3 group">
-                <img src="logo.png" alt="Best Air Dimension" class="h-12 w-auto object-contain transition-transform group-hover:scale-105">
+            <!-- Logo & Title (Bigger Size) -->
+            <a href="#" class="flex items-center gap-4 group">
+                <img src="logo.png" alt="Best Air Dimension" class="h-16 sm:h-20 w-auto object-contain transition-transform duration-300 group-hover:scale-105 drop-shadow-sm">
                 <div>
-                    <span class="block text-lg font-extrabold text-slate-900 tracking-tight leading-tight">Best Air Dimension</span>
-                    <span class="block text-[10px] font-bold text-sky-600 tracking-widest uppercase">Technology & Services</span>
+                    <span class="block text-xl sm:text-2xl font-black text-slate-900 tracking-tight leading-tight group-hover:text-sky-600 transition">Best Air Dimension</span>
+                    <span class="block text-xs sm:text-sm font-bold text-sky-600 tracking-widest uppercase">Technology & Services</span>
                 </div>
             </a>
 
-            <!-- Navigation Links -->
-            <nav class="hidden md:flex items-center gap-8 text-sm font-semibold text-slate-700">
-                <a href="#services" class="hover:text-sky-600 transition">Services</a>
-                <a href="#partners" class="hover:text-sky-600 transition">Partners & Brands</a>
-                <a href="#about" class="hover:text-sky-600 transition">About Us</a>
-                <a href="#contact" class="hover:text-sky-600 transition">Contact</a>
+            <!-- Navigation Links (Bigger Font & Spacing) -->
+            <nav class="hidden lg:flex items-center gap-10 text-base font-bold text-slate-700">
+                <a href="#services" class="hover:text-sky-600 transition py-2 border-b-2 border-transparent hover:border-sky-600">Services</a>
+                <a href="#partners" class="hover:text-sky-600 transition py-2 border-b-2 border-transparent hover:border-sky-600">Partners & Brands</a>
+                <a href="#about" class="hover:text-sky-600 transition py-2 border-b-2 border-transparent hover:border-sky-600">About Us</a>
+                <a href="#contact" class="hover:text-sky-600 transition py-2 border-b-2 border-transparent hover:border-sky-600">Contact</a>
             </nav>
 
-            <!-- Book Service CTA Button -->
-            <a href="#contact" class="bg-amber-500 hover:bg-amber-600 text-slate-950 font-bold px-5 py-2.5 rounded-full text-sm shadow-md hover:shadow-lg transition flex items-center gap-2">
+            <!-- Prominent Right CTA Button -->
+            <a href="#contact" class="bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-400 hover:to-amber-500 text-slate-950 font-extrabold px-6 py-3 rounded-xl text-sm sm:text-base shadow-md hover:shadow-lg transition duration-200 flex items-center gap-2">
                 <i class="fa-solid fa-calendar-check"></i> Book Service
             </a>
         </div>
     </header>
 
 
-    <!-- HERO SECTION WITH OFFICE BACKGROUND IMAGE -->
+    <!-- HERO SECTION (Bigger Centered Logo & Enhanced Layout) -->
     <section class="relative min-h-[90vh] flex items-center justify-center text-white bg-slate-950 overflow-hidden py-20 px-4">
         
         <!-- Background Image with Gradient Overlay -->
         <div class="absolute inset-0 z-0">
-            <!-- Place your office image here (e.g., office.jpeg) -->
             <img src="office.jpeg" alt="Best Air Dimension Office" class="w-full h-full object-cover object-center scale-105 filter brightness-75">
-            <!-- Dark Gradient Overlay for Readability -->
             <div class="absolute inset-0 bg-gradient-to-b from-slate-950/85 via-slate-950/75 to-slate-950/90"></div>
         </div>
 
         <div class="relative z-10 max-w-4xl mx-auto text-center flex flex-col items-center">
             
-            <!-- Company Logo centered & larger -->
-            <div class="mb-6 bg-white/10 backdrop-blur-md p-4 rounded-3xl border border-white/20 shadow-2xl hover:scale-105 transition duration-300">
-                <img src="logo.png" alt="Best Air Dimension Logo" class="h-24 sm:h-28 w-auto object-contain filter drop-shadow-lg">
+            <!-- Company Logo Centered & Scaled Up -->
+            <div class="mb-6 bg-white/10 backdrop-blur-md p-5 rounded-3xl border border-white/20 shadow-2xl hover:scale-105 transition duration-300">
+                <img src="logo.png" alt="Best Air Dimension Logo" class="h-28 sm:h-36 w-auto object-contain filter drop-shadow-xl">
             </div>
 
             <!-- Tagline Badge -->
@@ -95,16 +93,15 @@
                     <i class="fa-solid fa-calendar-days"></i> Book Service Appointment
                 </a>
                 
-                <!-- Changed to "Our Company Location" -->
                 <a href="#location" class="bg-white/10 hover:bg-white/20 border border-white/20 backdrop-blur-md text-white font-bold px-8 py-3.5 rounded-2xl transition flex items-center justify-center gap-2 text-sm sm:text-base">
                     <i class="fa-solid fa-location-dot text-amber-400"></i> Our Company Location
                 </a>
             </div>
 
-            <!-- Bottom Highlights Cards (Zakat Payer updated) -->
+            <!-- Bottom Highlights Cards -->
             <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 w-full max-w-3xl">
                 
-                <!-- Card 1: TOPAIRE Dealer -->
+                <!-- TOPAIRE Dealer -->
                 <div class="bg-slate-900/60 backdrop-blur-md border border-white/10 p-4 rounded-2xl flex items-center gap-3.5 text-left shadow-lg">
                     <div class="w-12 h-12 rounded-xl bg-sky-500/20 text-sky-400 flex items-center justify-center text-xl flex-shrink-0 border border-sky-500/30">
                         <i class="fa-solid fa-snowflake"></i>
@@ -115,7 +112,7 @@
                     </div>
                 </div>
 
-                <!-- Card 2: Zakat Payer (Updated) -->
+                <!-- Zakat Payer -->
                 <div class="bg-slate-900/60 backdrop-blur-md border border-white/10 p-4 rounded-2xl flex items-center gap-3.5 text-left shadow-lg">
                     <div class="w-12 h-12 rounded-xl bg-emerald-500/20 text-emerald-400 flex items-center justify-center text-xl flex-shrink-0 border border-emerald-500/30">
                         <i class="fa-solid fa-hand-holding-heart"></i>
@@ -126,7 +123,7 @@
                     </div>
                 </div>
 
-                <!-- Card 3: 30+ Years Experience -->
+                <!-- 30+ Years Experience -->
                 <div class="bg-slate-900/60 backdrop-blur-md border border-white/10 p-4 rounded-2xl flex items-center gap-3.5 text-left shadow-lg">
                     <div class="w-12 h-12 rounded-xl bg-amber-500/20 text-amber-400 flex items-center justify-center text-xl flex-shrink-0 border border-amber-500/30">
                         <i class="fa-solid fa-user-shield"></i>
