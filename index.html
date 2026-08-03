@@ -448,18 +448,291 @@
         </script>
     </section>
 
-    <!-- Partners & Brands Section -->
-    <section id="partners" class="bg-slate-100 py-12 px-4 border-y border-slate-200">
-        <div class="max-w-6xl mx-auto text-center">
-            <h4 class="text-sm font-bold text-slate-500 uppercase tracking-widest mb-6">Trusted Brands & Authorizations</h4>
-            <div class="flex flex-wrap justify-center items-center gap-8 md:gap-16 opacity-80 font-bold text-slate-700 text-lg sm:text-xl">
-                <span>TOPAIRE</span>
-                <span>DAIKIN</span>
-                <span>PANASONIC</span>
-                <span>MITSUBISHI</span>
-                <span>ACSON</span>
-                <span>MBPP</span>
+    <!-- Upgraded Partners, Brands & Authorizations Section -->
+    <section id="partners" class="max-w-6xl mx-auto px-4 py-16">
+        
+        <!-- Section Header -->
+        <div class="text-center mb-12">
+            <span class="text-logo-blue font-bold text-xs uppercase tracking-widest bg-logo-blue/10 px-3 py-1 rounded-full border border-logo-blue/20">Trust & Credibility</span>
+            <h3 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-3">Brands, Authorizations & Key Clients</h3>
+            <p class="text-slate-600 mt-2 max-w-xl mx-auto text-sm sm:text-base">We work with industry-leading HVAC manufacturers and trusted government institutions across Penang.</p>
+        </div>
+
+        <!-- 2-Column Layout -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            
+            <!-- COLUMN 1: BRANDS & MANUFACTURERS (9 BRANDS) -->
+            <div class="bg-white rounded-3xl p-6 sm:p-8 border border-slate-200/80 shadow-sm flex flex-col justify-between">
+                <div>
+                    <div class="flex items-center gap-3 mb-6 pb-4 border-b border-slate-100">
+                        <div class="w-10 h-10 rounded-xl bg-sky-100 text-sky-600 flex items-center justify-center text-lg font-bold">
+                            <i class="fa-solid fa-screwdriver-wrench"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-xl font-bold text-slate-900">HVAC Brands & Equipment</h4>
+                            <p class="text-xs text-slate-500">Authorized dealership & expert multi-brand servicing</p>
+                        </div>
+                    </div>
+
+                    <!-- FEATURED BRAND SPOTLIGHT: TOPAIRE (Brand 1) -->
+                    <div class="relative bg-gradient-to-br from-sky-900 via-slate-900 to-sky-950 text-white rounded-2xl p-5 mb-6 border-2 border-sky-400/60 shadow-lg group hover:border-sky-400 transition">
+                        <div class="absolute -top-3 right-4 bg-gradient-to-r from-amber-400 to-amber-500 text-slate-950 text-[10px] font-extrabold uppercase px-3 py-0.5 rounded-full shadow-md flex items-center gap-1">
+                            <i class="fa-solid fa-star text-slate-950"></i> Featured Authorized Dealer
+                        </div>
+                        
+                        <div class="flex flex-col sm:flex-row items-center sm:items-start gap-4">
+                            <!-- Image Logo Container -->
+                            <div class="w-24 h-20 bg-white rounded-xl p-2 flex items-center justify-center flex-shrink-0 shadow-inner">
+                                <img src="Brand1.jpeg" alt="Topaire Malaysia" class="max-h-full max-w-full object-contain">
+                            </div>
+                            
+                            <div>
+                                <div class="flex items-center gap-2 mb-1 justify-center sm:justify-start">
+                                    <h5 class="text-lg font-extrabold text-white">TOPAIRE</h5>
+                                    <span class="text-[10px] font-bold text-sky-300 bg-sky-900/80 px-2 py-0.5 rounded-md border border-sky-700">Primary Partner</span>
+                                </div>
+                                <p class="text-xs text-slate-300 leading-relaxed text-center sm:text-left">
+                                    Official authorized dealer in Penang. Direct factory sales, authentic spare parts supply, full warranty support, and specialized installation for residential & commercial units.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- OTHER 8 BRANDS GRID -->
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                        
+                        <!-- Brand 2: Acson -->
+                        <div class="bg-slate-50 hover:bg-white p-3 rounded-2xl border border-slate-200/70 transition flex items-center gap-3">
+                            <div class="w-12 h-10 bg-white rounded-lg p-1 flex items-center justify-center flex-shrink-0 border border-slate-100 shadow-sm">
+                                <img src="Brand2.jpeg" alt="Acson" class="max-h-full max-w-full object-contain">
+                            </div>
+                            <div>
+                                <h6 class="text-xs font-bold text-slate-900">ACSON</h6>
+                                <p class="text-[11px] text-slate-500 leading-tight">Wall & ceiling cassette repair</p>
+                            </div>
+                        </div>
+
+                        <!-- Brand 3: Daikin -->
+                        <div class="bg-slate-50 hover:bg-white p-3 rounded-2xl border border-slate-200/70 transition flex items-center gap-3">
+                            <div class="w-12 h-10 bg-white rounded-lg p-1 flex items-center justify-center flex-shrink-0 border border-slate-100 shadow-sm">
+                                <img src="Brand3.jpeg" alt="Daikin" class="max-h-full max-w-full object-contain">
+                            </div>
+                            <div>
+                                <h6 class="text-xs font-bold text-slate-900">DAIKIN</h6>
+                                <p class="text-[11px] text-slate-500 leading-tight">Inverter diagnostics & chemical wash</p>
+                            </div>
+                        </div>
+
+                        <!-- Brand 4: AUX -->
+                        <div class="bg-slate-50 hover:bg-white p-3 rounded-2xl border border-slate-200/70 transition flex items-center gap-3">
+                            <div class="w-12 h-10 bg-white rounded-lg p-1 flex items-center justify-center flex-shrink-0 border border-slate-100 shadow-sm">
+                                <img src="Brand4.jpeg" alt="AUX" class="max-h-full max-w-full object-contain">
+                            </div>
+                            <div>
+                                <h6 class="text-xs font-bold text-slate-900">AUX</h6>
+                                <p class="text-[11px] text-slate-500 leading-tight">Unit installation & servicing</p>
+                            </div>
+                        </div>
+
+                        <!-- Brand 5: Haier -->
+                        <div class="bg-slate-50 hover:bg-white p-3 rounded-2xl border border-slate-200/70 transition flex items-center gap-3">
+                            <div class="w-12 h-10 bg-white rounded-lg p-1 flex items-center justify-center flex-shrink-0 border border-slate-100 shadow-sm">
+                                <img src="Brand5.jpeg" alt="Haier" class="max-h-full max-w-full object-contain">
+                            </div>
+                            <div>
+                                <h6 class="text-xs font-bold text-slate-900">HAIER</h6>
+                                <p class="text-[11px] text-slate-500 leading-tight">Commercial & residential support</p>
+                            </div>
+                        </div>
+
+                        <!-- Brand 6: Panasonic -->
+                        <div class="bg-slate-50 hover:bg-white p-3 rounded-2xl border border-slate-200/70 transition flex items-center gap-3">
+                            <div class="w-12 h-10 bg-white rounded-lg p-1 flex items-center justify-center flex-shrink-0 border border-slate-100 shadow-sm">
+                                <img src="Brand6.jpeg" alt="Panasonic" class="max-h-full max-w-full object-contain">
+                            </div>
+                            <div>
+                                <h6 class="text-xs font-bold text-slate-900">PANASONIC</h6>
+                                <p class="text-[11px] text-slate-500 leading-tight">Overhaul & gas refills</p>
+                            </div>
+                        </div>
+
+                        <!-- Brand 7: Samsung -->
+                        <div class="bg-slate-50 hover:bg-white p-3 rounded-2xl border border-slate-200/70 transition flex items-center gap-3">
+                            <div class="w-12 h-10 bg-white rounded-lg p-1 flex items-center justify-center flex-shrink-0 border border-slate-100 shadow-sm">
+                                <img src="Brand7.jpeg" alt="Samsung" class="max-h-full max-w-full object-contain">
+                            </div>
+                            <div>
+                                <h6 class="text-xs font-bold text-slate-900">SAMSUNG</h6>
+                                <p class="text-[11px] text-slate-500 leading-tight">Digital inverter troubleshooting</p>
+                            </div>
+                        </div>
+
+                        <!-- Brand 8: York -->
+                        <div class="bg-slate-50 hover:bg-white p-3 rounded-2xl border border-slate-200/70 transition flex items-center gap-3">
+                            <div class="w-12 h-10 bg-white rounded-lg p-1 flex items-center justify-center flex-shrink-0 border border-slate-100 shadow-sm">
+                                <img src="Brand8.jpeg" alt="York" class="max-h-full max-w-full object-contain">
+                            </div>
+                            <div>
+                                <h6 class="text-xs font-bold text-slate-900">YORK</h6>
+                                <p class="text-[11px] text-slate-500 leading-tight">Industrial duct & cassette maintenance</p>
+                            </div>
+                        </div>
+
+                        <!-- Brand 9: Midea -->
+                        <div class="bg-slate-50 hover:bg-white p-3 rounded-2xl border border-slate-200/70 transition flex items-center gap-3">
+                            <div class="w-12 h-10 bg-white rounded-lg p-1 flex items-center justify-center flex-shrink-0 border border-slate-100 shadow-sm">
+                                <img src="Brand9.jpeg" alt="Midea" class="max-h-full max-w-full object-contain">
+                            </div>
+                            <div>
+                                <h6 class="text-xs font-bold text-slate-900">MIDEA</h6>
+                                <p class="text-[11px] text-slate-500 leading-tight">General maintenance & spare parts</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
             </div>
+
+
+            <!-- COLUMN 2: AUTHORIZATIONS & KEY CLIENTS WORKED WITH (10 INSTITUTIONS) -->
+            <div class="bg-white rounded-3xl p-6 sm:p-8 border border-slate-200/80 shadow-sm flex flex-col justify-between">
+                <div>
+                    <div class="flex items-center gap-3 mb-6 pb-4 border-b border-slate-100">
+                        <div class="w-10 h-10 rounded-xl bg-rose-100 text-rose-600 flex items-center justify-center text-lg font-bold">
+                            <i class="fa-solid fa-building-shield"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-xl font-bold text-slate-900">Authorizations & Key Clients</h4>
+                            <p class="text-xs text-slate-500">Government bodies, educational & healthcare institutions</p>
+                        </div>
+                    </div>
+
+                    <div class="space-y-2.5 max-h-[500px] overflow-y-auto pr-1">
+                        
+                        <!-- 1. MBPP -->
+                        <div class="bg-slate-50 hover:bg-white p-3 rounded-xl border border-slate-200/70 transition flex items-center justify-between gap-3">
+                            <div class="flex items-center gap-2.5">
+                                <div class="w-7 h-7 rounded-lg bg-sky-100 text-sky-700 flex items-center justify-center font-bold text-xs">1</div>
+                                <div>
+                                    <h6 class="text-xs font-bold text-slate-900">MBPP (Majlis Bandaraya Pulau Pinang)</h6>
+                                    <p class="text-[11px] text-slate-500">Council complex HVAC servicing & civil maintenance</p>
+                                </div>
+                            </div>
+                            <span class="text-[10px] font-bold text-sky-700 bg-sky-50 px-2 py-0.5 rounded border border-sky-200 flex-shrink-0">Council Partner</span>
+                        </div>
+
+                        <!-- 2. TYT PENANG -->
+                        <div class="bg-slate-50 hover:bg-white p-3 rounded-xl border border-slate-200/70 transition flex items-center justify-between gap-3">
+                            <div class="flex items-center gap-2.5">
+                                <div class="w-7 h-7 rounded-lg bg-sky-100 text-sky-700 flex items-center justify-center font-bold text-xs">2</div>
+                                <div>
+                                    <h6 class="text-xs font-bold text-slate-900">TYT PENANG (Istana)</h6>
+                                    <p class="text-[11px] text-slate-500">Official royal residence air conditioning maintenance</p>
+                                </div>
+                            </div>
+                            <span class="text-[10px] font-bold text-amber-700 bg-amber-50 px-2 py-0.5 rounded border border-amber-200 flex-shrink-0">High Security</span>
+                        </div>
+
+                        <!-- 3. SUK PENANG -->
+                        <div class="bg-slate-50 hover:bg-white p-3 rounded-xl border border-slate-200/70 transition flex items-center justify-between gap-3">
+                            <div class="flex items-center gap-2.5">
+                                <div class="w-7 h-7 rounded-lg bg-sky-100 text-sky-700 flex items-center justify-center font-bold text-xs">3</div>
+                                <div>
+                                    <h6 class="text-xs font-bold text-slate-900">SUK PENANG (Setiausaha Kerajaan Negeri)</h6>
+                                    <p class="text-[11px] text-slate-500">State secretariat building HVAC & cooling systems</p>
+                                </div>
+                            </div>
+                            <span class="text-[10px] font-bold text-indigo-700 bg-indigo-50 px-2 py-0.5 rounded border border-indigo-200 flex-shrink-0">State Admin</span>
+                        </div>
+
+                        <!-- 4. IPG PENANG -->
+                        <div class="bg-slate-50 hover:bg-white p-3 rounded-xl border border-slate-200/70 transition flex items-center justify-between gap-3">
+                            <div class="flex items-center gap-2.5">
+                                <div class="w-7 h-7 rounded-lg bg-sky-100 text-sky-700 flex items-center justify-center font-bold text-xs">4</div>
+                                <div>
+                                    <h6 class="text-xs font-bold text-slate-900">IPG PENANG (Institut Pendidikan Guru)</h6>
+                                    <p class="text-[11px] text-slate-500">Campus hall & lecture room air-cond overhaul</p>
+                                </div>
+                            </div>
+                            <span class="text-[10px] font-bold text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded border border-emerald-200 flex-shrink-0">Education</span>
+                        </div>
+
+                        <!-- 5. VETERINAR -->
+                        <div class="bg-slate-50 hover:bg-white p-3 rounded-xl border border-slate-200/70 transition flex items-center justify-between gap-3">
+                            <div class="flex items-center gap-2.5">
+                                <div class="w-7 h-7 rounded-lg bg-sky-100 text-sky-700 flex items-center justify-center font-bold text-xs">5</div>
+                                <div>
+                                    <h6 class="text-xs font-bold text-slate-900">JABATAN VETERINAR PENANG</h6>
+                                    <p class="text-[11px] text-slate-500">Fire protection system testing & office cooling</p>
+                                </div>
+                            </div>
+                            <span class="text-[10px] font-bold text-rose-700 bg-rose-50 px-2 py-0.5 rounded border border-rose-200 flex-shrink-0">Fire & Safety</span>
+                        </div>
+
+                        <!-- 6. USM -->
+                        <div class="bg-slate-50 hover:bg-white p-3 rounded-xl border border-slate-200/70 transition flex items-center justify-between gap-3">
+                            <div class="flex items-center gap-2.5">
+                                <div class="w-7 h-7 rounded-lg bg-sky-100 text-sky-700 flex items-center justify-center font-bold text-xs">6</div>
+                                <div>
+                                    <h6 class="text-xs font-bold text-slate-900">USM (Universiti Sains Malaysia)</h6>
+                                    <p class="text-[11px] text-slate-500">Faculty lab cooling & equipment maintenance</p>
+                                </div>
+                            </div>
+                            <span class="text-[10px] font-bold text-purple-700 bg-purple-50 px-2 py-0.5 rounded border border-purple-200 flex-shrink-0">University</span>
+                        </div>
+
+                        <!-- 7. JPN PENANG -->
+                        <div class="bg-slate-50 hover:bg-white p-3 rounded-xl border border-slate-200/70 transition flex items-center justify-between gap-3">
+                            <div class="flex items-center gap-2.5">
+                                <div class="w-7 h-7 rounded-lg bg-sky-100 text-sky-700 flex items-center justify-center font-bold text-xs">7</div>
+                                <div>
+                                    <h6 class="text-xs font-bold text-slate-900">JPN PENANG (Jabatan Pendaftaran Negara)</h6>
+                                    <p class="text-[11px] text-slate-500">Public counter air conditioning servicing</p>
+                                </div>
+                            </div>
+                            <span class="text-[10px] font-bold text-slate-700 bg-slate-200 px-2 py-0.5 rounded border border-slate-300 flex-shrink-0">Gov Dept</span>
+                        </div>
+
+                        <!-- 8. SEAMEO RECSAM -->
+                        <div class="bg-slate-50 hover:bg-white p-3 rounded-xl border border-slate-200/70 transition flex items-center justify-between gap-3">
+                            <div class="flex items-center gap-2.5">
+                                <div class="w-7 h-7 rounded-lg bg-sky-100 text-sky-700 flex items-center justify-center font-bold text-xs">8</div>
+                                <div>
+                                    <h6 class="text-xs font-bold text-slate-900">SEAMEO RECSAM GELUGOR</h6>
+                                    <p class="text-[11px] text-slate-500">Regional education center HVAC maintenance</p>
+                                </div>
+                            </div>
+                            <span class="text-[10px] font-bold text-teal-700 bg-teal-50 px-2 py-0.5 rounded border border-teal-200 flex-shrink-0">Regional Center</span>
+                        </div>
+
+                        <!-- 9. JABATAN KESIHATAN NEGERI -->
+                        <div class="bg-slate-50 hover:bg-white p-3 rounded-xl border border-slate-200/70 transition flex items-center justify-between gap-3">
+                            <div class="flex items-center gap-2.5">
+                                <div class="w-7 h-7 rounded-lg bg-sky-100 text-sky-700 flex items-center justify-center font-bold text-xs">9</div>
+                                <div>
+                                    <h6 class="text-xs font-bold text-slate-900">JABATAN KESIHATAN NEGERI PENANG</h6>
+                                    <p class="text-[11px] text-slate-500">Health department facility climate control</p>
+                                </div>
+                            </div>
+                            <span class="text-[10px] font-bold text-red-700 bg-red-50 px-2 py-0.5 rounded border border-red-200 flex-shrink-0">Healthcare</span>
+                        </div>
+
+                        <!-- 10. LPPKN -->
+                        <div class="bg-slate-50 hover:bg-white p-3 rounded-xl border border-slate-200/70 transition flex items-center justify-between gap-3">
+                            <div class="flex items-center gap-2.5">
+                                <div class="w-7 h-7 rounded-lg bg-sky-100 text-sky-700 flex items-center justify-center font-bold text-xs">10</div>
+                                <div>
+                                    <h6 class="text-xs font-bold text-slate-900">LPPKN PENANG</h6>
+                                    <p class="text-[11px] text-slate-500">LPPKN clinic & administrative office air-cond repairs</p>
+                                </div>
+                            </div>
+                            <span class="text-[10px] font-bold text-blue-700 bg-blue-50 px-2 py-0.5 rounded border border-blue-200 flex-shrink-0">Federal Dept</span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
         </div>
     </section>
 
