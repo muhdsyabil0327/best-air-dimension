@@ -121,7 +121,7 @@
         </div>
     </header>
 
-    <!-- Main Technical Services Section -->
+    <!-- Main Technical Services Section with Auto-Sliders -->
     <section id="services" class="max-w-6xl mx-auto px-4 py-16">
         
         <!-- Section Header -->
@@ -137,7 +137,7 @@
             <div class="bg-white rounded-3xl p-6 sm:p-8 border border-slate-200/80 shadow-sm hover:shadow-md transition">
                 <div class="flex flex-col lg:flex-row gap-8 items-start">
                     
-                    <!-- Left Column: Service Details & Sub-Services -->
+                    <!-- Left Column: Details & Sub-Services -->
                     <div class="flex-1">
                         <div class="flex items-center gap-3 mb-4">
                             <div class="w-10 h-10 rounded-xl bg-sky-100 text-sky-600 flex items-center justify-center text-xl font-bold">
@@ -169,23 +169,38 @@
                         </a>
                     </div>
 
-                    <!-- Right Column: Photos & Active Work Badge -->
+                    <!-- Right Column: Automatic 10s Photo Slider -->
                     <div class="w-full lg:w-80 flex-shrink-0">
                         <div class="bg-slate-900 text-white p-4 rounded-2xl">
                             <div class="flex items-center justify-between mb-3">
                                 <span class="text-xs font-bold uppercase text-sky-400 flex items-center gap-1.5">
-                                    <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span> Active Job Photo
+                                    <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span> Project Gallery
                                 </span>
-                                <span class="text-xs text-slate-400">Gelugor / Penang</span>
+                                <span class="text-xs text-slate-400">Penang Jobs</span>
                             </div>
                             
-                            <!-- Image Container (Replace aircond_photo.jpg with your photo file) -->
-                            <div class="h-44 bg-slate-800 rounded-xl overflow-hidden mb-3">
-                                <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=600&q=80" alt="Air Cond Chemical Wash Work" class="w-full h-full object-cover">
+                            <!-- Slider Container for Air-Cond -->
+                            <div class="relative h-52 bg-slate-800 rounded-xl overflow-hidden mb-3 group/slider">
+                                <div id="slider-aircond" class="w-full h-full relative">
+                                    <!-- Slide 1 -->
+                                    <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=600&q=80" alt="Chemical Overhaul" class="slide-img absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 opacity-100">
+                                    <!-- Slide 2 -->
+                                    <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=600&q=80" alt="Gas Top Up" class="slide-img absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 opacity-0">
+                                    <!-- Slide 3 -->
+                                    <img src="https://images.unsplash.com/photo-1621905252507-b35492cc74b4?auto=format&fit=crop&w=600&q=80" alt="Unit Installation" class="slide-img absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 opacity-0">
+                                    <!-- Slide 4 -->
+                                    <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=600&q=80" alt="Cassette Servicing" class="slide-img absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 opacity-0">
+                                    <!-- Slide 5 -->
+                                    <img src="https://images.unsplash.com/photo-1581092335397-9583fe92d232?auto=format&fit=crop&w=600&q=80" alt="Topaire Unit Setup" class="slide-img absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 opacity-0">
+                                </div>
+
+                                <!-- Manual Controls -->
+                                <button onclick="prevSlide('slider-aircond')" class="absolute left-2 top-1/2 -translate-y-1/2 bg-slate-950/60 hover:bg-slate-950 text-white w-7 h-7 rounded-full flex items-center justify-center text-xs opacity-0 group-hover/slider:opacity-100 transition"><i class="fa-solid fa-chevron-left"></i></button>
+                                <button onclick="nextSlide('slider-aircond')" class="absolute right-2 top-1/2 -translate-y-1/2 bg-slate-950/60 hover:bg-slate-950 text-white w-7 h-7 rounded-full flex items-center justify-center text-xs opacity-0 group-hover/slider:opacity-100 transition"><i class="fa-solid fa-chevron-right"></i></button>
                             </div>
                             
-                            <p class="text-xs text-slate-300 font-medium">
-                                <strong class="text-white">Recent Work:</strong> Chemical overhaul & pressure testing for commercial wall unit.
+                            <p class="text-xs text-slate-300 font-medium text-center">
+                                Auto-sliding active work gallery (10s)
                             </p>
                         </div>
                     </div>
@@ -229,29 +244,165 @@
                         </a>
                     </div>
 
-                    <!-- Right Column: Photos & Active Work Badge -->
+                    <!-- Right Column: Automatic 10s Photo Slider -->
                     <div class="w-full lg:w-80 flex-shrink-0">
                         <div class="bg-slate-900 text-white p-4 rounded-2xl">
                             <div class="flex items-center justify-between mb-3">
                                 <span class="text-xs font-bold uppercase text-amber-400 flex items-center gap-1.5">
-                                    <i class="fa-solid fa-wrench"></i> Workshop Inspection
+                                    <i class="fa-solid fa-wrench"></i> Workshop Gallery
                                 </span>
                                 <span class="text-xs text-slate-400">Gelugor Workshop</span>
                             </div>
                             
-                            <!-- Image Container (Replace electrical_photo.jpg with your photo file) -->
-                            <div class="h-44 bg-slate-800 rounded-xl overflow-hidden mb-3">
-                                <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=600&q=80" alt="Electrical Appliance Workshop Repair" class="w-full h-full object-cover">
+                            <!-- Slider Container for Electrical -->
+                            <div class="relative h-52 bg-slate-800 rounded-xl overflow-hidden mb-3 group/slider">
+                                <div id="slider-electrical" class="w-full h-full relative">
+                                    <!-- Slide 1 -->
+                                    <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=600&q=80" alt="Appliance Repair 1" class="slide-img absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 opacity-100">
+                                    <!-- Slide 2 -->
+                                    <img src="https://images.unsplash.com/photo-1581092335397-9583fe92d232?auto=format&fit=crop&w=600&q=80" alt="Appliance Repair 2" class="slide-img absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 opacity-0">
+                                    <!-- Slide 3 -->
+                                    <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=600&q=80" alt="Appliance Repair 3" class="slide-img absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 opacity-0">
+                                    <!-- Slide 4 -->
+                                    <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=600&q=80" alt="Appliance Repair 4" class="slide-img absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 opacity-0">
+                                </div>
+
+                                <!-- Manual Controls -->
+                                <button onclick="prevSlide('slider-electrical')" class="absolute left-2 top-1/2 -translate-y-1/2 bg-slate-950/60 hover:bg-slate-950 text-white w-7 h-7 rounded-full flex items-center justify-center text-xs opacity-0 group-hover/slider:opacity-100 transition"><i class="fa-solid fa-chevron-left"></i></button>
+                                <button onclick="nextSlide('slider-electrical')" class="absolute right-2 top-1/2 -translate-y-1/2 bg-slate-950/60 hover:bg-slate-950 text-white w-7 h-7 rounded-full flex items-center justify-center text-xs opacity-0 group-hover/slider:opacity-100 transition"><i class="fa-solid fa-chevron-right"></i></button>
                             </div>
                             
-                            <p class="text-xs text-slate-300 font-medium">
-                                <strong class="text-white">Workshop Base:</strong> Dedicated bench testing and component replacement in Gelugor.
+                            <p class="text-xs text-slate-300 font-medium text-center">
+                                Auto-sliding workshop gallery (10s)
                             </p>
                         </div>
                     </div>
 
                 </div>
             </div>
+
+            <!-- SEGMENT 3: FIRE PROTECTION & CIVIL WORKS -->
+            <div class="bg-white rounded-3xl p-6 sm:p-8 border border-slate-200/80 shadow-sm hover:shadow-md transition">
+                <div class="flex flex-col lg:flex-row gap-8 items-start">
+                    
+                    <!-- Left Column: Details & Sub-Services -->
+                    <div class="flex-1">
+                        <div class="flex items-center gap-3 mb-4">
+                            <div class="w-10 h-10 rounded-xl bg-rose-100 text-rose-600 flex items-center justify-center text-xl font-bold">
+                                <i class="fa-solid fa-fire-extinguisher"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-2xl font-bold text-slate-900">3. Fire Protection Equipment & Civil Works</h4>
+                                <span class="text-xs font-semibold text-rose-700 bg-rose-50 px-2.5 py-0.5 rounded-full border border-rose-200">MBPP Approved Fire Partner</span>
+                            </div>
+                        </div>
+
+                        <p class="text-slate-600 text-sm mb-6 leading-relaxed">
+                            Certified supply, installation, and maintenance of fire safety systems alongside general civil engineering contracting.
+                        </p>
+
+                        <!-- Sub-Services Grid -->
+                        <h5 class="text-xs font-bold uppercase tracking-wider text-slate-400 mb-3">Scope of Work & Sub-Services:</h5>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-6 text-sm text-slate-700">
+                            <div class="flex items-center gap-2 bg-slate-50 p-2.5 rounded-lg border border-slate-100"><i class="fa-solid fa-check text-rose-500 font-bold"></i> Fire Extinguisher Supply & Refilling</div>
+                            <div class="flex items-center gap-2 bg-slate-50 p-2.5 rounded-lg border border-slate-100"><i class="fa-solid fa-check text-rose-500 font-bold"></i> Annual Bomba / MBPP Inspection</div>
+                            <div class="flex items-center gap-2 bg-slate-50 p-2.5 rounded-lg border border-slate-100"><i class="fa-solid fa-check text-rose-500 font-bold"></i> Hose Reel System Installation</div>
+                            <div class="flex items-center gap-2 bg-slate-50 p-2.5 rounded-lg border border-slate-100"><i class="fa-solid fa-check text-rose-500 font-bold"></i> Commercial Plumbing & Piping</div>
+                            <div class="flex items-center gap-2 bg-slate-50 p-2.5 rounded-lg border border-slate-100"><i class="fa-solid fa-check text-rose-500 font-bold"></i> Welding & Structural Metalwork</div>
+                            <div class="flex items-center gap-2 bg-slate-50 p-2.5 rounded-lg border border-slate-100"><i class="fa-solid fa-check text-rose-500 font-bold"></i> General Civil & Building Maintenance</div>
+                        </div>
+
+                        <a href="https://wa.me/60125884643?text=Hi%20BADT,%20I%20would%20like%20to%20inquire%20about%20Fire%20Protection%20or%20Civil%20Works." target="_blank" class="inline-flex items-center gap-2 bg-rose-500 hover:bg-rose-600 text-white font-bold px-6 py-3 rounded-xl transition shadow-sm text-sm">
+                            <i class="fa-brands fa-whatsapp text-lg"></i> Inquire Fire / Civil Works
+                        </a>
+                    </div>
+
+                    <!-- Right Column: Automatic 10s Photo Slider -->
+                    <div class="w-full lg:w-80 flex-shrink-0">
+                        <div class="bg-slate-900 text-white p-4 rounded-2xl">
+                            <div class="flex items-center justify-between mb-3">
+                                <span class="text-xs font-bold uppercase text-rose-400 flex items-center gap-1.5">
+                                    <i class="fa-solid fa-shield-halved"></i> MBPP Safety Gallery
+                                </span>
+                                <span class="text-xs text-slate-400">Penang Council</span>
+                            </div>
+                            
+                            <!-- Slider Container for Fire / Civil -->
+                            <div class="relative h-52 bg-slate-800 rounded-xl overflow-hidden mb-3 group/slider">
+                                <div id="slider-fire" class="w-full h-full relative">
+                                    <!-- Slide 1 -->
+                                    <img src="https://images.unsplash.com/photo-1599818816930-591171887e47?auto=format&fit=crop&w=600&q=80" alt="Fire Equipment 1" class="slide-img absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 opacity-100">
+                                    <!-- Slide 2 -->
+                                    <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=600&q=80" alt="Fire Equipment 2" class="slide-img absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 opacity-0">
+                                    <!-- Slide 3 -->
+                                    <img src="https://images.unsplash.com/photo-1581092335397-9583fe92d232?auto=format&fit=crop&w=600&q=80" alt="Fire Equipment 3" class="slide-img absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 opacity-0">
+                                    <!-- Slide 4 -->
+                                    <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=600&q=80" alt="Fire Equipment 4" class="slide-img absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 opacity-0">
+                                </div>
+
+                                <!-- Manual Controls -->
+                                <button onclick="prevSlide('slider-fire')" class="absolute left-2 top-1/2 -translate-y-1/2 bg-slate-950/60 hover:bg-slate-950 text-white w-7 h-7 rounded-full flex items-center justify-center text-xs opacity-0 group-hover/slider:opacity-100 transition"><i class="fa-solid fa-chevron-left"></i></button>
+                                <button onclick="nextSlide('slider-fire')" class="absolute right-2 top-1/2 -translate-y-1/2 bg-slate-950/60 hover:bg-slate-950 text-white w-7 h-7 rounded-full flex items-center justify-center text-xs opacity-0 group-hover/slider:opacity-100 transition"><i class="fa-solid fa-chevron-right"></i></button>
+                            </div>
+                            
+                            <p class="text-xs text-slate-300 font-medium text-center">
+                                Auto-sliding safety gallery (10s)
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <!-- JavaScript to handle 10-second Auto Sliding -->
+        <script>
+            function showSlide(containerId, index) {
+                const container = document.getElementById(containerId);
+                const slides = container.querySelectorAll('.slide-img');
+                let currentIndex = index;
+
+                if (currentIndex >= slides.length) currentIndex = 0;
+                if (currentIndex < 0) currentIndex = slides.length - 1;
+
+                slides.forEach((slide, i) => {
+                    if (i === currentIndex) {
+                        slide.classList.remove('opacity-0');
+                        slide.classList.add('opacity-100');
+                    } else {
+                        slide.classList.remove('opacity-100');
+                        slide.classList.add('opacity-0');
+                    }
+                });
+
+                container.dataset.currentIndex = currentIndex;
+            }
+
+            function nextSlide(containerId) {
+                const container = document.getElementById(containerId);
+                const current = parseInt(container.dataset.currentIndex || 0);
+                showSlide(containerId, current + 1);
+            }
+
+            function prevSlide(containerId) {
+                const container = document.getElementById(containerId);
+                const current = parseInt(container.dataset.currentIndex || 0);
+                showSlide(containerId, current - 1);
+            }
+
+            // Auto-advance sliders every 10 seconds (10000ms)
+            document.addEventListener('DOMContentLoaded', () => {
+                const sliders = ['slider-aircond', 'slider-electrical', 'slider-fire'];
+                sliders.forEach(id => {
+                    document.getElementById(id).dataset.currentIndex = 0;
+                    setInterval(() => {
+                        nextSlide(id);
+                    }, 10000); // 10 seconds delay
+                });
+            });
+        </script>
+    </section>
 
             <!-- SEGMENT 3: FIRE PROTECTION & CIVIL WORKS -->
             <div class="bg-white rounded-3xl p-6 sm:p-8 border border-slate-200/80 shadow-sm hover:shadow-md transition">
