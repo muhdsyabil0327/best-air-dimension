@@ -189,65 +189,107 @@
 
             </div>
 
-            <!-- 2. Interactive Certificate Dropdowns (Direct Image View) -->
+            <!-- 2A. Company & Leadership Credentials -->
             <div class="bg-white rounded-3xl p-6 sm:p-8 border border-slate-200/80 shadow-sm">
                 <h3 class="text-xl font-bold text-slate-900 mb-2">Company & Leadership Credentials</h3>
                 <p class="text-xs text-slate-500 mb-6">Click on any category below to view our official certificates directly.</p>
 
                 <div class="space-y-4">
                     
-                    <!-- Dropdown 1: CIDB Grade G1 (3 Certificates) -->
+                    <!-- 1. CIDB Grade G1 -->
                     <div class="border border-slate-200 rounded-2xl overflow-hidden">
                         <button onclick="toggleAccordion('cert-cidb')" class="w-full bg-slate-50 hover:bg-slate-100 p-4 text-left font-bold text-slate-800 flex justify-between items-center transition">
                             <span><i class="fa-solid fa-award text-sky-500 mr-2"></i> CIDB Grade G1 (B, CE, ME) Certificates</span>
                             <i class="fa-solid fa-chevron-down text-slate-400"></i>
                         </button>
                         <div id="cert-cidb" class="hidden p-4 bg-slate-50/50 border-t border-slate-200 text-center space-y-6">
-                            
-                            <!-- Cert 1 -->
                             <div>
                                 <p class="text-xs font-bold text-slate-600 mb-2">1. Perakuan Pendaftaran (PPK)</p>
-                                <img src="CIDB1.jpg" alt="CIDB Perakuan Pendaftaran" class="max-w-full h-auto rounded-xl border border-slate-200 shadow-md mx-auto">
+                                <img src="certs/cidb-1.jpg" alt="CIDB Perakuan Pendaftaran" class="max-w-full h-auto rounded-xl border border-slate-200 shadow-md mx-auto">
                             </div>
-
-                            <!-- Cert 2 -->
                             <div>
                                 <p class="text-xs font-bold text-slate-600 mb-2">2. Sijil Perolehan Kerja Kerajaan (SPKK)</p>
-                                <img src="CIDB2.jpg" alt="CIDB SPKK Certificate" class="max-w-full h-auto rounded-xl border border-slate-200 shadow-md mx-auto">
+                                <img src="certs/cidb-2.jpg" alt="CIDB SPKK Certificate" class="max-w-full h-auto rounded-xl border border-slate-200 shadow-md mx-auto">
                             </div>
-
-                            <!-- Cert 3 -->
                             <div>
                                 <p class="text-xs font-bold text-slate-600 mb-2">3. Sijil Taraf Bumiputera (STB)</p>
-                                <img src="CIDB3.jpg" alt="CIDB Sijil Taraf Bumiputera" class="max-w-full h-auto rounded-xl border border-slate-200 shadow-md mx-auto">
+                                <img src="certs/cidb-3.jpg" alt="CIDB Sijil Taraf Bumiputera" class="max-w-full h-auto rounded-xl border border-slate-200 shadow-md mx-auto">
                             </div>
-
                         </div>
                     </div>
 
-                    <!-- Dropdown 2: SPKK Certificate -->
+                    <!-- 2. SSM (3 Images) -->
                     <div class="border border-slate-200 rounded-2xl overflow-hidden">
-                        <button onclick="toggleAccordion('cert-spkk')" class="w-full bg-slate-50 hover:bg-slate-100 p-4 text-left font-bold text-slate-800 flex justify-between items-center transition">
-                            <span><i class="fa-solid fa-file-contract text-sky-500 mr-2"></i> Sijil Perolehan Kerja Kerajaan (SPKK)</span>
+                        <button onclick="toggleAccordion('cert-ssm')" class="w-full bg-slate-50 hover:bg-slate-100 p-4 text-left font-bold text-slate-800 flex justify-between items-center transition">
+                            <span><i class="fa-solid fa-id-card text-sky-500 mr-2"></i> SSM Registration (3 Pages)</span>
                             <i class="fa-solid fa-chevron-down text-slate-400"></i>
                         </button>
-                        <div id="cert-spkk" class="hidden p-4 bg-slate-50/50 border-t border-slate-200 text-center">
-                            <img src="certs/spkk.jpg" alt="SPKK Certificate" class="max-w-full h-auto rounded-xl border border-slate-200 shadow-md mx-auto">
+                        <div id="cert-ssm" class="hidden p-4 bg-slate-50/50 border-t border-slate-200 text-center space-y-6">
+                            <div>
+                                <p class="text-xs font-bold text-slate-600 mb-2">Page 1</p>
+                                <img src="certs/ssm-1.jpg" alt="SSM Page 1" class="max-w-full h-auto rounded-xl border border-slate-200 shadow-md mx-auto">
+                            </div>
+                            <div>
+                                <p class="text-xs font-bold text-slate-600 mb-2">Page 2</p>
+                                <img src="certs/ssm-2.jpg" alt="SSM Page 2" class="max-w-full h-auto rounded-xl border border-slate-200 shadow-md mx-auto">
+                            </div>
+                            <div>
+                                <p class="text-xs font-bold text-slate-600 mb-2">Page 3</p>
+                                <img src="certs/ssm-3.jpg" alt="SSM Page 3" class="max-w-full h-auto rounded-xl border border-slate-200 shadow-md mx-auto">
+                            </div>
                         </div>
                     </div>
 
-                    <!-- Dropdown 3: MOF Bumiputera Status -->
+                    <!-- 3. MOF (Pendaftaran) (4 Images) -->
                     <div class="border border-slate-200 rounded-2xl overflow-hidden">
-                        <button onclick="toggleAccordion('cert-mof')" class="w-full bg-slate-50 hover:bg-slate-100 p-4 text-left font-bold text-slate-800 flex justify-between items-center transition">
-                            <span><i class="fa-solid fa-building-columns text-sky-500 mr-2"></i> Ministry of Finance (MOF) Bumiputera Status</span>
+                        <button onclick="toggleAccordion('cert-mof-reg')" class="w-full bg-slate-50 hover:bg-slate-100 p-4 text-left font-bold text-slate-800 flex justify-between items-center transition">
+                            <span><i class="fa-solid fa-building-columns text-sky-500 mr-2"></i> MOF Pendaftaran (4 Pages)</span>
                             <i class="fa-solid fa-chevron-down text-slate-400"></i>
                         </button>
-                        <div id="cert-mof" class="hidden p-4 bg-slate-50/50 border-t border-slate-200 text-center">
-                            <img src="certs/mof.jpg" alt="MOF Certificate" class="max-w-full h-auto rounded-xl border border-slate-200 shadow-md mx-auto">
+                        <div id="cert-mof-reg" class="hidden p-4 bg-slate-50/50 border-t border-slate-200 text-center space-y-6">
+                            <div><p class="text-xs font-bold text-slate-600 mb-2">Page 1</p><img src="certs/mof-reg-1.jpg" alt="MOF Pendaftaran Page 1" class="max-w-full h-auto rounded-xl border border-slate-200 shadow-md mx-auto"></div>
+                            <div><p class="text-xs font-bold text-slate-600 mb-2">Page 2</p><img src="certs/mof-reg-2.jpg" alt="MOF Pendaftaran Page 2" class="max-w-full h-auto rounded-xl border border-slate-200 shadow-md mx-auto"></div>
+                            <div><p class="text-xs font-bold text-slate-600 mb-2">Page 3</p><img src="certs/mof-reg-3.jpg" alt="MOF Pendaftaran Page 3" class="max-w-full h-auto rounded-xl border border-slate-200 shadow-md mx-auto"></div>
+                            <div><p class="text-xs font-bold text-slate-600 mb-2">Page 4</p><img src="certs/mof-reg-4.jpg" alt="MOF Pendaftaran Page 4" class="max-w-full h-auto rounded-xl border border-slate-200 shadow-md mx-auto"></div>
                         </div>
                     </div>
 
-                    <!-- Dropdown 4: Chargeman A0 License -->
+                    <!-- 4. MOF (Bumiputera) (3 Images) -->
+                    <div class="border border-slate-200 rounded-2xl overflow-hidden">
+                        <button onclick="toggleAccordion('cert-mof-bumi')" class="w-full bg-slate-50 hover:bg-slate-100 p-4 text-left font-bold text-slate-800 flex justify-between items-center transition">
+                            <span><i class="fa-solid fa-certificate text-sky-500 mr-2"></i> MOF Bumiputera Status (3 Pages)</span>
+                            <i class="fa-solid fa-chevron-down text-slate-400"></i>
+                        </button>
+                        <div id="cert-mof-bumi" class="hidden p-4 bg-slate-50/50 border-t border-slate-200 text-center space-y-6">
+                            <div><p class="text-xs font-bold text-slate-600 mb-2">Page 1</p><img src="certs/mof-bumi-1.jpg" alt="MOF Bumiputera Page 1" class="max-w-full h-auto rounded-xl border border-slate-200 shadow-md mx-auto"></div>
+                            <div><p class="text-xs font-bold text-slate-600 mb-2">Page 2</p><img src="certs/mof-bumi-2.jpg" alt="MOF Bumiputera Page 2" class="max-w-full h-auto rounded-xl border border-slate-200 shadow-md mx-auto"></div>
+                            <div><p class="text-xs font-bold text-slate-600 mb-2">Page 3</p><img src="certs/mof-bumi-3.jpg" alt="MOF Bumiputera Page 3" class="max-w-full h-auto rounded-xl border border-slate-200 shadow-md mx-auto"></div>
+                        </div>
+                    </div>
+
+                    <!-- 5. SPS (Sijil Pendaftaran Syarikat) (1 Image) -->
+                    <div class="border border-slate-200 rounded-2xl overflow-hidden">
+                        <button onclick="toggleAccordion('cert-sps')" class="w-full bg-slate-50 hover:bg-slate-100 p-4 text-left font-bold text-slate-800 flex justify-between items-center transition">
+                            <span><i class="fa-solid fa-file-contract text-sky-500 mr-2"></i> SPS (Sijil Pendaftaran Syarikat)</span>
+                            <i class="fa-solid fa-chevron-down text-slate-400"></i>
+                        </button>
+                        <div id="cert-sps" class="hidden p-4 bg-slate-50/50 border-t border-slate-200 text-center">
+                            <img src="certs/sps.jpg" alt="SPS Certificate" class="max-w-full h-auto rounded-xl border border-slate-200 shadow-md mx-auto">
+                        </div>
+                    </div>
+
+                    <!-- 6. TCC (1 Image) -->
+                    <div class="border border-slate-200 rounded-2xl overflow-hidden">
+                        <button onclick="toggleAccordion('cert-tcc')" class="w-full bg-slate-50 hover:bg-slate-100 p-4 text-left font-bold text-slate-800 flex justify-between items-center transition">
+                            <span><i class="fa-solid fa-shield-halved text-sky-500 mr-2"></i> TCC Certificate</span>
+                            <i class="fa-solid fa-chevron-down text-slate-400"></i>
+                        </button>
+                        <div id="cert-tcc" class="hidden p-4 bg-slate-50/50 border-t border-slate-200 text-center">
+                            <img src="certs/tcc.jpg" alt="TCC Certificate" class="max-w-full h-auto rounded-xl border border-slate-200 shadow-md mx-auto">
+                        </div>
+                    </div>
+
+                    <!-- 7. Chargeman A0 License -->
                     <div class="border border-slate-200 rounded-2xl overflow-hidden">
                         <button onclick="toggleAccordion('cert-chargeman')" class="w-full bg-slate-50 hover:bg-slate-100 p-4 text-left font-bold text-slate-800 flex justify-between items-center transition">
                             <span><i class="fa-solid fa-bolt text-amber-500 mr-2"></i> Chargeman A0 License (Suruhanjaya Tenaga)</span>
@@ -258,15 +300,157 @@
                         </div>
                     </div>
 
-                    <!-- Dropdown 5: JAS Gas Management Certification -->
+                </div>
+            </div>
+
+            <!-- 2B. Seminar & Training Certificates -->
+            <div class="bg-white rounded-3xl p-6 sm:p-8 border border-slate-200/80 shadow-sm">
+                <h3 class="text-xl font-bold text-slate-900 mb-2">Seminar & Training Certificates</h3>
+                <p class="text-xs text-slate-500 mb-6">Click on any course below to view the official completion certificates.</p>
+
+                <div class="space-y-4">
+
+                    <!-- Seminar 1 -->
                     <div class="border border-slate-200 rounded-2xl overflow-hidden">
-                        <button onclick="toggleAccordion('cert-jas')" class="w-full bg-slate-50 hover:bg-slate-100 p-4 text-left font-bold text-slate-800 flex justify-between items-center transition">
-                            <span><i class="fa-solid fa-leaf text-emerald-500 mr-2"></i> JAS Gas Management Certification</span>
+                        <button onclick="toggleAccordion('sem-1')" class="w-full bg-slate-50 hover:bg-slate-100 p-4 text-left font-bold text-slate-800 flex justify-between items-center transition">
+                            <span><i class="fa-solid fa-graduation-cap text-indigo-500 mr-2"></i> Kursus JKR - Bengkel Pengisian Borang SPK (2013)</span>
                             <i class="fa-solid fa-chevron-down text-slate-400"></i>
                         </button>
-                        <div id="cert-jas" class="hidden p-4 bg-slate-50/50 border-t border-slate-200 text-center space-y-4">
-                            <img src="certs/jas-badrul.jpg" alt="JAS Certification - Badrul Husam" class="max-w-full h-auto rounded-xl border border-slate-200 shadow-md mx-auto">
-                            <img src="certs/jas-nabil.jpg" alt="JAS Certification - Muhammad Nabil Aiman" class="max-w-full h-auto rounded-xl border border-slate-200 shadow-md mx-auto">
+                        <div id="sem-1" class="hidden p-4 bg-slate-50/50 border-t border-slate-200 text-center">
+                            <img src="certs/seminar-jkr-2013.jpg" alt="Kursus JKR 2013" class="max-w-full h-auto rounded-xl border border-slate-200 shadow-md mx-auto">
+                        </div>
+                    </div>
+
+                    <!-- Seminar 2 (2 Images) -->
+                    <div class="border border-slate-200 rounded-2xl overflow-hidden">
+                        <button onclick="toggleAccordion('sem-2')" class="w-full bg-slate-50 hover:bg-slate-100 p-4 text-left font-bold text-slate-800 flex justify-between items-center transition">
+                            <span><i class="fa-solid fa-graduation-cap text-indigo-500 mr-2"></i> Kursus PKK & Mediasi Semasa Pandemik (2021)</span>
+                            <i class="fa-solid fa-chevron-down text-slate-400"></i>
+                        </button>
+                        <div id="sem-2" class="hidden p-4 bg-slate-50/50 border-t border-slate-200 text-center space-y-6">
+                            <div><p class="text-xs font-bold text-slate-600 mb-2">Page 1</p><img src="certs/seminar-pkk-2021-1.jpg" alt="Kursus PKK 2021 Page 1" class="max-w-full h-auto rounded-xl border border-slate-200 shadow-md mx-auto"></div>
+                            <div><p class="text-xs font-bold text-slate-600 mb-2">Page 2</p><img src="certs/seminar-pkk-2021-2.jpg" alt="Kursus PKK 2021 Page 2" class="max-w-full h-auto rounded-xl border border-slate-200 shadow-md mx-auto"></div>
+                        </div>
+                    </div>
+
+                    <!-- Seminar 3 -->
+                    <div class="border border-slate-200 rounded-2xl overflow-hidden">
+                        <button onclick="toggleAccordion('sem-3')" class="w-full bg-slate-50 hover:bg-slate-100 p-4 text-left font-bold text-slate-800 flex justify-between items-center transition">
+                            <span><i class="fa-solid fa-graduation-cap text-indigo-500 mr-2"></i> Kursus Acson - Factory Visit & Technical Seminar (2009)</span>
+                            <i class="fa-solid fa-chevron-down text-slate-400"></i>
+                        </button>
+                        <div id="sem-3" class="hidden p-4 bg-slate-50/50 border-t border-slate-200 text-center">
+                            <img src="certs/seminar-acson-2009.jpg" alt="Kursus Acson 2009" class="max-w-full h-auto rounded-xl border border-slate-200 shadow-md mx-auto">
+                        </div>
+                    </div>
+
+                    <!-- Seminar 4 -->
+                    <div class="border border-slate-200 rounded-2xl overflow-hidden">
+                        <button onclick="toggleAccordion('sem-4')" class="w-full bg-slate-50 hover:bg-slate-100 p-4 text-left font-bold text-slate-800 flex justify-between items-center transition">
+                            <span><i class="fa-solid fa-graduation-cap text-indigo-500 mr-2"></i> Kursus Mitsubishi - KX6 VRF System Technical Seminar (2011)</span>
+                            <i class="fa-solid fa-chevron-down text-slate-400"></i>
+                        </button>
+                        <div id="sem-4" class="hidden p-4 bg-slate-50/50 border-t border-slate-200 text-center">
+                            <img src="certs/seminar-mitsubishi-2011.jpg" alt="Kursus Mitsubishi 2011" class="max-w-full h-auto rounded-xl border border-slate-200 shadow-md mx-auto">
+                        </div>
+                    </div>
+
+                    <!-- Seminar 5 -->
+                    <div class="border border-slate-200 rounded-2xl overflow-hidden">
+                        <button onclick="toggleAccordion('sem-5')" class="w-full bg-slate-50 hover:bg-slate-100 p-4 text-left font-bold text-slate-800 flex justify-between items-center transition">
+                            <span><i class="fa-solid fa-graduation-cap text-indigo-500 mr-2"></i> Kursus MARA - Teknologi Penyejuk Bekuan & Penyaman Udara (1998)</span>
+                            <i class="fa-solid fa-chevron-down text-slate-400"></i>
+                        </button>
+                        <div id="sem-5" class="hidden p-4 bg-slate-50/50 border-t border-slate-200 text-center">
+                            <img src="certs/seminar-mara-1998.jpg" alt="Kursus MARA 1998" class="max-w-full h-auto rounded-xl border border-slate-200 shadow-md mx-auto">
+                        </div>
+                    </div>
+
+                    <!-- Seminar 6 (2 Images) -->
+                    <div class="border border-slate-200 rounded-2xl overflow-hidden">
+                        <button onclick="toggleAccordion('sem-6')" class="w-full bg-slate-50 hover:bg-slate-100 p-4 text-left font-bold text-slate-800 flex justify-between items-center transition">
+                            <span><i class="fa-solid fa-graduation-cap text-indigo-500 mr-2"></i> Kursus Asas Waterproofing (2021)</span>
+                            <i class="fa-solid fa-chevron-down text-slate-400"></i>
+                        </button>
+                        <div id="sem-6" class="hidden p-4 bg-slate-50/50 border-t border-slate-200 text-center space-y-6">
+                            <div><p class="text-xs font-bold text-slate-600 mb-2">Page 1</p><img src="certs/seminar-waterproofing-2021-1.jpg" alt="Waterproofing 2021 Page 1" class="max-w-full h-auto rounded-xl border border-slate-200 shadow-md mx-auto"></div>
+                            <div><p class="text-xs font-bold text-slate-600 mb-2">Page 2</p><img src="certs/seminar-waterproofing-2021-2.jpg" alt="Waterproofing 2021 Page 2" class="max-w-full h-auto rounded-xl border border-slate-200 shadow-md mx-auto"></div>
+                        </div>
+                    </div>
+
+                    <!-- Seminar 7 -->
+                    <div class="border border-slate-200 rounded-2xl overflow-hidden">
+                        <button onclick="toggleAccordion('sem-7')" class="w-full bg-slate-50 hover:bg-slate-100 p-4 text-left font-bold text-slate-800 flex justify-between items-center transition">
+                            <span><i class="fa-solid fa-graduation-cap text-indigo-500 mr-2"></i> Kursus Asas Taraf Bumiputera (2021)</span>
+                            <i class="fa-solid fa-chevron-down text-slate-400"></i>
+                        </button>
+                        <div id="sem-7" class="hidden p-4 bg-slate-50/50 border-t border-slate-200 text-center">
+                            <img src="certs/seminar-bumiputera-2021.jpg" alt="Kursus Bumiputera 2021" class="max-w-full h-auto rounded-xl border border-slate-200 shadow-md mx-auto">
+                        </div>
+                    </div>
+
+                    <!-- Seminar 8 -->
+                    <div class="border border-slate-200 rounded-2xl overflow-hidden">
+                        <button onclick="toggleAccordion('sem-8')" class="w-full bg-slate-50 hover:bg-slate-100 p-4 text-left font-bold text-slate-800 flex justify-between items-center transition">
+                            <span><i class="fa-solid fa-graduation-cap text-indigo-500 mr-2"></i> Program Roadshow Keahlian PKJMM (2013)</span>
+                            <i class="fa-solid fa-chevron-down text-slate-400"></i>
+                        </button>
+                        <div id="sem-8" class="hidden p-4 bg-slate-50/50 border-t border-slate-200 text-center">
+                            <img src="certs/seminar-pkjmm-2013.jpg" alt="Roadshow PKJMM 2013" class="max-w-full h-auto rounded-xl border border-slate-200 shadow-md mx-auto">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- 2C. Manager Personal Certificates -->
+            <div class="bg-white rounded-3xl p-6 sm:p-8 border border-slate-200/80 shadow-sm">
+                <h3 class="text-xl font-bold text-slate-900 mb-2">Manager Personal Certificates</h3>
+                <p class="text-xs text-slate-500 mb-6">Technical skill competency & personal licensing qualifications.</p>
+
+                <div class="space-y-4">
+
+                    <!-- Personal 1 -->
+                    <div class="border border-slate-200 rounded-2xl overflow-hidden">
+                        <button onclick="toggleAccordion('pers-1')" class="w-full bg-slate-50 hover:bg-slate-100 p-4 text-left font-bold text-slate-800 flex justify-between items-center transition">
+                            <span><i class="fa-solid fa-user-check text-emerald-500 mr-2"></i> CIDB Pemateri Paip Gas Tembaga - Tahap 1 (2008)</span>
+                            <i class="fa-solid fa-chevron-down text-slate-400"></i>
+                        </button>
+                        <div id="pers-1" class="hidden p-4 bg-slate-50/50 border-t border-slate-200 text-center">
+                            <img src="certs/personal-cidb-gas-2008.jpg" alt="Pemateri Paip Gas Tembaga 2008" class="max-w-full h-auto rounded-xl border border-slate-200 shadow-md mx-auto">
+                        </div>
+                    </div>
+
+                    <!-- Personal 2 -->
+                    <div class="border border-slate-200 rounded-2xl overflow-hidden">
+                        <button onclick="toggleAccordion('pers-2')" class="w-full bg-slate-50 hover:bg-slate-100 p-4 text-left font-bold text-slate-800 flex justify-between items-center transition">
+                            <span><i class="fa-solid fa-user-check text-emerald-500 mr-2"></i> 1 Master HVAC Tiga Fasa - Servis, Troubleshooting & Pembaikpulihan (2015)</span>
+                            <i class="fa-solid fa-chevron-down text-slate-400"></i>
+                        </button>
+                        <div id="pers-2" class="hidden p-4 bg-slate-50/50 border-t border-slate-200 text-center">
+                            <img src="certs/personal-hvac-master-2015.jpg" alt="1 Master HVAC Tiga Fasa 2015" class="max-w-full h-auto rounded-xl border border-slate-200 shadow-md mx-auto">
+                        </div>
+                    </div>
+
+                    <!-- Personal 3 -->
+                    <div class="border border-slate-200 rounded-2xl overflow-hidden">
+                        <button onclick="toggleAccordion('pers-3')" class="w-full bg-slate-50 hover:bg-slate-100 p-4 text-left font-bold text-slate-800 flex justify-between items-center transition">
+                            <span><i class="fa-solid fa-user-check text-emerald-500 mr-2"></i> IKBN Bukit Mertajam Skills 2Y - Menservis System Penyaman Udara Kenderaan (2008)</span>
+                            <i class="fa-solid fa-chevron-down text-slate-400"></i>
+                        </button>
+                        <div id="pers-3" class="hidden p-4 bg-slate-50/50 border-t border-slate-200 text-center">
+                            <img src="certs/personal-ikbn-2008.jpg" alt="IKBN Bukit Mertajam Skills 2Y 2008" class="max-w-full h-auto rounded-xl border border-slate-200 shadow-md mx-auto">
+                        </div>
+                    </div>
+
+                    <!-- Personal 4 -->
+                    <div class="border border-slate-200 rounded-2xl overflow-hidden">
+                        <button onclick="toggleAccordion('pers-4')" class="w-full bg-slate-50 hover:bg-slate-100 p-4 text-left font-bold text-slate-800 flex justify-between items-center transition">
+                            <span><i class="fa-solid fa-user-check text-emerald-500 mr-2"></i> NAAST Engineering - Persediaan Penjaga Jentera Elektrik A0 (1998)</span>
+                            <i class="fa-solid fa-chevron-down text-slate-400"></i>
+                        </button>
+                        <div id="pers-4" class="hidden p-4 bg-slate-50/50 border-t border-slate-200 text-center">
+                            <img src="certs/personal-naast-a0-1998.jpg" alt="NAAST Engineering A0 1998" class="max-w-full h-auto rounded-xl border border-slate-200 shadow-md mx-auto">
                         </div>
                     </div>
 
