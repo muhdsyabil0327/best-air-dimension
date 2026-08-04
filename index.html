@@ -134,6 +134,196 @@
         </div>
     </section>
 
+    <!-- ABOUT US SECTION -->
+    <section id="about" class="max-w-6xl mx-auto px-4 py-16">
+        
+        <!-- Section Header -->
+        <div class="text-center mb-12">
+            <span class="text-sky-600 font-bold text-xs uppercase tracking-widest bg-sky-100 px-3 py-1 rounded-full border border-sky-200">About Our Company</span>
+            <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-3">Engineering Comfort, Powering Reliability</h2>
+            <p class="text-slate-600 mt-2 max-w-xl mx-auto text-sm sm:text-base">Learn more about our company background, certified leadership, credentials, team hierarchy, and equipment capacity.</p>
+        </div>
+
+        <div class="space-y-10">
+
+            <!-- 1. Background & Manager Profile Card -->
+            <div class="bg-white rounded-3xl p-6 sm:p-8 border border-slate-200/80 shadow-sm">
+                <div class="flex flex-col md:flex-row gap-8 items-center">
+                    <div class="w-full md:w-1/3 flex-shrink-0 text-center">
+                        <img src="Manager.png" alt="Manager Badrul Husam Abdullah" class="w-48 h-48 rounded-2xl object-cover mx-auto shadow-md border-2 border-slate-100">
+                        <h4 class="text-lg font-bold text-slate-900 mt-4">Badrul Husam bin Abdullah</h4>
+                        <p class="text-xs font-bold text-sky-600">Company Manager & Partner</p>
+                        <div class="mt-2 inline-flex gap-2">
+                            <span class="text-[10px] bg-amber-100 text-amber-800 font-bold px-2 py-0.5 rounded border border-amber-200">Chargeman A0 (ST)</span>
+                            <span class="text-[10px] bg-sky-100 text-sky-800 font-bold px-2 py-0.5 rounded border border-sky-200">JAS Certified</span>
+                        </div>
+                    </div>
+                    <div class="flex-1">
+                        <h3 class="text-2xl font-bold text-slate-900 mb-3">Company Background & Decades of Technical Mastery</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                            Founded in 2015 and operating as a dynamic partnership since 2020, <strong>BEST AIR DIMENSION TECHNOLOGY AND SERVICES</strong> is a premier Bumiputera-owned engineering contractor based in Gelugor, Pulau Pinang[cite: 1]. Fully registered with <strong>CIDB (Grade G1)</strong>, <strong>MOF</strong>, and <strong>PKK</strong>, we specialize in Heating, Ventilation, Air Conditioning (HVAC), electrical engineering, fire protection, and civil maintenance solutions across Northern Malaysia[cite: 1].
+                        </p>
+                        <p class="text-slate-600 text-sm leading-relaxed">
+                            At the helm of our operations is our Founder and Manager, <strong>Badrul Husam bin Abdullah</strong>[cite: 1]. Bringing <strong>over 20 years of hands-on industry experience</strong> in HVAC and Mechanical & Electrical (M&E) engineering, Badrul Husam provides the strategic direction and technical leadership that drive our success[cite: 1]. He holds dual regulatory credentials, including an official <strong>Chargeman A0</strong> license from the Energy Commission (<em>Suruhanjaya Tenaga</em>) and a <strong>Gas Management Certification</strong> from the Department of Environment (<em>Jabatan Alam Sekitar</em>)[cite: 1]. Under his stewardship, the company has successfully delivered critical maintenance and installation projects for major public institutions including JKR Pulau Pinang, USM, and MBPP[cite: 1].
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2. Interactive Certificate Dropdowns (Direct Image View) -->
+            <div class="bg-white rounded-3xl p-6 sm:p-8 border border-slate-200/80 shadow-sm">
+                <h3 class="text-xl font-bold text-slate-900 mb-2">Company & Leadership Credentials</h3>
+                <p class="text-xs text-slate-500 mb-6">Click on any category below to view our official certificates directly.</p>
+
+                <div class="space-y-4">
+                    
+                    <!-- Dropdown 1: CIDB Grade G1 -->
+                    <div class="border border-slate-200 rounded-2xl overflow-hidden">
+                        <button onclick="toggleAccordion('cert-cidb')" class="w-full bg-slate-50 hover:bg-slate-100 p-4 text-left font-bold text-slate-800 flex justify-between items-center transition">
+                            <span><i class="fa-solid fa-award text-sky-500 mr-2"></i> CIDB Grade G1 (B, CE, ME) Registration</span>
+                            <i class="fa-solid fa-chevron-down text-slate-400"></i>
+                        </button>
+                        <div id="cert-cidb" class="hidden p-4 bg-slate-50/50 border-t border-slate-200 text-center">
+                            <img src="certs/cidb-g1.jpg" alt="CIDB Grade G1 Certificate" class="max-w-full h-auto rounded-xl border border-slate-200 shadow-md mx-auto">
+                        </div>
+                    </div>
+
+                    <!-- Dropdown 2: SPKK Certificate -->
+                    <div class="border border-slate-200 rounded-2xl overflow-hidden">
+                        <button onclick="toggleAccordion('cert-spkk')" class="w-full bg-slate-50 hover:bg-slate-100 p-4 text-left font-bold text-slate-800 flex justify-between items-center transition">
+                            <span><i class="fa-solid fa-file-contract text-sky-500 mr-2"></i> Sijil Perolehan Kerja Kerajaan (SPKK)</span>
+                            <i class="fa-solid fa-chevron-down text-slate-400"></i>
+                        </button>
+                        <div id="cert-spkk" class="hidden p-4 bg-slate-50/50 border-t border-slate-200 text-center">
+                            <img src="certs/spkk.jpg" alt="SPKK Certificate" class="max-w-full h-auto rounded-xl border border-slate-200 shadow-md mx-auto">
+                        </div>
+                    </div>
+
+                    <!-- Dropdown 3: MOF Bumiputera Status -->
+                    <div class="border border-slate-200 rounded-2xl overflow-hidden">
+                        <button onclick="toggleAccordion('cert-mof')" class="w-full bg-slate-50 hover:bg-slate-100 p-4 text-left font-bold text-slate-800 flex justify-between items-center transition">
+                            <span><i class="fa-solid fa-building-columns text-sky-500 mr-2"></i> Ministry of Finance (MOF) Bumiputera Status</span>
+                            <i class="fa-solid fa-chevron-down text-slate-400"></i>
+                        </button>
+                        <div id="cert-mof" class="hidden p-4 bg-slate-50/50 border-t border-slate-200 text-center">
+                            <img src="certs/mof.jpg" alt="MOF Certificate" class="max-w-full h-auto rounded-xl border border-slate-200 shadow-md mx-auto">
+                        </div>
+                    </div>
+
+                    <!-- Dropdown 4: Chargeman A0 License -->
+                    <div class="border border-slate-200 rounded-2xl overflow-hidden">
+                        <button onclick="toggleAccordion('cert-chargeman')" class="w-full bg-slate-50 hover:bg-slate-100 p-4 text-left font-bold text-slate-800 flex justify-between items-center transition">
+                            <span><i class="fa-solid fa-bolt text-amber-500 mr-2"></i> Chargeman A0 License (Suruhanjaya Tenaga)</span>
+                            <i class="fa-solid fa-chevron-down text-slate-400"></i>
+                        </button>
+                        <div id="cert-chargeman" class="hidden p-4 bg-slate-50/50 border-t border-slate-200 text-center">
+                            <img src="certs/chargeman-a0.jpg" alt="Chargeman A0 License" class="max-w-full h-auto rounded-xl border border-slate-200 shadow-md mx-auto">
+                        </div>
+                    </div>
+
+                    <!-- Dropdown 5: JAS Gas Management Certification -->
+                    <div class="border border-slate-200 rounded-2xl overflow-hidden">
+                        <button onclick="toggleAccordion('cert-jas')" class="w-full bg-slate-50 hover:bg-slate-100 p-4 text-left font-bold text-slate-800 flex justify-between items-center transition">
+                            <span><i class="fa-solid fa-leaf text-emerald-500 mr-2"></i> JAS Gas Management Certification</span>
+                            <i class="fa-solid fa-chevron-down text-slate-400"></i>
+                        </button>
+                        <div id="cert-jas" class="hidden p-4 bg-slate-50/50 border-t border-slate-200 text-center space-y-4">
+                            <img src="certs/jas-badrul.jpg" alt="JAS Certification - Badrul Husam" class="max-w-full h-auto rounded-xl border border-slate-200 shadow-md mx-auto">
+                            <img src="certs/jas-nabil.jpg" alt="JAS Certification - Muhammad Nabil Aiman" class="max-w-full h-auto rounded-xl border border-slate-200 shadow-md mx-auto">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- 3. Organizational Structure -->
+            <div class="bg-white rounded-3xl p-6 sm:p-8 border border-slate-200/80 shadow-sm">
+                <h3 class="text-xl font-bold text-slate-900 mb-4">Our Organizational Structure</h3>
+                <div class="bg-slate-950 text-emerald-400 p-5 rounded-2xl overflow-x-auto font-mono text-xs leading-relaxed shadow-inner">
+<pre>
+                        +---------------------------------------+
+                        |            COMPANY MANAGER            |
+                        |      (Badrul Husam bin Abdullah)      |
+                        |          [ Partner / Pemilik 1 ]      |
+                        +-------------------+-------------------+
+                                            |
+                                            v
+                        +-------------------+-------------------+
+                        |       ASSISTANT COMPANY MANAGER       |
+                        |     (Muhammad Nabil Aiman B. Badrul)  |
+                        |          [ Partner / Pemilik 2 ]      |
+                        +-------------------+-------------------+
+                                            |
+                                            v
+                        +-------------------+-------------------+
+                        |       ADMINISTRATIVE ASSISTANT        |
+                        +-------------------+-------------------+
+                                            |
+        +-----------------------------------+-----------------------------------+
+        |                                   |                                   |
+        v                                   v                                   v
++---------------+                   +---------------+                   +---------------+
+| SERVICE & RAC |                   | INSTALLATION  |                   | PROJECT & CIVIL|
+|   DIVISION    |                   |   DIVISION    |                   |   DIVISION    |
+|               |                   |               |                   |               |
+| Head: M. Nabil|                   | Lead: Zamani  |                   | Lead: Afnan   |
+|     Aiman     |                   | Assistant:    |                   | Assistant:    |
+| (Co-Owner)    |                   | Awang         |                   | Akmal         |
++-------+-------+                   +---------------+                   +---------------+
+        |
+        v
++---------------+
+|  INTERNSHIP   |
+|   TRAINEES    |
++---------------+
+</pre>
+                </div>
+            </div>
+
+            <!-- 4. Hardware & Equipment -->
+            <div class="bg-white rounded-3xl p-6 sm:p-8 border border-slate-200/80 shadow-sm">
+                <h3 class="text-xl font-bold text-slate-900 mb-4">Professional Hardware & Equipment Inventory</h3>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                    <div class="bg-slate-50 p-4 rounded-2xl border border-slate-200">
+                        <h4 class="font-bold text-slate-900 text-sm mb-2"><i class="fa-solid fa-snowflake text-sky-500 mr-1.5"></i> HVAC & RAC Tools</h4>
+                        <p class="text-xs text-slate-600">Vacuum pumps, digital manifold gauges, JAS-compliant gas recovery machines, high-pressure water jets[cite: 1].</p>
+                    </div>
+                    <div class="bg-slate-50 p-4 rounded-2xl border border-slate-200">
+                        <h4 class="font-bold text-slate-900 text-sm mb-2"><i class="fa-solid fa-bolt text-amber-500 mr-1.5"></i> Electrical Testing</h4>
+                        <p class="text-xs text-slate-600">Digital multimeters, clamp meters, Megger insulation testers supervised under Chargeman A0[cite: 1].</p>
+                    </div>
+                    <div class="bg-slate-50 p-4 rounded-2xl border border-slate-200">
+                        <h4 class="font-bold text-slate-900 text-sm mb-2"><i class="fa-solid fa-screwdriver-wrench text-rose-500 mr-1.5"></i> Civil & Workshop</h4>
+                        <p class="text-xs text-slate-600">Impact drills, heavy cutters, Arc/MIG welding equipment, scaffolding, mobile transport fleet[cite: 1].</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 5. Location & Hub -->
+            <div class="bg-white rounded-3xl p-6 sm:p-8 border border-slate-200/80 shadow-sm">
+                <h3 class="text-xl font-bold text-slate-900 mb-4">Location & Operational Base</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="bg-slate-50 p-5 rounded-2xl border border-slate-200">
+                        <h4 class="font-bold text-slate-900 text-sm mb-1"><i class="fa-solid fa-location-dot text-sky-600 mr-1.5"></i> Primary Operating Office</h4>
+                        <p class="text-xs text-slate-600 leading-relaxed mb-3">
+                            No 16 & 17, SEAMEO RECSAM, Jalan Dato Haji Mohd Ali, Jalan Sultan Azlan Shah, 11700 Gelugor, Pulau Pinang.[cite: 1]
+                        </p>
+                        <a href="https://maps.google.com/?q=SEAMEO+RECSAM+Gelugor" target="_blank" class="inline-flex items-center gap-1.5 bg-emerald-500 hover:bg-emerald-600 text-white text-xs font-bold px-4 py-2 rounded-xl transition">
+                            <i class="fa-solid fa-map-location-dot"></i> View on Google Maps / Waze
+                        </a>
+                    </div>
+                    <div class="bg-slate-50 p-5 rounded-2xl border border-slate-200">
+                        <h4 class="font-bold text-slate-900 text-sm mb-1"><i class="fa-solid fa-envelope text-sky-600 mr-1.5"></i> Registered / Mailing Address</h4>
+                        <p class="text-xs text-slate-600 leading-relaxed">
+                            1A-10-12, Mutiara Idaman 1, Solok Tengku, 11600 Jelutong, Pulau Pinang.[cite: 1]
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
     <!-- Main Technical Services Section with Local 5-Photo Work Progress Sliders -->
     <section id="services" class="max-w-6xl mx-auto px-4 py-16">
         
@@ -786,5 +976,12 @@
         </span>
     </a>
 
-</body>
+<!-- Accordion Toggle Script -->
+    <script>
+        function toggleAccordion(id) {
+            const element = document.getElementById(id);
+            element.classList.toggle('hidden');
+        }
+    </script>
+git status</body>
 </html>
