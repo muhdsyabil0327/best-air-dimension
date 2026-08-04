@@ -54,86 +54,79 @@
     </header>
 
 
-    <!-- HERO SECTION (Bigger Centered Logo & Enhanced Layout) -->
-    <section class="relative min-h-[90vh] flex items-center justify-center text-white bg-slate-950 overflow-hidden py-20 px-4">
+    <!-- HERO SECTION (Cleaned Up & Enriched Hero Cards) -->
+    <section class="relative min-h-[85vh] flex items-center justify-center text-white bg-slate-950 overflow-hidden py-16 px-4">
         
-        <!-- Background Image with Gradient Overlay -->
+        <!-- Office Background Image with Dark Gradient Overlay -->
         <div class="absolute inset-0 z-0">
-            <img src="office.jpeg" alt="Best Air Dimension Office" class="w-full h-full object-cover object-center scale-105 filter brightness-75">
+            <img src="office.jpeg" alt="Best Air Dimension Office" class="w-full h-full object-cover object-center filter brightness-75">
             <div class="absolute inset-0 bg-gradient-to-b from-slate-950/85 via-slate-950/75 to-slate-950/90"></div>
         </div>
 
-        <div class="relative z-10 max-w-4xl mx-auto text-center flex flex-col items-center">
+        <div class="relative z-10 max-w-5xl mx-auto text-center flex flex-col items-center">
             
-            <!-- Company Logo Centered & Scaled Up -->
-            <div class="mb-6 bg-white/10 backdrop-blur-md p-5 rounded-3xl border border-white/20 shadow-2xl hover:scale-105 transition duration-300">
-                <img src="logo.png" alt="Best Air Dimension Logo" class="h-28 sm:h-36 w-auto object-contain filter drop-shadow-xl">
+            <!-- Company Logo Centered & Larger -->
+            <div class="mb-5 bg-white/10 backdrop-blur-md p-4 sm:p-5 rounded-3xl border border-white/20 shadow-2xl hover:scale-105 transition duration-300">
+                <img src="logo.png" alt="Best Air Dimension Logo" class="h-24 sm:h-32 w-auto object-contain filter drop-shadow-xl">
             </div>
 
-            <!-- Tagline Badge -->
-            <div class="mb-6 inline-flex items-center gap-2 bg-sky-950/80 border border-sky-400/40 text-sky-300 text-xs sm:text-sm font-bold px-4 py-1.5 rounded-full shadow-inner">
-                <i class="fa-solid fa-award text-amber-400"></i>
-                AUTHORIZED TOPAIRE DEALER & CERTIFIED CONTRACTORS
+            <!-- Penang Service & Topaire Tagline Badge -->
+            <div class="mb-5 inline-flex flex-wrap items-center justify-center gap-2 bg-sky-950/80 border border-sky-400/40 text-sky-300 text-xs sm:text-sm font-bold px-4 py-2 rounded-full shadow-inner">
+                <span class="text-amber-400 font-extrabold"><i class="fa-solid fa-location-dot"></i> Penang Island & Mainland</span>
+                <span class="text-slate-500">•</span>
+                <span class="flex items-center gap-1"><i class="fa-solid fa-award text-amber-400"></i> AUTHORIZED TOPAIRE DEALER & CERTIFIED CONTRACTORS</span>
             </div>
 
             <!-- Main Heading -->
-            <h1 class="text-4xl sm:text-6xl font-black text-white tracking-tight leading-tight mb-6">
+            <h1 class="text-4xl sm:text-6xl font-black text-white tracking-tight leading-tight mb-4">
                 Repairing, Servicing & Installation <br class="hidden sm:inline">
                 <span class="text-transparent bg-clip-text bg-gradient-to-r from-sky-400 via-sky-200 to-amber-300">Excellence</span>
             </h1>
 
             <!-- Subtitle -->
-            <p class="text-slate-300 text-base sm:text-lg max-w-2xl mb-8 leading-relaxed">
+            <p class="text-slate-300 text-sm sm:text-lg max-w-2xl mb-12 leading-relaxed">
                 Comprehensive air-conditioning solutions, electrical appliances repair, fire extinguisher supply, and civil engineering works in Penang.
             </p>
 
-            <!-- Call To Action Buttons -->
-            <div class="flex flex-col sm:flex-row gap-4 mb-14 w-full sm:w-auto">
-                <!-- Direct Pre-filled WhatsApp Booking Button -->
-                <a href="https://wa.me/60125884643?text=Hello%20Best%20Air%20Dimension!%20I%20would%20like%20to%20book%20a%20service%20appointment.%0A%0AService%20Type:%20[Aircond%20/%20Electrical%20/%20Fire%20Safety]%0ALocation:%20[Your%20Area%20in%20Penang]%0APreferred%20Date:%20" 
-                    target="_blank" 
-                    class="bg-amber-500 hover:bg-amber-400 text-slate-950 font-extrabold px-8 py-3.5 rounded-2xl shadow-xl hover:shadow-amber-500/20 transition flex items-center justify-center gap-2 text-sm sm:text-base">
-                        <i class="fa-solid fa-calendar-check"></i> Book Service Appointment
-                </a>
+            <!-- ENLARGED 3 HIGHLIGHT FEATURE CARDS WITH PHOTO ICONS -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-5 w-full max-w-5xl">
                 
-                <a href="#location" class="bg-white/10 hover:bg-white/20 border border-white/20 backdrop-blur-md text-white font-bold px-8 py-3.5 rounded-2xl transition flex items-center justify-center gap-2 text-sm sm:text-base">
-                    <i class="fa-solid fa-location-dot text-amber-400"></i> Our Company Location
-                </a>
-            </div>
-
-            <!-- Bottom Highlights Cards -->
-            <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 w-full max-w-3xl">
-                
-                <!-- TOPAIRE Dealer -->
-                <div class="bg-slate-900/60 backdrop-blur-md border border-white/10 p-4 rounded-2xl flex items-center gap-3.5 text-left shadow-lg">
-                    <div class="w-12 h-12 rounded-xl bg-sky-500/20 text-sky-400 flex items-center justify-center text-xl flex-shrink-0 border border-sky-500/30">
-                        <i class="fa-solid fa-snowflake"></i>
+                <!-- CARD 1: TOPAIRE DEALER -->
+                <div class="bg-slate-900/80 backdrop-blur-md border border-sky-500/30 p-5 rounded-2xl flex items-center gap-4 text-left shadow-xl hover:border-sky-400 transition group">
+                    <div class="w-16 h-16 rounded-xl bg-white p-2 flex items-center justify-center flex-shrink-0 shadow-md border border-slate-200">
+                        <!-- Photo replace icon: Topaire Logo -->
+                        <img src="Brand1.jpeg" alt="Topaire Authorized Dealer" class="max-h-full max-w-full object-contain group-hover:scale-105 transition">
                     </div>
                     <div>
-                        <h4 class="text-sm font-bold text-white">TOPAIRE Dealer</h4>
-                        <p class="text-xs text-slate-400">RM130k+ units sold since 2021</p>
+                        <h4 class="text-base font-extrabold text-white group-hover:text-sky-300 transition">TOPAIRE Dealer</h4>
+                        <p class="text-xs text-slate-300 mt-0.5">Authorized dealership & sales in Penang.</p>
+                        <span class="inline-block text-[11px] font-bold text-sky-400 mt-1">RM130k+ units sold since 2021</span>
                     </div>
                 </div>
 
-                <!-- Zakat Payer -->
-                <div class="bg-slate-900/60 backdrop-blur-md border border-white/10 p-4 rounded-2xl flex items-center gap-3.5 text-left shadow-lg">
-                    <div class="w-12 h-12 rounded-xl bg-emerald-500/20 text-emerald-400 flex items-center justify-center text-xl flex-shrink-0 border border-emerald-500/30">
-                        <i class="fa-solid fa-hand-holding-heart"></i>
+                <!-- CARD 2: ZAKAT PAYER -->
+                <div class="bg-slate-900/80 backdrop-blur-md border border-emerald-500/30 p-5 rounded-2xl flex items-center gap-4 text-left shadow-xl hover:border-emerald-400 transition group">
+                    <div class="w-16 h-16 rounded-xl bg-white p-2 flex items-center justify-center flex-shrink-0 shadow-md border border-slate-200">
+                        <!-- Photo replace icon: Zakat Logo/Badge -->
+                        <img src="zakat.jpeg" alt="Zakat Payer Penang" class="max-h-full max-w-full object-contain group-hover:scale-105 transition">
                     </div>
                     <div>
-                        <h4 class="text-sm font-bold text-white">Zakat Payer</h4>
-                        <p class="text-xs text-slate-400">Paying Zakat Perniagaan since 2020</p>
+                        <h4 class="text-base font-extrabold text-white group-hover:text-emerald-300 transition">Zakat Payer</h4>
+                        <p class="text-xs text-slate-300 mt-0.5">Official Zakat Perniagaan contributor.</p>
+                        <span class="inline-block text-[11px] font-bold text-emerald-400 mt-1">Paying continuously since 2020</span>
                     </div>
                 </div>
 
-                <!-- 30+ Years Experience -->
-                <div class="bg-slate-900/60 backdrop-blur-md border border-white/10 p-4 rounded-2xl flex items-center gap-3.5 text-left shadow-lg">
-                    <div class="w-12 h-12 rounded-xl bg-amber-500/20 text-amber-400 flex items-center justify-center text-xl flex-shrink-0 border border-amber-500/30">
-                        <i class="fa-solid fa-user-shield"></i>
+                <!-- CARD 3: 30+ YEARS EXPERIENCE -->
+                <div class="bg-slate-900/80 backdrop-blur-md border border-amber-500/30 p-5 rounded-2xl flex items-center gap-4 text-left shadow-xl hover:border-amber-400 transition group">
+                    <div class="w-16 h-16 rounded-xl bg-white p-1.5 flex items-center justify-center flex-shrink-0 shadow-md border border-slate-200 overflow-hidden">
+                        <!-- Photo replace icon: Manager Photo -->
+                        <img src="manager.jpeg" alt="Manager Badrul Husam Abdullah" class="w-full h-full object-cover rounded-lg group-hover:scale-105 transition">
                     </div>
                     <div>
-                        <h4 class="text-sm font-bold text-white">30+ Years Experience</h4>
-                        <p class="text-xs text-slate-400">Manager: Badrul Husam Abdullah</p>
+                        <h4 class="text-base font-extrabold text-white group-hover:text-amber-300 transition">30+ Years Experience</h4>
+                        <p class="text-xs text-slate-300 mt-0.5">Expert technical leadership & service.</p>
+                        <span class="inline-block text-[11px] font-bold text-amber-400 mt-1">Manager: Badrul Husam Abdullah</span>
                     </div>
                 </div>
 
@@ -782,9 +775,16 @@
         </div>
     </footer>
 
-    <!-- Floating WhatsApp Action Button -->
-    <a href="https://wa.me/60125884643?text=Hi%20Best%20Air%20Dimension,%20I%20would%20like%20to%20inquire%20about%20your%20services." target="_blank" class="fixed bottom-6 right-6 bg-emerald-500 text-white p-4 rounded-full shadow-2xl hover:bg-emerald-600 hover:scale-105 transition z-50 flex items-center justify-center">
+    <!-- FLOATING WHATSAPP POPUP BUTTON WITH FULL PRE-FILLED TEMPLATE -->
+    <a href="https://wa.me/60125884643?text=Hello%20Best%20Air%20Dimension!%20I%20would%20like%20to%20book%20a%20service%20appointment.%0A%0AService%20Type:%20[Aircond%20/%20Electrical%20/%20Fire%20Safety]%0ALocation:%20[Your%20Area%20in%20Penang]%0APreferred%20Date:%20" 
+       target="_blank" 
+       title="Book Appointment via WhatsApp"
+       class="fixed bottom-6 right-6 z-50 bg-emerald-500 hover:bg-emerald-600 text-white p-4 rounded-full shadow-2xl hover:scale-110 transition duration-300 flex items-center justify-center border-2 border-white/40 group">
         <i class="fa-brands fa-whatsapp text-3xl"></i>
+        <!-- Optional Tooltip Tag -->
+        <span class="absolute right-16 bg-slate-900 text-white text-xs font-bold px-3 py-1.5 rounded-xl whitespace-nowrap opacity-0 group-hover:opacity-100 transition shadow-lg border border-slate-700">
+            Book Appointment via WhatsApp
+        </span>
     </a>
 
 </body>
