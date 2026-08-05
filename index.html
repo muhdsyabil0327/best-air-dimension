@@ -30,16 +30,16 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex items-center justify-between h-16 sm:h-20">
                 
-                <!-- Left: Logo & Company Name -->
-                <a href="#" class="flex items-center space-x-3 group">
-                    <img src="logo.png" alt="Best Air Dimension" class="h-10 sm:h-12 w-auto object-contain">
-                    <div class="hidden sm:flex flex-col">
-                        <span class="text-sm font-extrabold text-slate-900 tracking-tight leading-none group-hover:text-sky-600 transition">BEST AIR DIMENSION</span>
-                        <span class="text-[10px] font-bold text-sky-600 tracking-wider uppercase mt-0.5">Technology & Services</span>
+                <!-- Left: Logo & Company Name (Always Visible) -->
+                <a href="#" class="flex items-center space-x-2.5 sm:space-x-3 group">
+                    <img src="logo.png" alt="Best Air Dimension" class="h-9 sm:h-12 w-auto object-contain">
+                    <div class="flex flex-col">
+                        <span class="text-xs sm:text-sm font-extrabold text-slate-900 tracking-tight leading-none group-hover:text-sky-600 transition">BEST AIR DIMENSION</span>
+                        <span class="text-[9px] sm:text-[10px] font-bold text-sky-600 tracking-wider uppercase mt-0.5">Technology & Services</span>
                     </div>
                 </a>
 
-                <!-- Middle: Desktop Navigation Links (Hidden on Mobile) -->
+                <!-- Middle: Desktop Navigation Links -->
                 <nav class="hidden md:flex items-center space-x-1 lg:space-x-2">
                     <a href="#services" class="px-3 py-2 rounded-lg text-sm font-bold text-slate-700 hover:text-sky-600 hover:bg-slate-100 transition">Services</a>
                     <a href="#about" class="px-3 py-2 rounded-lg text-sm font-bold text-slate-700 hover:text-sky-600 hover:bg-slate-100 transition">About Us</a>
@@ -57,29 +57,32 @@
                     </a>
 
                     <!-- Mobile Direct Call Icon Button -->
-                    <a href="tel:0125884643" aria-label="Call Us" class="sm:hidden p-2.5 bg-sky-50 text-sky-600 hover:bg-sky-100 rounded-xl transition border border-sky-200">
-                        <i class="fa-solid fa-phone text-base"></i>
+                    <a href="tel:0125884643" aria-label="Call Us" class="sm:hidden p-2 bg-sky-50 text-sky-600 hover:bg-sky-100 rounded-lg transition border border-sky-200">
+                        <i class="fa-solid fa-phone text-sm"></i>
                     </a>
 
                     <!-- Mobile Hamburger Toggle Button -->
-                    <button id="mobile-menu-btn" type="button" aria-label="Toggle Menu" class="md:hidden p-2.5 text-slate-700 hover:bg-slate-100 rounded-xl transition focus:outline-none border border-slate-200">
-                        <!-- Hamburger Icon -->
-                        <i id="menu-icon-open" class="fa-solid fa-bars text-lg block"></i>
-                        <!-- Close (X) Icon -->
-                        <i id="menu-icon-close" class="fa-solid fa-xmark text-lg hidden"></i>
+                    <button id="mobile-menu-btn" type="button" aria-label="Toggle Menu" class="md:hidden p-2 text-slate-700 hover:bg-slate-100 rounded-lg transition focus:outline-none border border-slate-200">
+                        <i id="menu-icon-open" class="fa-solid fa-bars text-base block"></i>
+                        <i id="menu-icon-close" class="fa-solid fa-xmark text-base hidden"></i>
                     </button>
                 </div>
 
             </div>
         </div>
 
-        <!-- Mobile Dropdown Menu Container -->
+        <!-- Mobile Dropdown Menu -->
         <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-slate-200 px-4 pt-3 pb-6 space-y-3 shadow-xl transition-all">
             
-            <!-- Badge Info in Dropdown -->
-            <div class="bg-sky-50 rounded-xl p-3 border border-sky-100 text-center mb-2">
-                <p class="text-xs font-bold text-sky-900">📍 Penang Island & Mainland</p>
-                <p class="text-[11px] font-semibold text-sky-700 mt-0.5"><i class="fa-solid fa-award text-amber-500 mr-1"></i> Authorized Topaire Dealer</p>
+            <div class="grid grid-cols-2 gap-2 mb-2">
+                <div class="bg-sky-50/80 p-2.5 rounded-xl border border-sky-100 text-center">
+                    <p class="text-[11px] font-bold text-sky-900">📍 Location</p>
+                    <p class="text-[10px] font-semibold text-sky-700">Penang Island & Mainland</p>
+                </div>
+                <div class="bg-amber-50/80 p-2.5 rounded-xl border border-amber-100 text-center">
+                    <p class="text-[11px] font-bold text-amber-900">🏅 Status</p>
+                    <p class="text-[10px] font-semibold text-amber-700">Topaire Authorized Dealer</p>
+                </div>
             </div>
 
             <!-- Navigation Links -->
@@ -102,7 +105,7 @@
                 </a>
             </div>
 
-            <!-- Mobile Menu Call CTA Button -->
+            <!-- Mobile Menu Call CTA -->
             <div class="pt-2">
                 <a href="tel:0125884643" class="w-full flex items-center justify-center space-x-2 bg-slate-900 active:bg-sky-600 text-white font-bold py-3 px-4 rounded-xl shadow transition">
                     <i class="fa-solid fa-phone text-sky-400"></i>
@@ -113,83 +116,35 @@
         </div>
     </header>
 
-    <!-- HERO SECTION (Cleaned Up & Enriched Hero Cards) -->
-    <section class="relative min-h-[85vh] flex items-center justify-center text-white bg-slate-950 overflow-hidden py-16 px-4">
-        
-        <!-- Office Background Image with Dark Gradient Overlay -->
-        <div class="absolute inset-0 z-0">
-            <img src="office.jpeg" alt="Best Air Dimension Office" class="w-full h-full object-cover object-center filter brightness-75">
-            <div class="absolute inset-0 bg-gradient-to-b from-slate-950/85 via-slate-950/75 to-slate-950/90"></div>
-        </div>
+    <!-- Hero Section Container -->
+    <section class="relative pt-8 pb-16 md:pt-16 md:pb-24 overflow-hidden">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 text-center">
 
-        <div class="relative z-10 max-w-5xl mx-auto text-center flex flex-col items-center">
-            
-            <!-- Company Logo Centered & Larger -->
-            <div class="mb-5 bg-white/10 backdrop-blur-md p-4 sm:p-5 rounded-3xl border border-white/20 shadow-2xl hover:scale-105 transition duration-300">
-                <img src="logo.png" alt="Best Air Dimension Logo" class="h-24 sm:h-32 w-auto object-contain filter drop-shadow-xl">
+            <!-- Separated Mobile & Desktop Badge Grid (Middle Logo Removed) -->
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-2.5 sm:gap-4 mb-8">
+                
+                <!-- Badge 1: Location -->
+                <div class="w-full sm:w-auto inline-flex items-center justify-center space-x-2 bg-sky-950/80 backdrop-blur-md border border-sky-500/30 text-sky-200 px-4 py-2 rounded-full shadow-sm">
+                    <i class="fa-solid fa-location-dot text-amber-400 text-xs"></i>
+                    <span class="text-xs sm:text-sm font-bold tracking-wide">Penang Island & Mainland</span>
+                </div>
+
+                <!-- Badge 2: Authorization -->
+                <div class="w-full sm:w-auto inline-flex items-center justify-center space-x-2 bg-sky-950/80 backdrop-blur-md border border-amber-500/30 text-amber-300 px-4 py-2 rounded-full shadow-sm">
+                    <i class="fa-solid fa-award text-amber-400 text-xs"></i>
+                    <span class="text-xs sm:text-sm font-bold tracking-wide">Authorized Topaire Dealer & Certified Contractors</span>
+                </div>
+
             </div>
 
-            <!-- Penang Service & Topaire Tagline Badge -->
-            <div class="mb-5 inline-flex flex-wrap items-center justify-center gap-2 bg-sky-950/80 border border-sky-400/40 text-sky-300 text-xs sm:text-sm font-bold px-4 py-2 rounded-full shadow-inner">
-                <span class="text-amber-400 font-extrabold"><i class="fa-solid fa-location-dot"></i> Penang Island & Mainland</span>
-                <span class="text-slate-500">•</span>
-                <span class="flex items-center gap-1"><i class="fa-solid fa-award text-amber-400"></i> AUTHORIZED TOPAIRE DEALER & CERTIFIED CONTRACTORS</span>
-            </div>
-
-            <!-- Main Heading -->
-            <h1 class="text-4xl sm:text-6xl font-black text-white tracking-tight leading-tight mb-4">
-                Repairing, Servicing & Installation <br class="hidden sm:inline">
-                <span class="text-transparent bg-clip-text bg-gradient-to-r from-sky-400 via-sky-200 to-amber-300">Excellence</span>
+            <!-- Main Title -->
+            <h1 class="text-3xl sm:text-5xl lg:text-6xl font-extrabold text-white tracking-tight leading-tight mb-4">
+                Repairing, Servicing <br class="hidden sm:inline" />& Installation <span class="text-sky-400">Excellence</span>
             </h1>
 
-            <!-- Subtitle -->
-            <p class="text-slate-300 text-sm sm:text-lg max-w-2xl mb-12 leading-relaxed">
+            <p class="text-sm sm:text-base text-slate-300 max-w-2xl mx-auto font-normal leading-relaxed mb-8">
                 Comprehensive air-conditioning solutions, electrical appliances repair, fire extinguisher supply, and civil engineering works in Penang.
             </p>
-
-            <!-- ENLARGED 3 HIGHLIGHT FEATURE CARDS WITH PHOTO ICONS -->
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-5 w-full max-w-5xl">
-                
-                <!-- CARD 1: TOPAIRE DEALER -->
-                <div class="bg-slate-900/80 backdrop-blur-md border border-sky-500/30 p-5 rounded-2xl flex items-center gap-4 text-left shadow-xl hover:border-sky-400 transition group">
-                    <div class="w-16 h-16 rounded-xl bg-white p-2 flex items-center justify-center flex-shrink-0 shadow-md border border-slate-200">
-                        <!-- Photo replace icon: Topaire Logo -->
-                        <img src="Brand1.jpg" alt="Topaire Authorized Dealer" class="max-h-full max-w-full object-contain group-hover:scale-105 transition">
-                    </div>
-                    <div>
-                        <h4 class="text-base font-extrabold text-white group-hover:text-sky-300 transition">TOPAIRE Dealer</h4>
-                        <p class="text-xs text-slate-300 mt-0.5">Authorized dealership & sales in Penang.</p>
-                        <span class="inline-block text-[11px] font-bold text-sky-400 mt-1">RM130k+ units sold since 2021</span>
-                    </div>
-                </div>
-
-                <!-- CARD 2: ZAKAT PAYER -->
-                <div class="bg-slate-900/80 backdrop-blur-md border border-emerald-500/30 p-5 rounded-2xl flex items-center gap-4 text-left shadow-xl hover:border-emerald-400 transition group">
-                    <div class="w-16 h-16 rounded-xl bg-white p-2 flex items-center justify-center flex-shrink-0 shadow-md border border-slate-200">
-                        <!-- Photo replace icon: Zakat Logo/Badge -->
-                        <img src="zakat.png" alt="Zakat Payer Penang" class="max-h-full max-w-full object-contain group-hover:scale-105 transition">
-                    </div>
-                    <div>
-                        <h4 class="text-base font-extrabold text-white group-hover:text-emerald-300 transition">Zakat Payer</h4>
-                        <p class="text-xs text-slate-300 mt-0.5">Official Zakat Perniagaan contributor.</p>
-                        <span class="inline-block text-[11px] font-bold text-emerald-400 mt-1">Paying continuously since 2020</span>
-                    </div>
-                </div>
-
-                <!-- CARD 3: 30+ YEARS EXPERIENCE -->
-                <div class="bg-slate-900/80 backdrop-blur-md border border-amber-500/30 p-5 rounded-2xl flex items-center gap-4 text-left shadow-xl hover:border-amber-400 transition group">
-                    <div class="w-16 h-16 rounded-xl bg-white p-1.5 flex items-center justify-center flex-shrink-0 shadow-md border border-slate-200 overflow-hidden">
-                        <!-- Photo replace icon: Manager Photo -->
-                        <img src="Manager.png" alt="Manager Badrul Husam Abdullah" class="w-full h-full object-cover rounded-lg group-hover:scale-105 transition">
-                    </div>
-                    <div>
-                        <h4 class="text-base font-extrabold text-white group-hover:text-amber-300 transition">30+ Years Experience</h4>
-                        <p class="text-xs text-slate-300 mt-0.5">Expert technical leadership & service.</p>
-                        <span class="inline-block text-[11px] font-bold text-amber-400 mt-1">Manager: Badrul Husam Abdullah</span>
-                    </div>
-                </div>
-
-            </div>
 
         </div>
     </section>
