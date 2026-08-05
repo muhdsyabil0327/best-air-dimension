@@ -116,38 +116,72 @@
         </div>
     </header>
 
-    <!-- Hero Section (Original Dark Theme with Minor Tweaks) -->
-<section class="relative bg-slate-950 text-white pt-10 pb-16 md:pt-16 md:pb-24 overflow-hidden">
+    <!-- Modern High-Converting Hero Section -->
+<section class="relative bg-slate-950 text-white py-20 lg:py-28 overflow-hidden">
     
-    <!-- Background Image & Dark Overlay (Preserved from original) -->
-    <div class="absolute inset-0 bg-cover bg-center opacity-25" style="background-image: url('hero-bg.jpg');"></div>
-    <div class="absolute inset-0 bg-gradient-to-b from-slate-950/90 via-slate-900/80 to-slate-950"></div>
+    <!-- Decorative Radial Gradient Glows for Visual Depth -->
+    <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[350px] bg-sky-500/15 blur-[120px] rounded-full pointer-events-none"></div>
+    <div class="absolute -bottom-10 right-10 w-[300px] h-[300px] bg-amber-500/10 blur-[100px] rounded-full pointer-events-none"></div>
 
     <div class="relative max-w-5xl mx-auto px-4 sm:px-6 text-center z-10">
 
-        <!-- Separated Badges (Center Logo Removed) -->
-        <div class="flex flex-col sm:flex-row items-center justify-center gap-2.5 sm:gap-3 mb-8">
-            <!-- Badge 1: Location -->
-            <div class="w-full sm:w-auto inline-flex items-center justify-center space-x-2 bg-slate-900/90 border border-sky-500/40 text-sky-200 px-4 py-2 rounded-full shadow-md backdrop-blur-sm">
-                <i class="fa-solid fa-location-dot text-amber-400 text-xs"></i>
-                <span class="text-xs sm:text-sm font-bold tracking-wide">Penang Island & Mainland</span>
+        <!-- Badges -->
+        <div class="flex flex-wrap items-center justify-center gap-3 mb-8">
+            <div class="inline-flex items-center space-x-2 bg-slate-900/90 border border-sky-500/30 text-sky-300 px-4 py-2 rounded-full text-xs font-bold shadow-sm backdrop-blur-md">
+                <i class="fa-solid fa-location-dot text-amber-400"></i>
+                <span>Penang Island & Mainland</span>
             </div>
 
-            <!-- Badge 2: Authorization -->
-            <div class="w-full sm:w-auto inline-flex items-center justify-center space-x-2 bg-slate-900/90 border border-amber-500/40 text-amber-300 px-4 py-2 rounded-full shadow-md backdrop-blur-sm">
-                <i class="fa-solid fa-award text-amber-400 text-xs"></i>
-                <span class="text-xs sm:text-sm font-bold tracking-wide">AUTHORIZED TOPAIRE DEALER & CERTIFIED CONTRACTORS</span>
+            <div class="inline-flex items-center space-x-2 bg-slate-900/90 border border-amber-500/30 text-amber-300 px-4 py-2 rounded-full text-xs font-bold shadow-sm backdrop-blur-md">
+                <i class="fa-solid fa-award text-amber-400"></i>
+                <span>Authorized Topaire Dealer & Certified Contractors</span>
             </div>
         </div>
 
-        <!-- Headline & Subtitle (Original Fonts & Styles Preserved) -->
-        <h1 class="text-3xl sm:text-5xl lg:text-6xl font-extrabold text-white tracking-tight leading-tight mb-4 drop-shadow-md">
-            Repairing, Servicing <br class="hidden sm:inline" />& Installation <span class="text-sky-400">Excellence</span>
+        <!-- Headline -->
+        <h1 class="text-3xl sm:text-5xl lg:text-6xl font-extrabold text-white tracking-tight leading-tight mb-6">
+            Repairing, Servicing <br class="hidden sm:inline" />& Installation <span class="bg-gradient-to-r from-sky-400 via-sky-300 to-amber-300 bg-clip-text text-transparent">Excellence</span>
         </h1>
 
-        <p class="text-sm sm:text-base text-slate-300 max-w-2xl mx-auto font-normal leading-relaxed mb-8">
+        <!-- Subtitle -->
+        <p class="text-base sm:text-lg text-slate-300 max-w-2xl mx-auto font-normal leading-relaxed mb-10">
             Comprehensive air-conditioning solutions, electrical appliances repair, fire extinguisher supply, and civil engineering works in Penang.
         </p>
+
+        <!-- Call to Action Buttons -->
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16">
+            <!-- Primary Action Button -->
+            <a href="tel:0125884643" class="w-full sm:w-auto inline-flex items-center justify-center space-x-2 bg-sky-500 hover:bg-sky-400 text-slate-950 font-extrabold px-8 py-4 rounded-xl shadow-lg shadow-sky-500/25 transition-all transform hover:-translate-y-0.5">
+                <i class="fa-solid fa-phone text-slate-950"></i>
+                <span>Book Service Now</span>
+            </a>
+
+            <!-- Secondary WhatsApp Button -->
+            <a href="https://wa.me/60125884643" target="_blank" class="w-full sm:w-auto inline-flex items-center justify-center space-x-2 bg-slate-900/80 hover:bg-slate-800 text-white font-bold px-8 py-4 rounded-xl border border-slate-700 hover:border-slate-600 transition-all backdrop-blur-md">
+                <i class="fa-brands fa-whatsapp text-emerald-400 text-lg"></i>
+                <span>WhatsApp Quote</span>
+            </a>
+        </div>
+
+        <!-- Trust Stats Floating Bar -->
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto bg-slate-900/60 border border-slate-800/80 p-5 rounded-2xl backdrop-blur-md shadow-xl text-center">
+            <div class="p-2 border-r border-slate-800/80 last:border-0">
+                <p class="text-xl sm:text-2xl font-extrabold text-sky-400">100%</p>
+                <p class="text-xs text-slate-400 font-medium mt-0.5">Certified Technicians</p>
+            </div>
+            <div class="p-2 border-r border-slate-800/80 last:border-0">
+                <p class="text-xl sm:text-2xl font-extrabold text-amber-400">Topaire</p>
+                <p class="text-xs text-slate-400 font-medium mt-0.5">Authorized Dealer</p>
+            </div>
+            <div class="p-2 border-r border-slate-800/80 last:border-0">
+                <p class="text-xl sm:text-2xl font-extrabold text-sky-400">Fast</p>
+                <p class="text-xs text-slate-400 font-medium mt-0.5">Response Time</p>
+            </div>
+            <div class="p-2">
+                <p class="text-xl sm:text-2xl font-extrabold text-amber-400">Penang</p>
+                <p class="text-xs text-slate-400 font-medium mt-0.5">Island & Mainland</p>
+            </div>
+        </div>
 
     </div>
 </section>
