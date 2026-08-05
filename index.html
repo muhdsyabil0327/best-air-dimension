@@ -116,38 +116,41 @@
         </div>
     </header>
 
-    <!-- Hero Section Container -->
-    <section class="relative pt-8 pb-16 md:pt-16 md:pb-24 overflow-hidden">
-        <div class="max-w-5xl mx-auto px-4 sm:px-6 text-center">
+    <!-- Hero Section (Original Dark Theme with Minor Tweaks) -->
+<section class="relative bg-slate-950 text-white pt-10 pb-16 md:pt-16 md:pb-24 overflow-hidden">
+    
+    <!-- Background Image & Dark Overlay (Preserved from original) -->
+    <div class="absolute inset-0 bg-cover bg-center opacity-25" style="background-image: url('hero-bg.jpg');"></div>
+    <div class="absolute inset-0 bg-gradient-to-b from-slate-950/90 via-slate-900/80 to-slate-950"></div>
 
-            <!-- Separated Mobile & Desktop Badge Grid (Middle Logo Removed) -->
-            <div class="flex flex-col sm:flex-row items-center justify-center gap-2.5 sm:gap-4 mb-8">
-                
-                <!-- Badge 1: Location -->
-                <div class="w-full sm:w-auto inline-flex items-center justify-center space-x-2 bg-sky-950/80 backdrop-blur-md border border-sky-500/30 text-sky-200 px-4 py-2 rounded-full shadow-sm">
-                    <i class="fa-solid fa-location-dot text-amber-400 text-xs"></i>
-                    <span class="text-xs sm:text-sm font-bold tracking-wide">Penang Island & Mainland</span>
-                </div>
+    <div class="relative max-w-5xl mx-auto px-4 sm:px-6 text-center z-10">
 
-                <!-- Badge 2: Authorization -->
-                <div class="w-full sm:w-auto inline-flex items-center justify-center space-x-2 bg-sky-950/80 backdrop-blur-md border border-amber-500/30 text-amber-300 px-4 py-2 rounded-full shadow-sm">
-                    <i class="fa-solid fa-award text-amber-400 text-xs"></i>
-                    <span class="text-xs sm:text-sm font-bold tracking-wide">Authorized Topaire Dealer & Certified Contractors</span>
-                </div>
-
+        <!-- Separated Badges (Center Logo Removed) -->
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-2.5 sm:gap-3 mb-8">
+            <!-- Badge 1: Location -->
+            <div class="w-full sm:w-auto inline-flex items-center justify-center space-x-2 bg-slate-900/90 border border-sky-500/40 text-sky-200 px-4 py-2 rounded-full shadow-md backdrop-blur-sm">
+                <i class="fa-solid fa-location-dot text-amber-400 text-xs"></i>
+                <span class="text-xs sm:text-sm font-bold tracking-wide">Penang Island & Mainland</span>
             </div>
 
-            <!-- Main Title -->
-            <h1 class="text-3xl sm:text-5xl lg:text-6xl font-extrabold text-white tracking-tight leading-tight mb-4">
-                Repairing, Servicing <br class="hidden sm:inline" />& Installation <span class="text-sky-400">Excellence</span>
-            </h1>
-
-            <p class="text-sm sm:text-base text-slate-300 max-w-2xl mx-auto font-normal leading-relaxed mb-8">
-                Comprehensive air-conditioning solutions, electrical appliances repair, fire extinguisher supply, and civil engineering works in Penang.
-            </p>
-
+            <!-- Badge 2: Authorization -->
+            <div class="w-full sm:w-auto inline-flex items-center justify-center space-x-2 bg-slate-900/90 border border-amber-500/40 text-amber-300 px-4 py-2 rounded-full shadow-md backdrop-blur-sm">
+                <i class="fa-solid fa-award text-amber-400 text-xs"></i>
+                <span class="text-xs sm:text-sm font-bold tracking-wide">AUTHORIZED TOPAIRE DEALER & CERTIFIED CONTRACTORS</span>
+            </div>
         </div>
-    </section>
+
+        <!-- Headline & Subtitle (Original Fonts & Styles Preserved) -->
+        <h1 class="text-3xl sm:text-5xl lg:text-6xl font-extrabold text-white tracking-tight leading-tight mb-4 drop-shadow-md">
+            Repairing, Servicing <br class="hidden sm:inline" />& Installation <span class="text-sky-400">Excellence</span>
+        </h1>
+
+        <p class="text-sm sm:text-base text-slate-300 max-w-2xl mx-auto font-normal leading-relaxed mb-8">
+            Comprehensive air-conditioning solutions, electrical appliances repair, fire extinguisher supply, and civil engineering works in Penang.
+        </p>
+
+    </div>
+</section>
 
     <!-- ABOUT US SECTION -->
     <section id="about" class="max-w-6xl mx-auto px-4 py-16">
