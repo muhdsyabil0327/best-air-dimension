@@ -116,20 +116,29 @@
         </div>
     </header>
 
-    <!-- Refined Hero Section (50% Image Darkness for Better Visibility) -->
+    <!-- Refined Hero Section with Smooth Edge-Faded Background -->
 <section class="relative bg-slate-950 text-white py-16 lg:py-24 overflow-hidden">
     
-    <!-- Background Image (Monochrome + 50% Brightness for Clear Visibility) -->
-    <img 
-        src="bg1.jpeg" 
-        alt="Engineering Background" 
-        class="absolute inset-0 w-full h-full object-cover grayscale contrast-125 brightness-50 pointer-events-none transition-all duration-700"
-    />
+    <!-- Background Image Container with Edge Blending -->
+    <div class="absolute inset-0 pointer-events-none overflow-hidden">
+        <!-- Background Image -->
+        <img 
+            src="hero-bg.jpg" 
+            alt="Engineering Background" 
+            class="w-full h-full object-cover object-center grayscale contrast-125 brightness-50 opacity-70"
+        />
+        
+        <!-- Base Tint Overlay -->
+        <div class="absolute inset-0 bg-slate-950/40"></div>
+        
+        <!-- Vertical Fade Gradient (Top & Bottom Edge Fading) -->
+        <div class="absolute inset-0 bg-gradient-to-b from-slate-950 via-transparent to-slate-950"></div>
+        
+        <!-- Horizontal Fade Gradient (Left & Right Edge Fading - Prevents Stretching Effect) -->
+        <div class="absolute inset-0 bg-gradient-to-r from-slate-950 via-slate-950/20 to-slate-950"></div>
+    </div>
     
-    <!-- Lightened Dark Gradient Overlay (Keeps white text sharp without hiding the picture) -->
-    <div class="absolute inset-0 bg-gradient-to-b from-slate-950/60 via-slate-950/40 to-slate-950/80 pointer-events-none"></div>
-    
-    <!-- Radial Blue Glow -->
+    <!-- Radial Blue Glow for Center Depth -->
     <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[300px] bg-sky-500/15 blur-[120px] rounded-full pointer-events-none"></div>
 
     <div class="relative max-w-5xl mx-auto px-4 sm:px-6 text-center z-10">
