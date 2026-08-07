@@ -116,22 +116,22 @@
         </div>
     </header>
 
-    <!-- Hero Section with Properly Fitted Background Picture -->
+   <!-- Hero Section with Natural Color Background Picture (No Filters) -->
 <section class="relative bg-slate-950 text-white py-16 lg:py-24 overflow-hidden">
     
-    <!-- Fitted Background Image Wrapper (Constrained Width & Centered) -->
+    <!-- Fitted Background Image Wrapper -->
     <div class="absolute inset-0 max-w-6xl mx-auto pointer-events-none overflow-hidden px-4">
-        <!-- Background Image (Fitted cleanly without zooming/stretching) -->
+        <!-- Background Image in original color (Filters removed) -->
         <img 
             src="bg1.jpeg" 
             alt="Engineering Background" 
-            class="w-full h-full object-contain object-center grayscale contrast-125 brightness-50 opacity-60"
+            class="w-full h-full object-contain object-center opacity-70"
         />
         
-        <!-- Subtle Overlay inside the image container -->
-        <div class="absolute inset-0 bg-slate-950/30"></div>
+        <!-- Soft Tint Overlay (Maintains text contrast over full-color image) -->
+        <div class="absolute inset-0 bg-slate-950/40"></div>
         
-        <!-- Smooth Edge Blending Gradients -->
+        <!-- Smooth Edge-Blending Gradients -->
         <div class="absolute inset-0 bg-gradient-to-b from-slate-950 via-transparent to-slate-950"></div>
         <div class="absolute inset-0 bg-gradient-to-r from-slate-950 via-transparent to-slate-950"></div>
     </div>
