@@ -116,13 +116,18 @@
         </div>
     </header>
 
-    <!-- Refined Professional Hero Section -->
+    <!-- Refined Professional Hero Section with Monochrome Background Filter -->
 <section class="relative bg-slate-950 text-white py-16 lg:py-24 overflow-hidden">
     
-    <!-- Background Image with Dark Overlay & Subtle Glow -->
-    <!-- Replace 'hero-bg.jpg' with your modern building or HVAC image -->
-    <div class="absolute inset-0 bg-cover bg-center opacity-20 pointer-events-none" style="background-image: url('hero-bg.jpg');"></div>
-    <div class="absolute inset-0 bg-gradient-to-b from-slate-950/90 via-slate-900/80 to-slate-950 pointer-events-none"></div>
+    <!-- Monochrome Background Image Container -->
+    <!-- 'grayscale', 'contrast-125', and 'opacity-20' create a subtle, high-contrast B&W texture -->
+    <div class="absolute inset-0 bg-cover bg-center grayscale contrast-125 opacity-20 pointer-events-none transition-all duration-700" 
+         style="background-image: url('bg1.jpeg');"></div>
+    
+    <!-- Dark Gradient Overlay (Keeps text perfectly legible) -->
+    <div class="absolute inset-0 bg-gradient-to-b from-slate-950/90 via-slate-900/85 to-slate-950 pointer-events-none"></div>
+    
+    <!-- Subtle Radial Glow for Depth -->
     <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[300px] bg-sky-500/10 blur-[120px] rounded-full pointer-events-none"></div>
 
     <div class="relative max-w-5xl mx-auto px-4 sm:px-6 text-center z-10">
@@ -143,7 +148,7 @@
             Comprehensive air-conditioning solutions, electrical appliances repair, fire extinguisher supply, and civil engineering works in Penang.
         </p>
 
-        <!-- Reworked 4-Column Credentials Bar (Option 1) -->
+        <!-- Reworked 4-Column Credentials Bar -->
         <div class="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto bg-slate-900/80 border border-slate-800 p-5 rounded-2xl backdrop-blur-md shadow-2xl text-center">
             
             <!-- Col 1 -->
