@@ -116,19 +116,22 @@
         </div>
     </header>
 
-    <!-- Refined Professional Hero Section with Monochrome Background Filter -->
+    <!-- Refined Hero Section using <img> tag for Monochrome Background -->
 <section class="relative bg-slate-950 text-white py-16 lg:py-24 overflow-hidden">
     
-    <!-- Monochrome Background Image Container -->
-    <!-- 'grayscale', 'contrast-125', and 'opacity-20' create a subtle, high-contrast B&W texture -->
-    <div class="absolute inset-0 bg-cover bg-center grayscale contrast-125 opacity-20 pointer-events-none transition-all duration-700" 
-         style="background-image: url('bg1.jpeg');"></div>
+    <!-- Background Image via <img> Tag (Monochrome Filtered) -->
+    <!-- Make sure the src matches your exact file path (e.g., 'hero-bg.jpg' or 'images/hero-bg.jpg') -->
+    <img 
+        src="hero-bg.jpg" 
+        alt="Engineering Background" 
+        class="absolute inset-0 w-full h-full object-cover grayscale contrast-125 opacity-40 pointer-events-none transition-all duration-700"
+    />
     
-    <!-- Dark Gradient Overlay (Keeps text perfectly legible) -->
-    <div class="absolute inset-0 bg-gradient-to-b from-slate-950/90 via-slate-900/85 to-slate-950 pointer-events-none"></div>
+    <!-- Dark Gradient Overlay (Keeps text readable over the photo) -->
+    <div class="absolute inset-0 bg-gradient-to-b from-slate-950/85 via-slate-900/75 to-slate-950 pointer-events-none"></div>
     
-    <!-- Subtle Radial Glow for Depth -->
-    <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[300px] bg-sky-500/10 blur-[120px] rounded-full pointer-events-none"></div>
+    <!-- Radial Blue Glow -->
+    <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[300px] bg-sky-500/15 blur-[120px] rounded-full pointer-events-none"></div>
 
     <div class="relative max-w-5xl mx-auto px-4 sm:px-6 text-center z-10">
 
@@ -139,17 +142,17 @@
         </div>
 
         <!-- Headline -->
-        <h1 class="text-3xl sm:text-5xl lg:text-6xl font-extrabold text-white tracking-tight leading-tight mb-6">
+        <h1 class="text-3xl sm:text-5xl lg:text-6xl font-extrabold text-white tracking-tight leading-tight mb-6 drop-shadow-md">
             Repairing, Servicing <br class="hidden sm:inline" />& Installation <span class="bg-gradient-to-r from-sky-400 to-sky-200 bg-clip-text text-transparent">Excellence</span>
         </h1>
 
         <!-- Subtitle -->
-        <p class="text-base sm:text-lg text-slate-300 max-w-2xl mx-auto font-normal leading-relaxed mb-12">
+        <p class="text-base sm:text-lg text-slate-300 max-w-2xl mx-auto font-normal leading-relaxed mb-12 drop-shadow-sm">
             Comprehensive air-conditioning solutions, electrical appliances repair, fire extinguisher supply, and civil engineering works in Penang.
         </p>
 
         <!-- Reworked 4-Column Credentials Bar -->
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto bg-slate-900/80 border border-slate-800 p-5 rounded-2xl backdrop-blur-md shadow-2xl text-center">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto bg-slate-900/85 border border-slate-800 p-5 rounded-2xl backdrop-blur-md shadow-2xl text-center">
             
             <!-- Col 1 -->
             <div class="p-2 border-r border-slate-800/80 last:border-0 md:border-r">
