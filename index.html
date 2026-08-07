@@ -116,29 +116,27 @@
         </div>
     </header>
 
-    <!-- Refined Hero Section with Smooth Edge-Faded Background -->
+    <!-- Hero Section with Properly Fitted Background Picture -->
 <section class="relative bg-slate-950 text-white py-16 lg:py-24 overflow-hidden">
     
-    <!-- Background Image Container with Edge Blending -->
-    <div class="absolute inset-0 pointer-events-none overflow-hidden">
-        <!-- Background Image -->
+    <!-- Fitted Background Image Wrapper (Constrained Width & Centered) -->
+    <div class="absolute inset-0 max-w-6xl mx-auto pointer-events-none overflow-hidden px-4">
+        <!-- Background Image (Fitted cleanly without zooming/stretching) -->
         <img 
             src="bg1.jpeg" 
             alt="Engineering Background" 
-            class="w-full h-full object-cover object-center grayscale contrast-125 brightness-50 opacity-70"
+            class="w-full h-full object-contain object-center grayscale contrast-125 brightness-50 opacity-60"
         />
         
-        <!-- Base Tint Overlay -->
-        <div class="absolute inset-0 bg-slate-950/40"></div>
+        <!-- Subtle Overlay inside the image container -->
+        <div class="absolute inset-0 bg-slate-950/30"></div>
         
-        <!-- Vertical Fade Gradient (Top & Bottom Edge Fading) -->
+        <!-- Smooth Edge Blending Gradients -->
         <div class="absolute inset-0 bg-gradient-to-b from-slate-950 via-transparent to-slate-950"></div>
-        
-        <!-- Horizontal Fade Gradient (Left & Right Edge Fading - Prevents Stretching Effect) -->
-        <div class="absolute inset-0 bg-gradient-to-r from-slate-950 via-slate-950/20 to-slate-950"></div>
+        <div class="absolute inset-0 bg-gradient-to-r from-slate-950 via-transparent to-slate-950"></div>
     </div>
     
-    <!-- Radial Blue Glow for Center Depth -->
+    <!-- Radial Blue Glow -->
     <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[300px] bg-sky-500/15 blur-[120px] rounded-full pointer-events-none"></div>
 
     <div class="relative max-w-5xl mx-auto px-4 sm:px-6 text-center z-10">
