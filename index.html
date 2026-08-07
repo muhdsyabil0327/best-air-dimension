@@ -116,21 +116,21 @@
         </div>
     </header>
 
-    <!-- Hero Section with Structured Container Image Style -->
+    <!-- Refined Hero Section using <img> tag for Monochrome Background -->
 <section class="relative bg-slate-950 text-white py-16 lg:py-24 overflow-hidden">
     
-    <!-- Background Container & Image Structured Like Your Card Component -->
-    <div class="absolute inset-0 w-full h-full pointer-events-none overflow-hidden">
-        <img 
-            src="bg1.jpeg" 
-            alt="Engineering Background" 
-            class="w-full h-full object-cover grayscale contrast-100 opacity-35"
-        />
-        <!-- Dark Overlay Layer inside the container -->
-        <div class="absolute inset-0 bg-slate-950/80 bg-gradient-to-b from-slate-950/90 via-slate-900/75 to-slate-950"></div>
-    </div>
+    <!-- Background Image via <img> Tag (Monochrome Filtered) -->
+    <!-- Make sure the src matches your exact file path (e.g., 'hero-bg.jpg' or 'images/hero-bg.jpg') -->
+    <img 
+        src="hero-bg.jpg" 
+        alt="Engineering Background" 
+        class="absolute inset-0 w-full h-full object-cover grayscale contrast-100 opacity-20 pointer-events-none transition-all duration-700"
+    />
     
-    <!-- Radial Blue Glow for Extra Depth -->
+    <!-- Dark Gradient Overlay (Keeps text readable over the photo) -->
+    <div class="absolute inset-0 bg-gradient-to-b from-slate-950/85 via-slate-900/75 to-slate-950 pointer-events-none"></div>
+    
+    <!-- Radial Blue Glow -->
     <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[300px] bg-sky-500/15 blur-[120px] rounded-full pointer-events-none"></div>
 
     <div class="relative max-w-5xl mx-auto px-4 sm:px-6 text-center z-10">
