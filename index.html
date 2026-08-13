@@ -116,18 +116,18 @@
         </div>
     </header>
 
-   <!-- Reworked Hero Section -->
+   <!-- Hero Section -->
 <section class="relative bg-slate-100 text-slate-900 py-20 lg:py-28 overflow-hidden border-b border-slate-200">
     
-    <!-- Background Image Cover with Light Overlay for Contrast -->
+    <!-- Background Image Cover with Light Overlay -->
     <div class="absolute inset-0 z-0">
         <img 
             src="bg3.png" 
             alt="Engineering Background" 
             class="w-full h-full object-cover object-center"
         />
-        <!-- White overlay to make text crisp and legible -->
-        <div class="absolute inset-0 bg-white/85 backdrop-blur-[2px]"></div>
+        <!-- Slightly lower white overlay opacity (75%) so background photo details show better -->
+        <div class="absolute inset-0 bg-white/75"></div>
     </div>
 
     <!-- Hero Content -->
@@ -145,9 +145,21 @@
         </h1>
 
         <!-- Subtitle -->
-        <p class="text-base sm:text-lg text-slate-700 max-w-2xl mx-auto font-bold leading-relaxed mb-10">
+        <p class="text-base sm:text-lg text-slate-700 max-w-2xl mx-auto font-semibold leading-relaxed mb-8">
             Comprehensive air-conditioning solutions, electrical appliances repair, fire extinguisher supply, and civil engineering works in Penang.
         </p>
+
+        <!-- 👇 ADDED: Action Call-to-Action Buttons 👇 -->
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-3 mb-12">
+            <a href="https://wa.me/60125884643" target="_blank" class="w-full sm:w-auto inline-flex items-center justify-center space-x-2 bg-emerald-600 hover:bg-emerald-700 text-white font-bold px-6 py-3.5 rounded-xl shadow-md transition transform active:scale-95">
+                <i class="fa-brands fa-whatsapp text-lg"></i>
+                <span>Get a Free Quote</span>
+            </a>
+            <a href="tel:0125884643" class="w-full sm:w-auto inline-flex items-center justify-center space-x-2 bg-slate-900 hover:bg-sky-600 text-white font-bold px-6 py-3.5 rounded-xl shadow-md transition transform active:scale-95">
+                <i class="fa-solid fa-phone text-sky-400"></i>
+                <span>Call 012-588 4643</span>
+            </a>
+        </div>
 
         <!-- 4-Column Credentials Card -->
         <div class="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto bg-white/95 border border-slate-200 p-6 rounded-2xl shadow-xl text-center">
