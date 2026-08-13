@@ -116,62 +116,64 @@
         </div>
     </header>
 
-   <!-- Hero Section -->
-<section class="relative bg-white text-slate-900 py-16 lg:py-24 overflow-hidden border-b border-slate-200">
+   <!-- Reworked Hero Section -->
+<section class="relative bg-slate-100 text-slate-900 py-20 lg:py-28 overflow-hidden border-b border-slate-200">
     
-    <!-- Fitted Background Image Wrapper -->
-    <div class="absolute inset-0 max-w-6xl mx-auto pointer-events-none overflow-hidden px-4">
-        <!-- Background Image in original color (Filters & overlays removed) -->
+    <!-- Background Image Cover with Light Overlay for Contrast -->
+    <div class="absolute inset-0 z-0">
         <img 
             src="bg3.png" 
             alt="Engineering Background" 
-            class="w-full h-full object-contain object-center opacity-25"
+            class="w-full h-full object-cover object-center"
         />
+        <!-- White overlay to make text crisp and legible -->
+        <div class="absolute inset-0 bg-white/85 backdrop-blur-[2px]"></div>
     </div>
 
+    <!-- Hero Content -->
     <div class="relative max-w-5xl mx-auto px-4 sm:px-6 text-center z-10">
 
-        <!-- Single Centered Badge -->
-        <div class="inline-flex items-center space-x-2 bg-amber-50 border border-amber-200 text-amber-900 px-4 py-2 rounded-full text-xs sm:text-sm font-bold shadow-sm mb-8">
+        <!-- Top Badge -->
+        <div class="inline-flex items-center space-x-2 bg-amber-100 border border-amber-300 text-amber-900 px-4 py-2 rounded-full text-xs sm:text-sm font-bold shadow-xs mb-6">
             <i class="fa-solid fa-award text-amber-600 text-xs"></i>
             <span class="uppercase tracking-wider">Authorized Topaire Dealer & Certified Contractors</span>
         </div>
 
         <!-- Headline -->
-        <h1 class="text-3xl sm:text-5xl lg:text-6xl font-extrabold text-slate-900 tracking-tight leading-tight mb-6">
-            Repairing, Servicing <br class="hidden sm:inline" />& Installation <span class="bg-gradient-to-r from-sky-600 to-sky-800 bg-clip-text text-transparent">Excellence</span>
+        <h1 class="text-3xl sm:text-5xl lg:text-6xl font-black text-slate-900 tracking-tight leading-tight mb-6">
+            Repairing, Servicing <br class="hidden sm:inline" />& Installation <span class="text-sky-600">Excellence</span>
         </h1>
 
         <!-- Subtitle -->
-        <p class="text-base sm:text-lg text-slate-600 max-w-2xl mx-auto font-medium leading-relaxed mb-12">
+        <p class="text-base sm:text-lg text-slate-700 max-w-2xl mx-auto font-bold leading-relaxed mb-10">
             Comprehensive air-conditioning solutions, electrical appliances repair, fire extinguisher supply, and civil engineering works in Penang.
         </p>
 
-        <!-- Reworked 4-Column Credentials Bar -->
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto bg-slate-50 border border-slate-200 p-5 rounded-2xl shadow-sm text-center">
+        <!-- 4-Column Credentials Card -->
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto bg-white/95 border border-slate-200 p-6 rounded-2xl shadow-xl text-center">
             
             <!-- Col 1 -->
             <div class="p-2 border-r border-slate-200 last:border-0 md:border-r">
-                <p class="text-lg sm:text-xl font-extrabold text-sky-600">CIDB Registered</p>
-                <p class="text-xs text-slate-600 font-medium mt-1">Certified Contractor</p>
+                <p class="text-base sm:text-lg font-extrabold text-sky-600">CIDB Registered</p>
+                <p class="text-xs text-slate-500 font-bold mt-1">Certified Contractor</p>
             </div>
 
             <!-- Col 2 -->
             <div class="p-2 border-r-0 md:border-r border-slate-200">
-                <p class="text-lg sm:text-xl font-extrabold text-amber-600">Topaire Dealer</p>
-                <p class="text-xs text-slate-600 font-medium mt-1">Sales & Authorized Service</p>
+                <p class="text-base sm:text-lg font-extrabold text-amber-600">Topaire Dealer</p>
+                <p class="text-xs text-slate-500 font-bold mt-1">Sales & Authorized Service</p>
             </div>
 
             <!-- Col 3 -->
             <div class="p-2 border-r border-slate-200 last:border-0">
-                <p class="text-lg sm:text-xl font-extrabold text-sky-600">Chargeman A0</p>
-                <p class="text-xs text-slate-600 font-medium mt-1">Electrical Leadership</p>
+                <p class="text-base sm:text-lg font-extrabold text-sky-600">Chargeman A0</p>
+                <p class="text-xs text-slate-500 font-bold mt-1">Electrical Leadership</p>
             </div>
 
             <!-- Col 4 -->
             <div class="p-2">
-                <p class="text-lg sm:text-xl font-extrabold text-amber-600">Multi-Disciplinary</p>
-                <p class="text-xs text-slate-600 font-medium mt-1">HVAC, Electrical & Civil</p>
+                <p class="text-base sm:text-lg font-extrabold text-amber-600">Multi-Disciplinary</p>
+                <p class="text-xs text-slate-500 font-bold mt-1">HVAC, Electrical & Civil</p>
             </div>
 
         </div>
