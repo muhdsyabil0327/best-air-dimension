@@ -7,7 +7,10 @@
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+
     <!-- Defining Logo-Matched Color Theme -->
     <script>
         tailwind.config = {
@@ -116,76 +119,88 @@
         </div>
     </header>
 
-   <!-- Hero Section -->
-<section class="relative bg-slate-100 text-slate-900 py-20 lg:py-28 overflow-hidden border-b border-slate-200">
+   <!-- Reworked Hero Section -->
+<section class="relative bg-slate-100 text-slate-900 py-20 lg:py-28 overflow-hidden border-b border-slate-200" style="font-family: 'Plus Jakarta Sans', sans-serif;">
     
-    <!-- Background Image Cover with Light Overlay -->
+    <!-- Background Image Cover with Soft Light Overlay -->
     <div class="absolute inset-0 z-0">
         <img 
             src="bg5.png" 
             alt="Engineering Background" 
             class="w-full h-full object-cover object-center"
         />
-        <!-- Slightly lower white overlay opacity (75%) so background photo details show better -->
-        <div class="absolute inset-0 bg-white/75"></div>
+        <div class="absolute inset-0 bg-white/80 backdrop-blur-[1px]"></div>
     </div>
 
     <!-- Hero Content -->
     <div class="relative max-w-5xl mx-auto px-4 sm:px-6 text-center z-10">
 
         <!-- Top Badge -->
-        <div class="inline-flex items-center space-x-2 bg-amber-100 border border-amber-300 text-amber-900 px-4 py-2 rounded-full text-xs sm:text-sm font-bold shadow-xs mb-6">
-            <i class="fa-solid fa-award text-amber-600 text-xs"></i>
-            <span class="uppercase tracking-wider">Authorized Topaire Dealer & Certified Contractors</span>
+        <div class="inline-flex items-center space-x-2 bg-sky-50 border border-sky-200 text-sky-900 px-4 py-2 rounded-full text-xs sm:text-sm font-bold shadow-xs mb-6">
+            <i class="fa-solid fa-shield-halved text-sky-600 text-xs"></i>
+            <span class="uppercase tracking-wider">Registered MOF & Bumiputera Engineering Firm</span>
         </div>
 
-        <!-- Headline -->
-        <h1 class="text-3xl sm:text-5xl lg:text-6xl font-black text-slate-900 tracking-tight leading-tight mb-6">
-            Repairing, Servicing <br class="hidden sm:inline" />& Installation <span class="text-sky-600">Excellence</span>
+        <!-- Headline with Modern Font & Cyan Gradient -->
+        <h1 class="text-3xl sm:text-5xl lg:text-6xl font-extrabold text-slate-900 tracking-tight leading-tight mb-6">
+            Penang’s Trusted <br class="hidden sm:inline" />
+            <span class="bg-gradient-to-r from-sky-600 via-blue-600 to-cyan-500 bg-clip-text text-transparent">HVAC & Electrical</span> Specialists
         </h1>
 
         <!-- Subtitle -->
-        <p class="text-base sm:text-lg text-slate-700 max-w-2xl mx-auto font-semibold leading-relaxed mb-8">
-            Comprehensive air-conditioning solutions, electrical appliances repair, fire extinguisher supply, and civil engineering works in Penang.
+        <p class="text-base sm:text-lg text-slate-600 max-w-2xl mx-auto font-medium leading-relaxed mb-8">
+            Certified air-conditioning installation, chemical overhaul, electrical maintenance, and civil works across Penang Island & Mainland[cite: 1].
         </p>
 
-        <!-- 👇 ADDED: Action Call-to-Action Buttons 👇 -->
+        <!-- Action Call-to-Action Buttons -->
         <div class="flex flex-col sm:flex-row items-center justify-center gap-3 mb-12">
-            <a href="https://wa.me/60125884643" target="_blank" class="w-full sm:w-auto inline-flex items-center justify-center space-x-2 bg-emerald-600 hover:bg-emerald-700 text-white font-bold px-6 py-3.5 rounded-xl shadow-md transition transform active:scale-95">
-                <i class="fa-brands fa-whatsapp text-lg"></i>
-                <span>Get a Free Quote</span>
+            <a href="https://wa.me/60125884643" target="_blank" class="w-full sm:w-auto inline-flex items-center justify-center space-x-2.5 bg-emerald-600 hover:bg-emerald-700 text-white font-bold px-7 py-3.5 rounded-xl shadow-lg shadow-emerald-600/20 transition transform active:scale-95">
+                <i class="fa-brands fa-whatsapp text-xl"></i>
+                <span>Get Instant Quote</span>
             </a>
-            <a href="tel:0125884643" class="w-full sm:w-auto inline-flex items-center justify-center space-x-2 bg-slate-900 hover:bg-sky-600 text-white font-bold px-6 py-3.5 rounded-xl shadow-md transition transform active:scale-95">
+            <a href="tel:0125884643" class="w-full sm:w-auto inline-flex items-center justify-center space-x-2.5 bg-slate-900 hover:bg-sky-600 text-white font-bold px-7 py-3.5 rounded-xl shadow-lg transition transform active:scale-95">
                 <i class="fa-solid fa-phone text-sky-400"></i>
-                <span>Call 012-588 4643</span>
+                <span>Call Hotline</span>
             </a>
         </div>
 
-        <!-- 4-Column Credentials Card -->
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto bg-white/95 border border-slate-200 p-6 rounded-2xl shadow-xl text-center">
+        <!-- Reworked 4-Column Key Factors Card with Icons -->
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-5xl mx-auto bg-white/95 border border-slate-200/80 p-5 sm:p-6 rounded-2xl shadow-xl text-center backdrop-blur-md">
             
-            <!-- Col 1 -->
-            <div class="p-2 border-r border-slate-200 last:border-0 md:border-r">
-                <p class="text-base sm:text-lg font-extrabold text-sky-600">CIDB Registered</p>
-                <p class="text-xs text-slate-500 font-bold mt-1">Certified Contractor</p>
+            <!-- Factor 1 -->
+            <div class="p-3 border-r border-slate-200/80 last:border-0 md:border-r flex flex-col items-center">
+                <div class="w-10 h-10 rounded-xl bg-sky-50 text-sky-600 flex items-center justify-center mb-2 text-lg">
+                    <i class="fa-solid fa-user-check"></i>
+                </div>
+                <p class="text-sm sm:text-base font-extrabold text-slate-900 leading-snug">ST Chargeman A0</p>
+                <p class="text-[11px] sm:text-xs text-slate-500 font-semibold mt-0.5">Suruhanjaya Tenaga Certified[cite: 1]</p>
             </div>
 
-            <!-- Col 2 -->
-            <div class="p-2 border-r-0 md:border-r border-slate-200">
-                <p class="text-base sm:text-lg font-extrabold text-amber-600">Topaire Dealer</p>
-                <p class="text-xs text-slate-500 font-bold mt-1">Sales & Authorized Service</p>
+            <!-- Factor 2 -->
+            <div class="p-3 border-r-0 md:border-r border-slate-200/80 flex flex-col items-center">
+                <div class="w-10 h-10 rounded-xl bg-amber-50 text-amber-600 flex items-center justify-center mb-2 text-lg">
+                    <i class="fa-solid fa-award"></i>
+                </div>
+                <p class="text-sm sm:text-base font-extrabold text-slate-900 leading-snug">Topaire Authorized</p>
+                <p class="text-[11px] sm:text-xs text-slate-500 font-semibold mt-0.5">Dealer & Direct Warranty[cite: 1]</p>
             </div>
 
-            <!-- Col 3 -->
-            <div class="p-2 border-r border-slate-200 last:border-0">
-                <p class="text-base sm:text-lg font-extrabold text-sky-600">Chargeman A0</p>
-                <p class="text-xs text-slate-500 font-bold mt-1">Electrical Leadership</p>
+            <!-- Factor 3 -->
+            <div class="p-3 border-r border-slate-200/80 last:border-0 flex flex-col items-center">
+                <div class="w-10 h-10 rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center mb-2 text-lg">
+                    <i class="fa-solid fa-leaf"></i>
+                </div>
+                <p class="text-sm sm:text-base font-extrabold text-slate-900 leading-snug">JAS Gas Certified</p>
+                <p class="text-[11px] sm:text-xs text-slate-500 font-semibold mt-0.5">Eco Refrigerant Handling[cite: 1]</p>
             </div>
 
-            <!-- Col 4 -->
-            <div class="p-2">
-                <p class="text-base sm:text-lg font-extrabold text-amber-600">Multi-Disciplinary</p>
-                <p class="text-xs text-slate-500 font-bold mt-1">HVAC, Electrical & Civil</p>
+            <!-- Factor 4 -->
+            <div class="p-3 flex flex-col items-center">
+                <div class="w-10 h-10 rounded-xl bg-blue-50 text-blue-600 flex items-center justify-center mb-2 text-lg">
+                    <i class="fa-solid fa-building-shield"></i>
+                </div>
+                <p class="text-sm sm:text-base font-extrabold text-slate-900 leading-snug">CIDB & MOF Grade</p>
+                <p class="text-[11px] sm:text-xs text-slate-500 font-semibold mt-0.5">Trusted Government Vendor[cite: 1]</p>
             </div>
 
         </div>
