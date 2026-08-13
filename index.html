@@ -26,7 +26,7 @@
 <body class="bg-slate-50 text-slate-800 font-sans antialiased">
 
     <!-- Main Responsive Header -->
-    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-200/80 shadow-xs">
+    <header class="sticky top-0 z-50 bg-white border-b border-slate-200 shadow-sm">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex items-center justify-between h-16 sm:h-20">
                 
@@ -116,72 +116,62 @@
         </div>
     </header>
 
-   <!-- Hero Section with Natural Color Background Picture (No Filters) -->
-<section class="relative bg-slate-950 text-white py-16 lg:py-24 overflow-hidden">
+   <!-- Hero Section -->
+<section class="relative bg-white text-slate-900 py-16 lg:py-24 overflow-hidden border-b border-slate-200">
     
     <!-- Fitted Background Image Wrapper -->
     <div class="absolute inset-0 max-w-6xl mx-auto pointer-events-none overflow-hidden px-4">
-        <!-- Background Image in original color (Filters removed) -->
+        <!-- Background Image in original color (Filters & overlays removed) -->
         <img 
             src="bg1.jpeg" 
             alt="Engineering Background" 
-            class="w-full h-full object-contain object-center opacity-70"
+            class="w-full h-full object-contain object-center opacity-25"
         />
-        
-        <!-- Soft Tint Overlay (Maintains text contrast over full-color image) -->
-        <div class="absolute inset-0 bg-slate-950/40"></div>
-        
-        <!-- Smooth Edge-Blending Gradients -->
-        <div class="absolute inset-0 bg-gradient-to-b from-slate-950 via-transparent to-slate-950"></div>
-        <div class="absolute inset-0 bg-gradient-to-r from-slate-950 via-transparent to-slate-950"></div>
     </div>
-    
-    <!-- Radial Blue Glow -->
-    <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[300px] bg-sky-500/15 blur-[120px] rounded-full pointer-events-none"></div>
 
     <div class="relative max-w-5xl mx-auto px-4 sm:px-6 text-center z-10">
 
         <!-- Single Centered Badge -->
-        <div class="inline-flex items-center space-x-2 bg-slate-900/90 border border-amber-500/40 text-amber-300 px-4 py-2 rounded-full text-xs sm:text-sm font-bold shadow-md backdrop-blur-md mb-8">
-            <i class="fa-solid fa-award text-amber-400 text-xs"></i>
+        <div class="inline-flex items-center space-x-2 bg-amber-50 border border-amber-200 text-amber-900 px-4 py-2 rounded-full text-xs sm:text-sm font-bold shadow-sm mb-8">
+            <i class="fa-solid fa-award text-amber-600 text-xs"></i>
             <span class="uppercase tracking-wider">Authorized Topaire Dealer & Certified Contractors</span>
         </div>
 
         <!-- Headline -->
-        <h1 class="text-3xl sm:text-5xl lg:text-6xl font-extrabold text-white tracking-tight leading-tight mb-6 drop-shadow-lg">
-            Repairing, Servicing <br class="hidden sm:inline" />& Installation <span class="bg-gradient-to-r from-sky-400 to-sky-200 bg-clip-text text-transparent">Excellence</span>
+        <h1 class="text-3xl sm:text-5xl lg:text-6xl font-extrabold text-slate-900 tracking-tight leading-tight mb-6">
+            Repairing, Servicing <br class="hidden sm:inline" />& Installation <span class="bg-gradient-to-r from-sky-600 to-sky-800 bg-clip-text text-transparent">Excellence</span>
         </h1>
 
         <!-- Subtitle -->
-        <p class="text-base sm:text-lg text-slate-200 max-w-2xl mx-auto font-medium leading-relaxed mb-12 drop-shadow-md">
+        <p class="text-base sm:text-lg text-slate-600 max-w-2xl mx-auto font-medium leading-relaxed mb-12">
             Comprehensive air-conditioning solutions, electrical appliances repair, fire extinguisher supply, and civil engineering works in Penang.
         </p>
 
         <!-- Reworked 4-Column Credentials Bar -->
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto bg-slate-950/85 border border-slate-800/80 p-5 rounded-2xl backdrop-blur-md shadow-2xl text-center">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto bg-slate-50 border border-slate-200 p-5 rounded-2xl shadow-sm text-center">
             
             <!-- Col 1 -->
-            <div class="p-2 border-r border-slate-800/80 last:border-0 md:border-r">
-                <p class="text-lg sm:text-xl font-extrabold text-sky-400">CIDB Registered</p>
-                <p class="text-xs text-slate-300 font-medium mt-1">Certified Contractor</p>
+            <div class="p-2 border-r border-slate-200 last:border-0 md:border-r">
+                <p class="text-lg sm:text-xl font-extrabold text-sky-600">CIDB Registered</p>
+                <p class="text-xs text-slate-600 font-medium mt-1">Certified Contractor</p>
             </div>
 
             <!-- Col 2 -->
-            <div class="p-2 border-r-0 md:border-r border-slate-800/80">
-                <p class="text-lg sm:text-xl font-extrabold text-amber-400">Topaire Dealer</p>
-                <p class="text-xs text-slate-300 font-medium mt-1">Sales & Authorized Service</p>
+            <div class="p-2 border-r-0 md:border-r border-slate-200">
+                <p class="text-lg sm:text-xl font-extrabold text-amber-600">Topaire Dealer</p>
+                <p class="text-xs text-slate-600 font-medium mt-1">Sales & Authorized Service</p>
             </div>
 
             <!-- Col 3 -->
-            <div class="p-2 border-r border-slate-800/80 last:border-0">
-                <p class="text-lg sm:text-xl font-extrabold text-sky-400">Chargeman A0</p>
-                <p class="text-xs text-slate-300 font-medium mt-1">Electrical Leadership</p>
+            <div class="p-2 border-r border-slate-200 last:border-0">
+                <p class="text-lg sm:text-xl font-extrabold text-sky-600">Chargeman A0</p>
+                <p class="text-xs text-slate-600 font-medium mt-1">Electrical Leadership</p>
             </div>
 
             <!-- Col 4 -->
             <div class="p-2">
-                <p class="text-lg sm:text-xl font-extrabold text-amber-400">Multi-Disciplinary</p>
-                <p class="text-xs text-slate-300 font-medium mt-1">HVAC, Electrical & Civil</p>
+                <p class="text-lg sm:text-xl font-extrabold text-amber-600">Multi-Disciplinary</p>
+                <p class="text-xs text-slate-600 font-medium mt-1">HVAC, Electrical & Civil</p>
             </div>
 
         </div>
