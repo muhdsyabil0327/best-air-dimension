@@ -29,95 +29,105 @@
 <body class="bg-slate-50 text-slate-800 font-sans antialiased">
 
     <!-- Main Responsive Header -->
-    <header class="sticky top-0 z-50 bg-white border-b border-slate-200 shadow-sm">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex items-center justify-between h-16 sm:h-20">
-                
-                <!-- Left: Logo & Company Name (Always Visible) -->
-                <a href="#" class="flex items-center space-x-2.5 sm:space-x-3 group">
-                    <img src="logo.png" alt="Best Air Dimension" class="h-9 sm:h-12 w-auto object-contain">
-                    <div class="flex flex-col">
-                        <span class="text-xs sm:text-sm font-extrabold text-slate-900 tracking-tight leading-none group-hover:text-sky-600 transition">BEST AIR DIMENSION</span>
-                        <span class="text-[9px] sm:text-[10px] font-bold text-sky-600 tracking-wider uppercase mt-0.5">Technology & Services</span>
-                    </div>
-                </a>
-
-                <!-- Middle: Desktop Navigation Links -->
-                <nav class="hidden md:flex items-center space-x-1 lg:space-x-2">
-                    <a href="#services" class="px-3 py-2 rounded-lg text-sm font-bold text-slate-700 hover:text-sky-600 hover:bg-slate-100 transition">Services</a>
-                    <a href="#about" class="px-3 py-2 rounded-lg text-sm font-bold text-slate-700 hover:text-sky-600 hover:bg-slate-100 transition">About Us</a>
-                    <a href="#org-chart" class="px-3 py-2 rounded-lg text-sm font-bold text-slate-700 hover:text-sky-600 hover:bg-slate-100 transition">Our Team</a>
-                    <a href="#contact" class="px-3 py-2 rounded-lg text-sm font-bold text-slate-700 hover:text-sky-600 hover:bg-slate-100 transition">Contact</a>
-                </nav>
-
-                <!-- Right Action Area -->
-                <div class="flex items-center space-x-2 sm:space-x-3">
-                    
-                    <!-- Desktop Call Button -->
-                    <a href="tel:0125884643" class="hidden sm:inline-flex items-center space-x-2 bg-slate-900 hover:bg-sky-600 text-white text-xs font-bold px-4 py-2.5 rounded-xl transition shadow-sm">
-                        <i class="fa-solid fa-phone text-sky-400"></i>
-                        <span>012-588 4643</span>
-                    </a>
-
-                    <!-- Mobile Direct Call Icon Button -->
-                    <a href="tel:0125884643" aria-label="Call Us" class="sm:hidden p-2 bg-sky-50 text-sky-600 hover:bg-sky-100 rounded-lg transition border border-sky-200">
-                        <i class="fa-solid fa-phone text-sm"></i>
-                    </a>
-
-                    <!-- Mobile Hamburger Toggle Button -->
-                    <button id="mobile-menu-btn" type="button" aria-label="Toggle Menu" class="md:hidden p-2 text-slate-700 hover:bg-slate-100 rounded-lg transition focus:outline-none border border-slate-200">
-                        <i id="menu-icon-open" class="fa-solid fa-bars text-base block"></i>
-                        <i id="menu-icon-close" class="fa-solid fa-xmark text-base hidden"></i>
-                    </button>
-                </div>
-
-            </div>
-        </div>
-
-        <!-- Mobile Dropdown Menu -->
-        <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-slate-200 px-4 pt-3 pb-6 space-y-3 shadow-xl transition-all">
+<header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-200/90 shadow-sm transition-all duration-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-20">
             
-            <div class="grid grid-cols-2 gap-2 mb-2">
-                <div class="bg-sky-50/80 p-2.5 rounded-xl border border-sky-100 text-center">
-                    <p class="text-[11px] font-bold text-sky-900">📍 Location</p>
-                    <p class="text-[10px] font-semibold text-sky-700">Penang Island & Mainland</p>
+            <!-- Left: Brand Logo & Company Name -->
+            <a href="#" class="flex items-center space-x-3 group">
+                <img src="logo.png" alt="Best Air Dimension" class="h-11 w-auto object-contain transition-transform group-hover:scale-105">
+                <div class="flex flex-col">
+                    <span class="text-sm font-extrabold text-slate-900 tracking-tight leading-none group-hover:text-sky-600 transition-colors">BEST AIR DIMENSION</span>
+                    <span class="text-[10px] font-bold text-sky-600 tracking-wider uppercase mt-1">Technology & Services</span>
                 </div>
-                <div class="bg-amber-50/80 p-2.5 rounded-xl border border-amber-100 text-center">
-                    <p class="text-[11px] font-bold text-amber-900">🏅 Status</p>
-                    <p class="text-[10px] font-semibold text-amber-700">Topaire Authorized Dealer</p>
+            </a>
+
+            <!-- Middle: Desktop Navigation Links (New Order) -->
+            <nav class="hidden lg:flex items-center space-x-1">
+                
+                <!-- 1. About Us -->
+                <a href="#about" class="px-3.5 py-2 rounded-xl text-sm font-bold text-slate-700 hover:text-sky-600 hover:bg-sky-50/80 transition-all">
+                    About Us
+                </a>
+
+                <!-- 2. Our Team (Direct link to Organizational Structure) -->
+                <a href="#organizational-structure" class="px-3.5 py-2 rounded-xl text-sm font-bold text-slate-700 hover:text-sky-600 hover:bg-sky-50/80 transition-all">
+                    Our Team
+                </a>
+
+                <!-- 3. Brand, Authorization & Key Clients -->
+                <a href="#brands-clients" class="px-3.5 py-2 rounded-xl text-sm font-bold text-slate-700 hover:text-sky-600 hover:bg-sky-50/80 transition-all">
+                    Brands & Clients
+                </a>
+
+                <!-- 4. Our Services Dropdown -->
+                <div class="relative group">
+                    <button type="button" class="inline-flex items-center space-x-1.5 px-3.5 py-2 rounded-xl text-sm font-bold text-slate-700 hover:text-sky-600 hover:bg-sky-50/80 transition-all focus:outline-none">
+                        <span>Our Services</span>
+                        <i class="fa-solid fa-chevron-down text-[10px] text-slate-400 group-hover:text-sky-600 group-hover:rotate-180 transition-transform duration-200"></i>
+                    </button>
+
+                    <!-- Dropdown Box -->
+                    <div class="absolute left-0 top-full pt-2 w-60 opacity-0 translate-y-2 pointer-events-none group-hover:opacity-100 group-hover:translate-y-0 group-hover:pointer-events-auto transition-all duration-200 z-50">
+                        <div class="bg-white border border-slate-200 rounded-2xl shadow-xl p-2 space-y-1">
+                            
+                            <a href="#mechanical-services" class="flex items-center space-x-3 px-3 py-2.5 rounded-xl text-xs font-bold text-slate-800 hover:bg-sky-50 hover:text-sky-600 transition">
+                                <div class="w-8 h-8 rounded-lg bg-sky-100 text-sky-600 flex items-center justify-center">
+                                    <i class="fa-solid fa-fan text-sm"></i>
+                                </div>
+                                <div>
+                                    <p class="leading-none">Mechanical</p>
+                                    <span class="text-[10px] font-medium text-slate-400">HVAC & Cooling Systems</span>
+                                </div>
+                            </a>
+
+                            <a href="#electrical-services" class="flex items-center space-x-3 px-3 py-2.5 rounded-xl text-xs font-bold text-slate-800 hover:bg-amber-50 hover:text-amber-600 transition">
+                                <div class="w-8 h-8 rounded-lg bg-amber-100 text-amber-600 flex items-center justify-center">
+                                    <i class="fa-solid fa-bolt text-sm"></i>
+                                </div>
+                                <div>
+                                    <p class="leading-none">Electrical</p>
+                                    <span class="text-[10px] font-medium text-slate-400">Wiring & Appliance Repairs</span>
+                                </div>
+                            </a>
+
+                            <a href="#civil-services" class="flex items-center space-x-3 px-3 py-2.5 rounded-xl text-xs font-bold text-slate-800 hover:bg-emerald-50 hover:text-emerald-600 transition">
+                                <div class="w-8 h-8 rounded-lg bg-emerald-100 text-emerald-600 flex items-center justify-center">
+                                    <i class="fa-solid fa-helmet-safety text-sm"></i>
+                                </div>
+                                <div>
+                                    <p class="leading-none">Civil Services</p>
+                                    <span class="text-[10px] font-medium text-slate-400">Engineering & Construction</span>
+                                </div>
+                            </a>
+
+                        </div>
+                    </div>
                 </div>
-            </div>
 
-            <!-- Navigation Links -->
-            <div class="flex flex-col space-y-1">
-                <a href="#services" class="mobile-nav-link flex items-center justify-between px-4 py-3 rounded-xl text-sm font-bold text-slate-800 hover:bg-slate-100 active:bg-sky-50 transition">
-                    <span>Services</span>
-                    <i class="fa-solid fa-chevron-right text-xs text-slate-400"></i>
+                <!-- 5. Contact Us -->
+                <a href="#contact" class="px-3.5 py-2 rounded-xl text-sm font-bold text-slate-700 hover:text-sky-600 hover:bg-sky-50/80 transition-all">
+                    Contact Us
                 </a>
-                <a href="#about" class="mobile-nav-link flex items-center justify-between px-4 py-3 rounded-xl text-sm font-bold text-slate-800 hover:bg-slate-100 active:bg-sky-50 transition">
-                    <span>About Us</span>
-                    <i class="fa-solid fa-chevron-right text-xs text-slate-400"></i>
-                </a>
-                <a href="#org-chart" class="mobile-nav-link flex items-center justify-between px-4 py-3 rounded-xl text-sm font-bold text-slate-800 hover:bg-slate-100 active:bg-sky-50 transition">
-                    <span>Our Organizational Team</span>
-                    <i class="fa-solid fa-chevron-right text-xs text-slate-400"></i>
-                </a>
-                <a href="#contact" class="mobile-nav-link flex items-center justify-between px-4 py-3 rounded-xl text-sm font-bold text-slate-800 hover:bg-slate-100 active:bg-sky-50 transition">
-                    <span>Contact Us</span>
-                    <i class="fa-solid fa-chevron-right text-xs text-slate-400"></i>
-                </a>
-            </div>
 
-            <!-- Mobile Menu Call CTA -->
-            <div class="pt-2">
-                <a href="tel:0125884643" class="w-full flex items-center justify-center space-x-2 bg-slate-900 active:bg-sky-600 text-white font-bold py-3 px-4 rounded-xl shadow transition">
+            </nav>
+
+            <!-- Right: Direct Phone CTA Button -->
+            <div class="flex items-center space-x-3">
+                <a href="tel:0125884643" class="inline-flex items-center space-x-2 bg-slate-900 hover:bg-sky-600 text-white text-xs font-extrabold px-4 py-2.5 rounded-xl transition shadow-md hover:shadow-sky-600/20 active:scale-95">
                     <i class="fa-solid fa-phone text-sky-400"></i>
-                    <span>Call Hotline: 012-588 4643</span>
+                    <span>012-588 4643</span>
                 </a>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" type="button" aria-label="Toggle Menu" class="lg:hidden p-2 text-slate-700 hover:bg-slate-100 rounded-xl transition border border-slate-200">
+                    <i class="fa-solid fa-bars text-lg block"></i>
+                </button>
             </div>
 
         </div>
-    </header>
+    </div>
+</header>
 
    <!-- Reworked Hero Section -->
 <section class="relative bg-slate-100 text-slate-900 py-20 lg:py-28 overflow-hidden border-b border-slate-200" style="font-family: 'Plus Jakarta Sans', sans-serif;">
@@ -254,7 +264,7 @@
                 <div>
                     <h3 class="text-2xl font-bold text-slate-900 mb-3">Company Background & Decades of Technical Mastery</h3>
                     <p class="text-slate-600 text-sm leading-relaxed mb-4">
-                        Founded in 2015 and operating as a dynamic partnership since 2020, <strong>BEST AIR DIMENSION TECHNOLOGY AND SERVICES</strong> is a premier Bumiputera-owned engineering contractor based in Gelugor, Pulau Pinang[cite: 1]. Fully registered with <strong>CIDB (Grade G1)</strong>, <strong>MOF</strong>, and <strong>PKK</strong>, we specialize in Heating, Ventilation, Air Conditioning (HVAC), electrical engineering, fire protection, and civil maintenance solutions across Northern Malaysia.
+                        Founded in 2015 and operating as a dynamic partnership since 2020, <strong>BEST AIR DIMENSION TECHNOLOGY AND SERVICES</strong> is a premier Bumiputera-owned engineering contractor based in Gelugor, Pulau Pinang. Fully registered with <strong>CIDB (Grade G1)</strong>, <strong>MOF</strong>, and <strong>PKK</strong>, we specialize in Heating, Ventilation, Air Conditioning (HVAC), electrical engineering, fire protection, and civil maintenance solutions across Northern Malaysia.
                     </p>
                     <p class="text-slate-600 text-sm leading-relaxed">
                         At the helm of our operations is our Founder and Manager, <strong>Badrul Husam bin Abdullah</strong>, working in close partnership with Assistant Manager <strong>Muhammad Nabil Aiman bin Badrul Husam</strong>. Bringing <strong>over 20 years of hands-on industry experience</strong> in HVAC and Mechanical & Electrical (M&E) engineering, the management provides strategic direction and certified technical leadership that drive our success. With regulatory credentials including official <strong>Chargeman A0</strong> licensing from the Energy Commission (<em>Suruhanjaya Tenaga</em>) and <strong>Gas Management Certifications</strong> from the Department of Environment (<em>Jabatan Alam Sekitar</em>), the company consistently delivers high-standard maintenance and installation projects for major public institutions such as JKR Pulau Pinang, USM, and MBPP.
