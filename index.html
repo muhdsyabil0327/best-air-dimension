@@ -71,7 +71,7 @@
                     <div class="absolute left-0 top-full pt-2 w-60 opacity-0 translate-y-2 pointer-events-none group-hover:opacity-100 group-hover:translate-y-0 group-hover:pointer-events-auto transition-all duration-200 z-50">
                         <div class="bg-white border border-slate-200 rounded-2xl shadow-xl p-2 space-y-1">
                             
-                            <a href="#mechanical-services" class="flex items-center space-x-3 px-3 py-2.5 rounded-xl text-xs font-bold text-slate-800 hover:bg-sky-50 hover:text-sky-600 transition">
+                            <a href="#services" class="flex items-center space-x-3 px-3 py-2.5 rounded-xl text-xs font-bold text-slate-800 hover:bg-sky-50 hover:text-sky-600 transition">
                                 <div class="w-8 h-8 rounded-lg bg-sky-100 text-sky-600 flex items-center justify-center">
                                     <i class="fa-solid fa-fan text-sm"></i>
                                 </div>
@@ -81,7 +81,7 @@
                                 </div>
                             </a>
 
-                            <a href="#electrical-services" class="flex items-center space-x-3 px-3 py-2.5 rounded-xl text-xs font-bold text-slate-800 hover:bg-amber-50 hover:text-amber-600 transition">
+                            <a href="#services" class="flex items-center space-x-3 px-3 py-2.5 rounded-xl text-xs font-bold text-slate-800 hover:bg-amber-50 hover:text-amber-600 transition">
                                 <div class="w-8 h-8 rounded-lg bg-amber-100 text-amber-600 flex items-center justify-center">
                                     <i class="fa-solid fa-bolt text-sm"></i>
                                 </div>
@@ -91,7 +91,7 @@
                                 </div>
                             </a>
 
-                            <a href="#civil-services" class="flex items-center space-x-3 px-3 py-2.5 rounded-xl text-xs font-bold text-slate-800 hover:bg-emerald-50 hover:text-emerald-600 transition">
+                            <a href="#services" class="flex items-center space-x-3 px-3 py-2.5 rounded-xl text-xs font-bold text-slate-800 hover:bg-emerald-50 hover:text-emerald-600 transition">
                                 <div class="w-8 h-8 rounded-lg bg-emerald-100 text-emerald-600 flex items-center justify-center">
                                     <i class="fa-solid fa-helmet-safety text-sm"></i>
                                 </div>
@@ -649,8 +649,8 @@
                 </div>
             </div>
 
-            <!-- 3. Organizational Structure (With Larger Admin Card & Bigger Fonts) -->
-            <div class="bg-white rounded-3xl p-6 sm:p-8 border border-slate-200/80 shadow-sm">
+            <!-- 3. Organizational Structure (With Target ID Added) -->
+            <div id="organizational-structure" class="bg-white rounded-3xl p-6 sm:p-8 border border-slate-200/80 shadow-sm scroll-mt-24">
                 
                 <!-- Section Header -->
                 <div class="text-center max-w-xl mx-auto mb-10">
@@ -882,7 +882,7 @@
     </section>
 
     <!-- Main Technical Services Section with Local 5-Photo Work Progress Sliders -->
-    <section id="services" class="max-w-6xl mx-auto px-4 py-16">
+    <section id="services" class="max-w-6xl mx-auto px-4 py-16 scroll-mt-24">
         
         <!-- Section Header -->
         <div class="text-center mb-16">
@@ -894,7 +894,7 @@
         <div class="space-y-12">
 
             <!-- SEGMENT 1: AIR-COND SERVICING & REPAIR -->
-            <div class="bg-white rounded-3xl p-6 sm:p-8 border border-slate-200/80 shadow-sm hover:shadow-md transition">
+            <div id="mechanical-services" class="bg-white rounded-3xl p-6 sm:p-8 border border-slate-200/80 shadow-sm hover:shadow-md transition scroll-mt-24">
                 <div class="flex flex-col lg:flex-row gap-8 items-start">
                     
                     <!-- Left Column: Details & Sub-Services -->
@@ -981,7 +981,7 @@
             </div>
 
             <!-- SEGMENT 2: ELECTRICAL APPLIANCE REPAIR -->
-            <div class="bg-white rounded-3xl p-6 sm:p-8 border border-slate-200/80 shadow-sm hover:shadow-md transition">
+            <div id="electrical-services" class="bg-white rounded-3xl p-6 sm:p-8 border border-slate-200/80 shadow-sm hover:shadow-md transition scroll-mt-24">
                 <div class="flex flex-col lg:flex-row gap-8 items-start">
                     
                     <!-- Left Column: Details & Sub-Services -->
@@ -1068,7 +1068,7 @@
             </div>
 
             <!-- SEGMENT 3: FIRE PROTECTION & CIVIL WORKS -->
-            <div class="bg-white rounded-3xl p-6 sm:p-8 border border-slate-200/80 shadow-sm hover:shadow-md transition">
+            <div id="civil-services" class="bg-white rounded-3xl p-6 sm:p-8 border border-slate-200/80 shadow-sm hover:shadow-md transition scroll-mt-24">
                 <div class="flex flex-col lg:flex-row gap-8 items-start">
                     
                     <!-- Left Column: Details & Sub-Services -->
@@ -1196,20 +1196,30 @@
                 showSlide(containerId, current - 1);
             }
 
+            function toggleAccordion(id) {
+                const el = document.getElementById(id);
+                if (el) {
+                    el.classList.toggle('hidden');
+                }
+            }
+
             document.addEventListener('DOMContentLoaded', () => {
                 const sliders = ['slider-aircond', 'slider-electrical', 'slider-fire'];
                 sliders.forEach(id => {
-                    document.getElementById(id).dataset.currentIndex = 0;
-                    setInterval(() => {
-                        nextSlide(id);
-                    }, 10000); // 10 seconds auto-slide
+                    const el = document.getElementById(id);
+                    if (el) {
+                        el.dataset.currentIndex = 0;
+                        setInterval(() => {
+                            nextSlide(id);
+                        }, 10000); // 10 seconds auto-slide
+                    }
                 });
             });
         </script>
     </section>
 
-    <!-- Upgraded Partners, Brands & Authorizations Section -->
-    <section id="partners" class="max-w-6xl mx-auto px-4 py-16">
+    <!-- Upgraded Partners, Brands & Authorizations Section (With Target ID Added) -->
+    <section id="brands-clients" class="max-w-6xl mx-auto px-4 py-16 scroll-mt-24">
         
         <!-- Section Header -->
         <div class="text-center mb-12">
@@ -1497,7 +1507,7 @@
     </section>
 
     <!-- Footer Section with Official Logo -->
-    <footer id="contact" class="bg-slate-950 text-slate-400 py-12 px-4 border-t border-slate-800">
+    <footer id="contact" class="bg-slate-950 text-slate-400 py-12 px-4 border-t border-slate-800 scroll-mt-24">
         <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 mb-8 text-center md:text-left">
             <div>
                 <img src="logo.png" alt="Best Air Dimension Logo" class="h-16 mx-auto md:mx-0 mb-3 object-contain">
@@ -1512,57 +1522,14 @@
             </div>
             <div>
                 <h5 class="font-bold text-white text-sm uppercase tracking-wider mb-3">Operating Hours</h5>
-                <p class="text-sm text-slate-400">Mon - Sat: 8:30 AM - 6:00 PM</p>
-                <p class="text-sm text-slate-400">Sunday / Public Holidays: On Call</p>
+                <p class="text-sm text-slate-400 mb-1">Monday – Saturday: 8:30 AM – 6:00 PM</p>
+                <p class="text-sm text-slate-400">Sunday & Public Holidays: By Appointment</p>
             </div>
         </div>
-        <div class="max-w-6xl mx-auto border-t border-slate-900 pt-6 text-center text-xs text-slate-500">
-            <p>© 2026 Best Air Dimension Technology & Services. All rights reserved.</p>
+        <div class="max-w-6xl mx-auto pt-6 border-t border-slate-900 text-center text-xs text-slate-600">
+            &copy; Best Air Dimension Technology & Services. All Rights Reserved.
         </div>
     </footer>
 
-    <!-- FLOATING WHATSAPP POPUP BUTTON WITH FULL PRE-FILLED TEMPLATE -->
-    <a href="https://wa.me/60125884643?text=Hello%20Best%20Air%20Dimension!%20I%20would%20like%20to%20book%20a%20service%20appointment.%0A%0AService%20Type:%20[Aircond%20/%20Electrical%20/%20Fire%20Safety]%0ALocation:%20[Your%20Area%20in%20Penang]%0APreferred%20Date:%20" 
-       target="_blank" 
-       title="Book Appointment via WhatsApp"
-       class="fixed bottom-6 right-6 z-50 bg-emerald-500 hover:bg-emerald-600 text-white p-4 rounded-full shadow-2xl hover:scale-110 transition duration-300 flex items-center justify-center border-2 border-white/40 group">
-        <i class="fa-brands fa-whatsapp text-3xl"></i>
-        <!-- Optional Tooltip Tag -->
-        <span class="absolute right-16 bg-slate-900 text-white text-xs font-bold px-3 py-1.5 rounded-xl whitespace-nowrap opacity-0 group-hover:opacity-100 transition shadow-lg border border-slate-700">
-            Book Appointment via WhatsApp
-        </span>
-    </a>
-
-<!-- Accordion Toggle Script -->
-    <script>
-        function toggleAccordion(id) {
-            const element = document.getElementById(id);
-            element.classList.toggle('hidden');
-        }
-    </script>
-
-    <script>
-        const menuBtn = document.getElementById('mobile-menu-btn');
-        const mobileMenu = document.getElementById('mobile-menu');
-        const iconOpen = document.getElementById('menu-icon-open');
-        const iconClose = document.getElementById('menu-icon-close');
-        const mobileNavLinks = document.querySelectorAll('.mobile-nav-link');
-
-        // Toggle mobile menu visibility
-        menuBtn.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
-            iconOpen.classList.toggle('hidden');
-            iconClose.classList.toggle('hidden');
-        });
-
-        // Close mobile menu when a navigation link is clicked
-        mobileNavLinks.forEach(link => {
-            link.addEventListener('click', () => {
-                mobileMenu.classList.add('hidden');
-                iconOpen.classList.remove('hidden');
-                iconClose.classList.add('hidden');
-            });
-        });
-    </script>
 </body>
-</html>
+</html>git add .
