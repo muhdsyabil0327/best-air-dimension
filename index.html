@@ -649,193 +649,184 @@
                 </div>
             </div>
 
-            <!-- 3. Organizational Structure (With Target ID Added) -->
-            <div id="organizational-structure" class="bg-white rounded-3xl p-6 sm:p-8 border border-slate-200/80 shadow-sm scroll-mt-24">
+            <!-- 3. Organizational Structure -->
+<div id="organizational-structure" class="bg-white rounded-3xl p-6 sm:p-10 border border-slate-200/80 shadow-sm scroll-mt-24">
+    
+    <!-- Section Header -->
+    <div class="text-center max-w-xl mx-auto mb-12">
+        <span class="text-xs font-bold uppercase tracking-widest text-sky-600 bg-sky-50 px-3 py-1 rounded-full border border-sky-100">Team Hierarchy</span>
+        <h3 class="text-3xl font-extrabold text-slate-900 tracking-tight mt-2">Organizational Structure</h3>
+        <p class="text-sm text-slate-500 mt-1 font-medium">Our certified management team, operational divisions, and office team.</p>
+    </div>
+
+    <div class="flex flex-col items-center">
+
+        <!-- LEVEL 1 & 2: Executive Leadership (Side-by-Side with Assistant Lowered) -->
+        <div class="relative w-full max-w-3xl">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-start">
                 
-                <!-- Section Header -->
-                <div class="text-center max-w-xl mx-auto mb-10">
-                    <h3 class="text-3xl font-extrabold text-slate-900 tracking-tight">Organizational Structure</h3>
-                    <p class="text-sm text-slate-500 mt-1.5 font-medium">Our certified management team, operational divisions, and office team.</p>
+                <!-- Manager (Higher Tier) -->
+                <div class="bg-slate-900 text-white rounded-2xl p-5 shadow-md border border-slate-800 flex items-center space-x-4 relative z-10">
+                    <img src="Manager.png" alt="Badrul Husam" class="w-14 h-14 rounded-full object-cover border-2 border-sky-400 shadow-sm flex-shrink-0">
+                    <div>
+                        <span class="inline-block bg-sky-500/20 text-sky-300 text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded-md border border-sky-400/30 mb-1">Executive Leadership</span>
+                        <h4 class="text-base font-bold leading-snug">Badrul Husam bin Abdullah</h4>
+                        <p class="text-xs text-sky-400 font-medium mt-0.5">Company Manager & Partner (Pemilik 1)</p>
+                    </div>
                 </div>
 
-                <!-- Org Chart Container -->
-                <div class="flex flex-col items-center">
-
-                    <!-- Level 1: Company Manager -->
-                    <div class="relative flex flex-col items-center w-full max-w-sm">
-                        <div class="w-full bg-slate-900 text-white rounded-2xl p-4.5 text-center shadow-lg border border-slate-800 flex items-center space-x-4">
-                            <img src="Manager.png" alt="Badrul Husam" class="w-16 h-16 rounded-full object-cover border-2 border-sky-400 shadow flex-shrink-0">
-                            <div class="text-left">
-                                <span class="inline-block bg-sky-500/20 text-sky-300 text-[11px] font-bold uppercase tracking-wider px-2.5 py-0.5 rounded-full border border-sky-400/30 mb-1">Executive Leadership</span>
-                                <h4 class="text-base font-extrabold leading-snug">Badrul Husam bin Abdullah</h4>
-                                <p class="text-xs text-sky-400 font-semibold mt-0.5">Company Manager & Partner (Pemilik 1)</p>
-                            </div>
-                        </div>
-                        <!-- Vertical Connector -->
-                        <div class="w-0.5 h-8 bg-slate-300"></div>
+                <!-- Assistant Manager (Lowered via md:translate-y-6) -->
+                <div class="bg-white rounded-2xl p-5 shadow-sm border border-slate-200 flex items-center space-x-4 md:translate-y-6 relative z-10">
+                    <img src="nabil.png" alt="Muhammad Nabil Aiman" class="w-14 h-14 rounded-full object-cover border-2 border-sky-500 shadow-sm flex-shrink-0">
+                    <div>
+                        <span class="inline-block bg-sky-50 text-sky-700 text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded-md border border-sky-100 mb-1">Management & Operations</span>
+                        <h4 class="text-base font-bold text-slate-900 leading-snug">Muhammad Nabil Aiman</h4>
+                        <p class="text-xs text-sky-600 font-medium mt-0.5">Assistant Manager & Partner (Pemilik 2)</p>
                     </div>
+                </div>
 
-                    <!-- Level 2: Assistant Manager -->
-                    <div class="relative flex flex-col items-center w-full max-w-sm">
-                        <div class="w-full bg-sky-900 text-white rounded-2xl p-4.5 text-center shadow-md border border-sky-800 flex items-center space-x-4">
-                            <img src="nabil.png" alt="Muhammad Nabil Aiman" class="w-16 h-16 rounded-full object-cover border-2 border-sky-300 shadow flex-shrink-0">
-                            <div class="text-left">
-                                <span class="inline-block bg-sky-400/20 text-sky-200 text-[11px] font-bold uppercase tracking-wider px-2.5 py-0.5 rounded-full border border-sky-300/30 mb-1">Management & Operations</span>
-                                <h4 class="text-base font-extrabold leading-snug">Muhammad Nabil Aiman</h4>
-                                <p class="text-xs text-sky-300 font-semibold mt-0.5">Assistant Manager & Partner (Pemilik 2)</p>
-                            </div>
-                        </div>
-                        <!-- Vertical Connector -->
-                        <div class="w-0.5 h-8 bg-slate-300"></div>
-                    </div>
+            </div>
 
-                    <!-- Level 3: Administration Support (Sized matching Level 1 & 2) -->
-                    <div class="relative flex flex-col items-center w-full max-w-sm">
-                        <div class="w-full bg-slate-50 rounded-2xl p-4.5 border border-slate-200 shadow-sm flex items-center space-x-4">
-                            <img src="nabila.png" alt="Nur Nabila Najwa" class="w-16 h-16 rounded-full object-cover border-2 border-slate-300 shadow-sm flex-shrink-0">
-                            <div class="text-left">
-                                <span class="inline-block bg-slate-200/80 text-slate-700 text-[11px] font-bold uppercase tracking-wider px-2.5 py-0.5 rounded-full border border-slate-300 mb-1">Administrative Support</span>
-                                <h4 class="text-base font-extrabold text-slate-900 leading-snug">Nur Nabila Najwa</h4>
-                                <p class="text-xs text-sky-700 font-semibold mt-0.5"><i class="fa-solid fa-clipboard-user mr-1"></i> Administrative Assistant</p>
-                            </div>
-                        </div>
-                        <!-- Vertical Connector to Branch -->
-                        <div class="w-0.5 h-8 bg-slate-300"></div>
-                    </div>
+            <!-- Leadership Connection Line (Desktop) -->
+            <div class="hidden md:block absolute top-10 left-1/4 right-1/4 h-0.5 bg-slate-200 -z-0"></div>
+        </div>
 
-                    <!-- Horizontal Branch Line (Desktop Only) -->
-                    <div class="hidden md:block w-full max-w-4xl h-0.5 bg-slate-300 relative">
-                        <!-- Downward connectors -->
-                        <div class="absolute left-[16.6%] -bottom-4 w-0.5 h-4 bg-slate-300"></div>
-                        <div class="absolute left-[50%] -bottom-4 w-0.5 h-4 bg-slate-300"></div>
-                        <div class="absolute right-[16.6%] -bottom-4 w-0.5 h-4 bg-slate-300"></div>
-                    </div>
+        <!-- Central Vertical Connector -->
+        <div class="w-0.5 h-10 bg-slate-200 my-2"></div>
 
-                    <!-- Level 4: Operational Divisions (Grid) -->
-                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 w-full max-w-5xl mt-4 md:mt-4">
-                        
-                        <!-- Division 1: Service & RAC -->
-                        <div class="flex flex-col items-center">
-                            <div class="w-full bg-slate-50 rounded-2xl p-5 border border-slate-200/80 hover:border-sky-300 transition shadow-sm text-center">
-                                <div class="w-11 h-11 bg-sky-100 text-sky-600 rounded-xl flex items-center justify-center mx-auto mb-3 font-bold text-xl">
-                                    <i class="fa-solid fa-snowflake"></i>
-                                </div>
-                                <h5 class="font-bold text-slate-900 text-base mb-4">Service & RAC Division</h5>
-                                
-                                <!-- Head -->
-                                <div class="bg-white p-3 rounded-xl border border-slate-200 flex items-center space-x-3 mb-3 text-left shadow-2xs">
-                                    <img src="nabil.png" alt="M. Nabil Aiman" class="w-12 h-12 rounded-full object-cover border-2 border-sky-400 flex-shrink-0">
-                                    <div>
-                                        <p class="text-sm font-bold text-slate-900">M. Nabil Aiman</p>
-                                        <p class="text-xs font-bold text-sky-600">Head (Co-Owner)</p>
-                                    </div>
-                                </div>
-
-                                <!-- Internship Trainee -->
-                                <div class="bg-white p-3 rounded-xl border border-slate-200 flex items-center space-x-3 text-left shadow-2xs">
-                                    <img src="team/syabil.jpg" alt="Muhd Syabil" class="w-12 h-12 rounded-full object-cover border-2 border-slate-300 flex-shrink-0">
-                                    <div>
-                                        <p class="text-sm font-bold text-slate-900">Muhd Syabil</p>
-                                        <p class="text-xs text-slate-600 font-semibold"><i class="fa-solid fa-user-graduate mr-1"></i> Internship Trainee</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Division 2: Installation -->
-                        <div class="flex flex-col items-center">
-                            <div class="w-full bg-slate-50 rounded-2xl p-5 border border-slate-200/80 hover:border-amber-300 transition shadow-sm text-center">
-                                <div class="w-11 h-11 bg-amber-100 text-amber-600 rounded-xl flex items-center justify-center mx-auto mb-3 font-bold text-xl">
-                                    <i class="fa-solid fa-screwdriver-wrench"></i>
-                                </div>
-                                <h5 class="font-bold text-slate-900 text-base mb-4">Installation Division</h5>
-                                
-                                <!-- Lead -->
-                                <div class="bg-white p-3 rounded-xl border border-slate-200 flex items-center space-x-3 mb-3 text-left shadow-2xs">
-                                    <img src="team/zamani.jpg" alt="Zamani" class="w-12 h-12 rounded-full object-cover border-2 border-amber-400 flex-shrink-0">
-                                    <div>
-                                        <p class="text-sm font-bold text-slate-900">Zamani</p>
-                                        <p class="text-xs font-bold text-amber-600">Division Lead</p>
-                                    </div>
-                                </div>
-
-                                <!-- Assistant -->
-                                <div class="bg-white p-3 rounded-xl border border-slate-200 flex items-center space-x-3 text-left shadow-2xs">
-                                    <img src="team/awang.jpg" alt="Awang" class="w-12 h-12 rounded-full object-cover border-2 border-slate-300 flex-shrink-0">
-                                    <div>
-                                        <p class="text-sm font-bold text-slate-900">Awang</p>
-                                        <p class="text-xs text-slate-600 font-semibold">Assistant</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Division 3: Project & Civil -->
-                        <div class="flex flex-col items-center">
-                            <div class="w-full bg-slate-50 rounded-2xl p-5 border border-slate-200/80 hover:border-emerald-300 transition shadow-sm text-center">
-                                <div class="w-11 h-11 bg-emerald-100 text-emerald-600 rounded-xl flex items-center justify-center mx-auto mb-3 font-bold text-xl">
-                                    <i class="fa-solid fa-helmet-safety"></i>
-                                </div>
-                                <h5 class="font-bold text-slate-900 text-base mb-4">Project & Civil Division</h5>
-                                
-                                <!-- Lead -->
-                                <div class="bg-white p-3 rounded-xl border border-slate-200 flex items-center space-x-3 mb-3 text-left shadow-2xs">
-                                    <img src="team/afnan.jpg" alt="Afnan" class="w-12 h-12 rounded-full object-cover border-2 border-emerald-400 flex-shrink-0">
-                                    <div>
-                                        <p class="text-sm font-bold text-slate-900">Afnan</p>
-                                        <p class="text-xs font-bold text-emerald-600">Division Lead</p>
-                                    </div>
-                                </div>
-
-                                <!-- Assistant -->
-                                <div class="bg-white p-3 rounded-xl border border-slate-200 flex items-center space-x-3 text-left shadow-2xs">
-                                    <img src="team/akmal.jpg" alt="Akmal" class="w-12 h-12 rounded-full object-cover border-2 border-slate-300 flex-shrink-0">
-                                    <div>
-                                        <p class="text-sm font-bold text-slate-900">Akmal</p>
-                                        <p class="text-xs text-slate-600 font-semibold">Assistant</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-
-                    <!-- Level 5: Office Security Cats Section -->
-                    <div class="w-full max-w-5xl mt-12 pt-8 border-t border-slate-200/60">
-                        <div class="text-center mb-6">
-                            <span class="bg-amber-100 text-amber-800 text-xs font-bold px-3 py-1 rounded-full border border-amber-200 inline-flex items-center gap-1.5">
-                                <i class="fa-solid fa-shield-cat text-amber-600"></i> Headquarters Security
-                            </span>
-                            <h5 class="text-lg font-extrabold text-slate-900 mt-2">Office Security Guards</h5>
-                            <p class="text-xs text-slate-500 font-medium">Keeping our workshop and office space safe 24/7!</p>
-                        </div>
-
-                        <div class="grid grid-cols-3 gap-4 max-w-xl mx-auto text-center">
-                            <!-- Cat 1: Awang -->
-                            <div class="bg-slate-50 p-4 rounded-2xl border border-slate-200/80 flex flex-col items-center">
-                                <img src="team/cat-awang.jpg" alt="Awang - Security Cat" class="w-16 h-16 rounded-full object-cover border-2 border-amber-400 shadow-sm mb-2">
-                                <p class="text-sm font-extrabold text-slate-900">Awang</p>
-                                <span class="text-xs text-slate-600 font-semibold">Head Security</span>
-                            </div>
-
-                            <!-- Cat 2: Black -->
-                            <div class="bg-slate-50 p-4 rounded-2xl border border-slate-200/80 flex flex-col items-center">
-                                <img src="team/cat-black.jpg" alt="Black - Security Cat" class="w-16 h-16 rounded-full object-cover border-2 border-slate-700 shadow-sm mb-2">
-                                <p class="text-sm font-extrabold text-slate-900">Black</p>
-                                <span class="text-xs text-slate-600 font-semibold">Night Patrol</span>
-                            </div>
-
-                            <!-- Cat 3: Beywan -->
-                            <div class="bg-slate-50 p-4 rounded-2xl border border-slate-200/80 flex flex-col items-center">
-                                <img src="team/cat-beywan.jpg" alt="Beywan - Security Cat" class="w-16 h-16 rounded-full object-cover border-2 border-amber-500 shadow-sm mb-2">
-                                <p class="text-sm font-extrabold text-slate-900">Beywan</p>
-                                <span class="text-xs text-slate-600 font-semibold">Chief Morale Officer</span>
-                            </div>
-                        </div>
-                    </div>
-
+        <!-- LEVEL 3: Administrative Support -->
+        <div class="w-full max-w-md">
+            <div class="bg-slate-50/80 rounded-2xl p-4 border border-slate-200/80 shadow-2xs flex items-center space-x-4">
+                <img src="nabila.png" alt="Nur Nabila Najwa" class="w-12 h-12 rounded-full object-cover border-2 border-slate-300 flex-shrink-0">
+                <div class="flex-1">
+                    <span class="text-[10px] font-bold uppercase tracking-wider text-slate-500">Administrative Support</span>
+                    <h4 class="text-sm font-bold text-slate-900 leading-tight">Nur Nabila Najwa</h4>
+                    <p class="text-xs text-slate-600 font-medium mt-0.5"><i class="fa-solid fa-clipboard-user mr-1 text-sky-600"></i> Administrative Assistant</p>
                 </div>
             </div>
+        </div>
+
+        <!-- Vertical Connector to Divisions -->
+        <div class="w-0.5 h-8 bg-slate-200"></div>
+
+        <!-- Horizontal Branch Line (Desktop) -->
+        <div class="hidden md:block w-full max-w-4xl h-0.5 bg-slate-200 relative">
+            <div class="absolute left-[16.6%] -bottom-3 w-0.5 h-3 bg-slate-200"></div>
+            <div class="absolute left-[50%] -bottom-3 w-0.5 h-3 bg-slate-200"></div>
+            <div class="absolute right-[16.6%] -bottom-3 w-0.5 h-3 bg-slate-200"></div>
+        </div>
+
+        <!-- LEVEL 4: Operational Divisions (Flattened, De-cluttered Design) -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 w-full max-w-5xl mt-3">
+            
+            <!-- Division 1: Service & RAC -->
+            <div class="bg-slate-50/60 rounded-2xl p-5 border border-slate-200/70">
+                <div class="flex items-center space-x-3 pb-4 mb-4 border-b border-slate-200/60">
+                    <span class="w-9 h-9 bg-sky-100 text-sky-600 rounded-lg flex items-center justify-center font-bold text-lg">
+                        <i class="fa-solid fa-snowflake"></i>
+                    </span>
+                    <h5 class="font-bold text-slate-900 text-sm">Service & RAC Division</h5>
+                </div>
+                
+                <div class="space-y-3">
+                    <div class="flex items-center space-x-3">
+                        <img src="nabil.png" alt="M. Nabil Aiman" class="w-10 h-10 rounded-full object-cover border border-sky-400">
+                        <div>
+                            <p class="text-sm font-bold text-slate-800">M. Nabil Aiman</p>
+                            <p class="text-xs font-semibold text-sky-600">Head (Co-Owner)</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center space-x-3 pt-2 border-t border-slate-100">
+                        <img src="team/syabil.jpg" alt="Muhd Syabil" class="w-10 h-10 rounded-full object-cover border border-slate-300">
+                        <div>
+                            <p class="text-sm font-semibold text-slate-800">Muhd Syabil</p>
+                            <p class="text-xs text-slate-500"><i class="fa-solid fa-user-graduate mr-1"></i> Trainee</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Division 2: Installation -->
+            <div class="bg-slate-50/60 rounded-2xl p-5 border border-slate-200/70">
+                <div class="flex items-center space-x-3 pb-4 mb-4 border-b border-slate-200/60">
+                    <span class="w-9 h-9 bg-amber-100 text-amber-600 rounded-lg flex items-center justify-center font-bold text-lg">
+                        <i class="fa-solid fa-screwdriver-wrench"></i>
+                    </span>
+                    <h5 class="font-bold text-slate-900 text-sm">Installation Division</h5>
+                </div>
+
+                <div class="space-y-3">
+                    <div class="flex items-center space-x-3">
+                        <img src="team/zamani.jpg" alt="Zamani" class="w-10 h-10 rounded-full object-cover border border-amber-400">
+                        <div>
+                            <p class="text-sm font-bold text-slate-800">Zamani</p>
+                            <p class="text-xs font-semibold text-amber-600">Division Lead</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center space-x-3 pt-2 border-t border-slate-100">
+                        <img src="team/awang.jpg" alt="Awang" class="w-10 h-10 rounded-full object-cover border border-slate-300">
+                        <div>
+                            <p class="text-sm font-semibold text-slate-800">Awang</p>
+                            <p class="text-xs text-slate-500">Assistant</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Division 3: Project & Civil -->
+            <div class="bg-slate-50/60 rounded-2xl p-5 border border-slate-200/70">
+                <div class="flex items-center space-x-3 pb-4 mb-4 border-b border-slate-200/60">
+                    <span class="w-9 h-9 bg-emerald-100 text-emerald-600 rounded-lg flex items-center justify-center font-bold text-lg">
+                        <i class="fa-solid fa-helmet-safety"></i>
+                    </span>
+                    <h5 class="font-bold text-slate-900 text-sm">Project & Civil Division</h5>
+                </div>
+
+                <div class="space-y-3">
+                    <div class="flex items-center space-x-3">
+                        <img src="team/afnan.jpg" alt="Afnan" class="w-10 h-10 rounded-full object-cover border border-emerald-400">
+                        <div>
+                            <p class="text-sm font-bold text-slate-800">Afnan</p>
+                            <p class="text-xs font-semibold text-emerald-600">Division Lead</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center space-x-3 pt-2 border-t border-slate-100">
+                        <img src="team/akmal.jpg" alt="Akmal" class="w-10 h-10 rounded-full object-cover border border-slate-300">
+                        <div>
+                            <p class="text-sm font-semibold text-slate-800">Akmal</p>
+                            <p class="text-xs text-slate-500">Assistant</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- LEVEL 5: Streamlined Security Cats Strip -->
+        <div class="w-full max-w-3xl mt-12 pt-6 border-t border-slate-200/60 flex flex-col md:flex-row items-center justify-between gap-4 bg-amber-50/40 p-4 rounded-2xl border border-amber-100">
+            <div class="flex items-center space-x-2">
+                <i class="fa-solid fa-shield-cat text-amber-600 text-lg"></i>
+                <span class="text-xs font-bold text-slate-800">HQ Security Detail:</span>
+            </div>
+
+            <div class="flex items-center space-x-6">
+                <div class="flex items-center space-x-2">
+                    <img src="team/cat-awang.jpg" alt="Awang" class="w-8 h-8 rounded-full object-cover border border-amber-400">
+                    <span class="text-xs font-medium text-slate-700">Awang <span class="text-[10px] text-slate-400">(Head)</span></span>
+                </div>
+                <div class="flex items-center space-x-2">
+                    <img src="team/cat-black.jpg" alt="Black" class="w-8 h-8 rounded-full object-cover border border-slate-600">
+                    <span class="text-xs font-medium text-slate-700">Black <span class="text-[10px] text-slate-400">(Night)</span></span>
+                </div>
+                <div class="flex items-center space-x-2">
+                    <img src="team/cat-beywan.jpg" alt="Beywan" class="w-8 h-8 rounded-full object-cover border border-amber-500">
+                    <span class="text-xs font-medium text-slate-700">Beywan <span class="text-[10px] text-slate-400">(Morale)</span></span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
 
             <!-- 4. Hardware & Equipment -->
             <div class="bg-white rounded-3xl p-6 sm:p-8 border border-slate-200/80 shadow-sm">
